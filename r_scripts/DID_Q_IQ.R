@@ -1,5 +1,7 @@
-#clear workspace at some point
-#rm(list = ls())
+#script for the final DiD analysis (Fig 4B) in which individual stocks are paired to one another
+
+#clear workspace
+rm(list = ls())
 
 require(tidyverse)
 require(glmmTMB)
@@ -13,29 +15,24 @@ datadir = "~/Dropbox/ITQ_meta/Data/"
 did = read.csv(paste0(datadir, "Q_IQ_ITQ_strict2.csv"))
 US_pacific = read.csv(paste0(datadir, "extra_stocks.csv"))
 
-####!!!!add some of the pacific stocks to the Q_IQ_ITQ.csv file, for instance now you have Canadian ones
-###### that can function as controls.##########
-
-####these will be only stocks that already have TAC in place and shift to individual or individual transferable quota
-
 # read RAM legacy data
-#check if names are still correct
 load("/Users/mtn1/Dropbox/RAM v4.491 Files (1-16-20)/RAM v4.491/DB Files With Assessment Data/R Data/DBdata[asmt][v4.491].RData")
+
+#these are only stocks that already have TAC in place and shift to individual or individual transferable quota
 
 
 did = did %>%
-  mutate(yof_iq = as.numeric(as.character(yof_iq), 
+  mutate(yof_iq = as.numeric(as.character(yof_iq),
                              beforeaftercontrol = as.character(beforeaftercontrol)),
                              yof_quota = as.numeric(as.character(yof_quota)))
 
-did$beforeaftercontrol = as.character(did$beforeaftercontrol)
 
 
 ifelse(!is.na(did$yof_iq) & did$beforeaftercontrol == "control" , as.integer(did$yof_iq), 2017)
 
 
 #create year that will be cut-off point, i.e. control will no longer be control
-vars= did %>% 
+vars= did %>%
   group_by(baci_pair)%>%
   filter(beforeaftercontrol=="impact")%>%
   mutate(intervention_year = yof_iq)%>%
@@ -50,12 +47,9 @@ minimum = did %>% group_by(baci_pair)%>%
 
 did = did %>% left_join(minimum)
 
-series =timeseries_values_views %>% left_join(metadata, by = c("stockid", "stocklong")) 
-
+series =timeseries_values_views %>% left_join(metadata, by = c("stockid", "stocklong"))
 series= subset(series, !is.na(BdivBmsypref | UdivUmsypref | BdivBmgtpref | UdivUmgtpref | SSBdivSSBmsy | SSBdivSSBmgt | FdivFmgt |
-                                FdivFmsy))
- 
-series = series %>%
+                                FdivFmsy))%>%
   filter(!(stocklong %in% US_pacific$stocklong))
 
 
@@ -85,16 +79,11 @@ series_did = series_did %>%
   filter(year > 1983)
 
 
-# model for over or under bbmsy ffmsy 
+# model for over or under bbmsy ffmsy
 series_did$ffmsy_overfishing = as.factor(ifelse(series_did$ffmsy>1.1, 1, 0))
 series_did$ffmsy_high_overfishing = as.factor(ifelse(series_did$ffmsy>1.5, 1, 0))
 series_did$bbmsy_overfished = as.factor(ifelse(series_did$bbmsy<0.8, 1, 0))
 series_did$bbmsy_overexploited = as.factor(ifelse(series_did$bbmsy<0.5, 1, 0))
-
-
-series_didITQ = series_did %>%
-  filter(treatmentstock_iq_type == "ITQ")
-
 
 
 #series_did$collapsed = as.factor(ifelse(series_did$bbmsy<0.4, 1, 0)
@@ -110,7 +99,7 @@ series_did$did = as.factor(ifelse(series_did$beforeaftercontrol==1 & series_did$
 
 f_series = series_did %>%
   filter(!is.na(ffmsy_overfishing))
-
+#model overfishing
 m_1 =  glmmTMB(ffmsy_overfishing ~ ba*beforeaftercontrol +  ar1(year + 0 | stocklong) ,  family=binomial(),  data = f_series)
 
 sum = data.frame(summary(m_1)$coefficients$cond)
@@ -123,7 +112,7 @@ confidence_m_1$order = 1
 
 series_b = series_did %>%
   filter(!is.na(bbmsy_overfished))
-
+#model overfished
 m_b1 =  glmmTMB(bbmsy_overfished ~ ba*beforeaftercontrol +    ar1(year + 0 | stocklong),  family=binomial(),  data = series_b)
 
 sum = data.frame(summary(m_b1)$coefficients$cond)
@@ -144,17 +133,13 @@ confidence_interval$predictor[confidence_interval$predictors=="ba1:beforeafterco
 confidence_i = confidence_interval %>%
   filter(!is.na(predictor))
 
-#confidence_i$probability[is.na(onfidence_i$probability)] = 0
 
 confidence_i$effect = ifelse(confidence_i$estimate <0  & confidence_i$probability <0.05 , "negative", "non-significant")
 confidence_i$effect = ifelse(confidence_i$estimate >0  & confidence_i$probability <0.05, "positive", confidence_i$effect)
 confidence_i$effect = ifelse(confidence_i$lower == 0 & confidence_i$estimate ==0 &confidence_i$upper ==0, "", confidence_i$effect)
 
 
-
-#write.csv(confidence_i, "~/Dropbox/ITQ_meta/model_outcomes/confidence_intervals_paired_approach.csv")
-
-
+#plot confidence intervals
 ggplot(confidence_i, aes( x= rev(order), y = estimate, ymax = upper, ymin = lower, colour= effect, shape= effect)) +
   geom_pointrange(position=position_dodge(width=c(0.3)))+scale_x_continuous(breaks = rev(confidence_i$order), labels = confidence_i$outcome)+
   theme_classic()+ coord_flip() + geom_hline(yintercept=0, linetype="dashed") +
@@ -162,84 +147,6 @@ ggplot(confidence_i, aes( x= rev(order), y = estimate, ymax = upper, ymin = lowe
   theme(legend.position = "bottom", text = element_text(size=12))+
   scale_shape_manual(values = c(19,21,19))+ggtitle("paired approach Individual (n=19)")
 
-
+#model coefficients
 tab_model(m_1, m_b1)
-
-
-
-#prediction test
-
-
-#duration test
-## 75% of the sample size
-smp_size <- floor(0.75 * nrow(f_series))
-
-## set the seed to make your partition reproducible
-set.seed(123)
-train_ind <- sample(seq_len(nrow(f_series)), size = smp_size)
-
-train <- f_series[train_ind, ]
-test <- f_series[-train_ind, ]
-
-m_1 =  glmmTMB(ffmsy_overfishing ~ ba*beforeaftercontrol +  ar1(year + 0 | stocklong) ,  family=binomial(),  data = train)
-
-
-test$pre<- predict(m_1 , newdata = test, type="response", allow.new.levels=TRUE)
-
-test = test %>%
-  mutate(pred = ifelse(pre>0.6, 1, 0))
-
-#95% accuracy
-test = test %>% 
-  mutate(accurate = 1*(pred == ffmsy_overfishing))
-sum(test$accurate)/nrow(test)
-
-
-t1 = ggplot(test, aes(x = ffmsy_overfishing, y = pre)) +
-  geom_violin()+geom_boxplot(width=0.03)+ylab("model predicted overfishing")+xlab("overfishing")+
-  theme_classic()
-
-
-t1
-series_b$bbmsy_overfished= as.factor(series_b$bbmsy_overfished)
-
-## 75% of the sample size
-smp_size <- floor(0.75 * nrow(series_b))
-
-## set the seed to make your partition reproducible
-set.seed(123)
-train_ind <- sample(seq_len(nrow(series_b)), size = smp_size)
-
-train <- series_b[train_ind, ]
-test <- series_b[-train_ind, ]
-
-
-m_b1 =  glmmTMB(bbmsy_overfished ~ ba*beforeaftercontrol +    ar1(year + 0 | stocklong),  family=binomial(),  data = train)
-
-
-test$pre<- predict(m_b1 , newdata = test, type="response", allow.new.levels=TRUE)
-
-test = test %>%
-  mutate(pred = ifelse(pre>0.6, 1, 0))
-
-
-ggplot(test, aes(x = pre)) +
-  geom_histogram()+facet_wrap(~did)
-
-#96% accuracy
-test = test %>% 
-  mutate(accurate = 1*(pred == bbmsy_overfished))
-sum(test$accurate)/nrow(test)
-
-
-t2 = ggplot(test, aes(x = bbmsy_overfished, y = pre)) +
-  geom_violin()+geom_boxplot(width=0.03)+ylab("model predicted overfished")+xlab("overfished")+
-  theme_classic()
-
-
-t2
-
-
-
-t1+t2
 

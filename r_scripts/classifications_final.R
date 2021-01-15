@@ -1,3 +1,6 @@
+#this script classifies all attributes of management, needed for classification attribute model
+#and DiD per attribute
+
 rm(list = ls())
 require(tidyverse)
 
@@ -8,7 +11,7 @@ mn_data = read.csv(paste0(datadir, "all_data_nov2020.csv"))
 
 
 
-#make tidy data 
+#make tidy data
 classes = mn_data%>% select(fish_admin, name, year, share_admin, rec, ITQ, ILQ, IQ, SGQP, GQP, IRQP, RQP, RIQ, ITE, IE, TE, OA) %>%
   gather(key = "mngmt", value = percentage, -fish_admin, - name, -year, -share_admin) %>%
   distinct()
@@ -33,50 +36,50 @@ class$perc_share[is.na(class$perc_share)] = 0
 stocks = sort(unique(classes$name))
 
 for(i in 1:length(stocks)){
-  
+
   gdata = class %>% filter(name == stocks[i])
   years = unique(gdata$year)
-  
-  
+
+
   out <- purrr::map_df(years, function(t){
-    
+
     gdatat <- gdata[gdata$year==t, ]
-    
+
     if(length(na.omit(gdatat$perc_share))<6){ transferable= NA} else
       if(gdatat$perc_share[gdatat$class == "ITQ"] + gdatat$perc_share[gdatat$class == "ITE"] >= 75){transferable = 1} else {transferable  = 0}
-    
+
     if(length(na.omit(gdatat$perc_share))<6){ individual = NA} else
       if(gdatat$perc_share[gdatat$class == "ITQ"]+ gdatat$perc_share[gdatat$class == "ILQ"]+gdatat$perc_share[gdatat$class == "IQ"] +
          gdatat$perc_share[gdatat$class == "ITE"] + gdatat$perc_share[gdatat$class == "IE"] + gdatat$perc_share[gdatat$class == "RIQ"]>= 75 ){individual = 1} else {individual = 0}
-    
+
     if(length(na.omit(gdatat$perc_share))<6){ quota = NA}else
       if(gdatat$perc_share[gdatat$class == "ITQ"]+gdatat$perc_share[gdatat$class == "IQ"] +gdatat$perc_share[gdatat$class == "ILQ"]+
          gdatat$perc_share[gdatat$class == "RQP"]+ gdatat$perc_share[gdatat$class == "RIQ"] + gdatat$perc_share[gdatat$class == "IRQP"] + gdatat$perc_share[gdatat$class == "SGQP"]+  gdatat$perc_share[gdatat$class == "GQP"]>= 75) {quota = 1} else {quota = 0}
-    
+
     if(length(na.omit(gdatat$perc_share))<6){ effort = NA}else
       if(gdatat$perc_share[gdatat$class == "TE"] + gdatat$perc_share[gdatat$class == "ITE"] + gdatat$perc_share[gdatat$class == "IE"]>= 75) {effort = 1}else {effort = 0}
-    
+
     if(length(na.omit(gdatat$perc_share))<6){ leasable = NA}else
       if(gdatat$perc_share[gdatat$class == "ILQ"] + gdatat$perc_share[gdatat$class == "ITQ"]>= 75) {leasable = 1}else {leasable = 0}
-    
+
     if(length(na.omit(gdatat$perc_share))<6){ pooled = NA}else
       if(gdatat$perc_share[gdatat$class == "GQP"] + gdatat$perc_share[gdatat$class == "IRQP"]+ gdatat$perc_share[gdatat$class == "RQP"] + gdatat$perc_share[gdatat$class == "SGQP"] >= 75){pooled = 1}else {pooled = 0}
-    
+
     if(length(na.omit(gdatat$perc_share))<6){ rationed = NA}else
       if(gdatat$perc_share[gdatat$class == "RIQ"] + gdatat$perc_share[gdatat$class == "IRQP"]+ gdatat$perc_share[gdatat$class == "RQP"] >= 75) {rationed = 1}else {rationed = 0}
-    
+
     if(length(na.omit(gdatat$perc_share))<6){ SG = NA}else
       if(gdatat$perc_share[gdatat$class == "SGQP"]  >= 75) {SG = 1}else {SG = 0}
-    
-    
-    df <- data.frame(name = stocks[i], year = t,leasable=leasable, transferable = transferable, individual= individual, quota= quota, 
+
+
+    df <- data.frame(name = stocks[i], year = t,leasable=leasable, transferable = transferable, individual= individual, quota= quota,
                      effort = effort, pooled = pooled, rationed= rationed, SG=SG)
-    
+
     return(df)
-    
+
   })
   if(i==1){results <- out}else{results <- rbind(results, out)}
-  
+
 }#warning for binding rows, ignore
 
 
@@ -95,35 +98,35 @@ try = results%>%
 stocks = sort(unique(try$stocklong))
 
 for(i in 1:length(stocks)){
-  
+
   sdat = try%>%
     filter(stocklong == stocks[i])
-  
-  
-  
+
+
+
   years = sort(unique(sdat$year[c(1:(length(sdat$year)))]))
   years = years[years!=min(sdat$year)]
-  
+
   out = purrr::map_df(years, function(t){
-    
-    
+
+
     gdat1 = sdat%>%
       filter(year == t-1)
-    
+
     gdat = sdat%>%
       filter(year == t)
-    
+
     num = gdat$year -gdat1$year
-    
+
     if(!(length(num)>0)){df = data_frame(stocklong = stocks[i], brk = "break")
     return(df)}
-    
-    
-    
+
+
+
   })
-  
+
   if(i==1){check = out}else{check= rbind(check, out)}
-  
+
 }
 
 

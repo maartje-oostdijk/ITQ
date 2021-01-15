@@ -1,3 +1,5 @@
+#script for classification attribute model (Fig 3C in main text, needs the "attributes.csv" which is the result of
+#classification script)
 rm(list = ls())
 
 require(tidyverse)
@@ -20,35 +22,35 @@ try = read.csv(paste0(datadir, "attributes.csv"))
 stocks = sort(unique(try$stocklong))
 
 for(i in 1:length(stocks)){
-  
+
   sdat = try%>%
     filter(stocklong == stocks[i])
-  
-  
-  
+
+
+
   years = sort(unique(sdat$year[c(1:(length(sdat$year)))]))
   years = years[years!=min(sdat$year)]
-  
+
   out = purrr::map_df(years, function(t){
-    
-    
+
+
     gdat1 = sdat%>%
       filter(year == t-1)
-    
+
     gdat = sdat%>%
       filter(year == t)
-    
+
     num = gdat$year -gdat1$year
-    
+
     if(!(length(num)>0)){df = data_frame(stocklong = stocks[i], brk = "break")
     return(df)}
-    
-    
-    
+
+
+
   })
-  
+
   if(i==1){check = out}else{check= rbind(check, out)}
-  
+
 }
 
 
@@ -106,8 +108,8 @@ series = series %>%
   mutate(region = ifelse(region == "Canada West Coast"| region == "Canada East Coast", "Canada",  as.character(region)))%>%
 mutate(region = ifelse(region == "European Union"| region == "Europe non EU", "Europe", as.character(region)))%>%
   distinct()
-  
-#filter observations from timeseries before first year f/fmsy >0.5 
+
+#filter observations from timeseries before first year f/fmsy >0.5
 min_years = series %>%
   group_by(stocklong)%>%filter(ffmsy > 0.5)%>%
   summarise(min_year_ffmsy0.5 = min(year)) %>%
@@ -130,7 +132,7 @@ series = series%>%
   mutate(year = as.factor(as.character(year)),
          stocklong=as.factor(as.character(stocklong)),
          region = as.factor(as.character(region)), transferable = as.factor(transferable),
-         individual = as.factor(individual), quota = as.factor(quota), effort = as.factor(effort), 
+         individual = as.factor(individual), quota = as.factor(quota), effort = as.factor(effort),
          leasable = as.factor(leasable), pooled = as.factor(pooled),  rationed = as.factor(rationed),
          FisheryType=as.factor(FisheryType))%>%
   filter(!is.na(region) & !is.na(individual))%>%
@@ -240,7 +242,7 @@ test = test %>%
   mutate(pred. = ifelse(pred>0.6, 1, 0))
 
 #94% accuracy!
-test = test %>% 
+test = test %>%
   mutate(accurate = 1*(pred. == bbmsy_overfished))
 sum(test$accurate)/nrow(test)
 

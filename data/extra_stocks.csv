@@ -1,0 +1,1673 @@
+﻿year,stocklong,bbmsy,ffmsy,region ,FisheryType
+1980,Acadian redfish Gulf of Maine / Georges Bank,0.144735906,6.4211,US East Coast,Rockfish
+1981,Acadian redfish Gulf of Maine / Georges Bank,0.121346652,6.0789,US East Coast,Rockfish
+1982,Acadian redfish Gulf of Maine / Georges Bank,0.101721022,6.5263,US East Coast,Rockfish
+1983,Acadian redfish Gulf of Maine / Georges Bank,0.085859017,6.0526,US East Coast,Rockfish
+1984,Acadian redfish Gulf of Maine / Georges Bank,0.074102137,6.2368,US East Coast,Rockfish
+1985,Acadian redfish Gulf of Maine / Georges Bank,0.064383591,6.6316,US East Coast,Rockfish
+1986,Acadian redfish Gulf of Maine / Georges Bank,0.057887959,5.1316,US East Coast,Rockfish
+1987,Acadian redfish Gulf of Maine / Georges Bank,0.055931444,3.2368,US East Coast,Rockfish
+1988,Acadian redfish Gulf of Maine / Georges Bank,0.057646063,1.9737,US East Coast,Rockfish
+1989,Acadian redfish Gulf of Maine / Georges Bank,0.062391502,1.0789,US East Coast,Rockfish
+1990,Acadian redfish Gulf of Maine / Georges Bank,0.069420729,0.9211,US East Coast,Rockfish
+1991,Acadian redfish Gulf of Maine / Georges Bank,0.06372549,15.8684,US East Coast,Rockfish
+1992,Acadian redfish Gulf of Maine / Georges Bank,0.054736191,1.7895,US East Coast,Rockfish
+1993,Acadian redfish Gulf of Maine / Georges Bank,0.062800592,1.7632,US East Coast,Rockfish
+1994,Acadian redfish Gulf of Maine / Georges Bank,0.074215971,1.1842,US East Coast,Rockfish
+1995,Acadian redfish Gulf of Maine / Georges Bank,0.091419079,0.7632,US East Coast,Rockfish
+1996,Acadian redfish Gulf of Maine / Georges Bank,0.115882638,0.6579,US East Coast,Rockfish
+1997,Acadian redfish Gulf of Maine / Georges Bank,0.148517317,0.3158,US East Coast,Rockfish
+1998,Acadian redfish Gulf of Maine / Georges Bank,0.18904209,0.3421,US East Coast,Rockfish
+1999,Acadian redfish Gulf of Maine / Georges Bank,0.235503998,0.1579,US East Coast,Rockfish
+2000,Acadian redfish Gulf of Maine / Georges Bank,0.286448106,0.1579,US East Coast,Rockfish
+2001,Acadian redfish Gulf of Maine / Georges Bank,0.339665329,0.2105,US East Coast,Rockfish
+2002,Acadian redfish Gulf of Maine / Georges Bank,0.395148553,0.1053,US East Coast,Rockfish
+2003,Acadian redfish Gulf of Maine / Georges Bank,0.454196192,0.1053,US East Coast,Rockfish
+2004,Acadian redfish Gulf of Maine / Georges Bank,0.517238681,0.1053,US East Coast,Rockfish
+2005,Acadian redfish Gulf of Maine / Georges Bank,0.584806056,0.1053,US East Coast,Rockfish
+2006,Acadian redfish Gulf of Maine / Georges Bank,0.656773813,0.1053,US East Coast,Rockfish
+2007,Acadian redfish Gulf of Maine / Georges Bank,0.732458949,0.1579,US East Coast,Rockfish
+2008,Acadian redfish Gulf of Maine / Georges Bank,0.811601781,0.1579,US East Coast,Rockfish
+2009,Acadian redfish Gulf of Maine / Georges Bank,0.896969891,0.1842,US East Coast,Rockfish
+2010,Acadian redfish Gulf of Maine / Georges Bank,0.99205299,0.1842,US East Coast,Rockfish
+2011,Acadian redfish Gulf of Maine / Georges Bank,1.099881898,0.2105,US East Coast,Rockfish
+2012,Acadian redfish Gulf of Maine / Georges Bank,1.218613933,0.3158,US East Coast,Rockfish
+2013,Acadian redfish Gulf of Maine / Georges Bank,1.344634879,0.2895,US East Coast,Rockfish
+2014,Acadian redfish Gulf of Maine / Georges Bank,1.474657788,0.3158,US East Coast,Rockfish
+2015,Acadian redfish Gulf of Maine / Georges Bank,1.474657788,0.3158,US East Coast,Rockfish
+1980,american plaice nafo-5yz,2.899748226,2.2449,US East Coast,Flatfish
+1981,american plaice nafo-5yz,2.205539025,1.9388,US East Coast,Flatfish
+1982,american plaice nafo-5yz,1.916151675,3.5714,US East Coast,Flatfish
+1983,american plaice nafo-5yz,1.61356527,3.5204,US East Coast,Flatfish
+1984,american plaice nafo-5yz,1.42183566,2.6531,US East Coast,Flatfish
+1985,american plaice nafo-5yz,0.862211032,4.4388,US East Coast,Flatfish
+1986,american plaice nafo-5yz,0.626764324,3.3673,US East Coast,Flatfish
+1987,american plaice nafo-5yz,0.643930724,2.602,US East Coast,Flatfish
+1988,american plaice nafo-5yz,0.651026169,1.9388,US East Coast,Flatfish
+1989,american plaice nafo-5yz,0.611123827,2.449,US East Coast,Flatfish
+1990,american plaice nafo-5yz,0.62684062,1.9898,US East Coast,Flatfish
+1991,american plaice nafo-5yz,0.833524071,1.8367,US East Coast,Flatfish
+1992,american plaice nafo-5yz,0.894636454,2.3469,US East Coast,Flatfish
+1993,american plaice nafo-5yz,0.781490806,3.1633,US East Coast,Flatfish
+1994,american plaice nafo-5yz,0.757991913,4.2857,US East Coast,Flatfish
+1995,american plaice nafo-5yz,0.63042649,4.6429,US East Coast,Flatfish
+1996,american plaice nafo-5yz,0.653086137,3.1122,US East Coast,Flatfish
+1997,american plaice nafo-5yz,0.769817655,2.602,US East Coast,Flatfish
+1998,american plaice nafo-5yz,0.852216373,2.7041,US East Coast,Flatfish
+1999,american plaice nafo-5yz,0.736705577,3.0612,US East Coast,Flatfish
+2000,american plaice nafo-5yz,0.765621424,2.8571,US East Coast,Flatfish
+2001,american plaice nafo-5yz,0.738231479,3.2653,US East Coast,Flatfish
+2002,american plaice nafo-5yz,0.581292439,3.0102,US East Coast,Flatfish
+2003,american plaice nafo-5yz,0.467765316,3.3163,US East Coast,Flatfish
+2004,american plaice nafo-5yz,0.39032578,2.8061,US East Coast,Flatfish
+2005,american plaice nafo-5yz,0.392538338,1.6837,US East Coast,Flatfish
+2006,american plaice nafo-5yz,0.46677348,1.4286,US East Coast,Flatfish
+2007,american plaice nafo-5yz,0.61638819,0.6633,US East Coast,Flatfish
+2008,american plaice nafo-5yz,0.85397116,0.8673,US East Coast,Flatfish
+2009,american plaice nafo-5yz,0.990920882,1.0204,US East Coast,Flatfish
+2010,american plaice nafo-5yz,1.067368582,0.7143,US East Coast,Flatfish
+2011,american plaice nafo-5yz,1.13962005,0.5612,US East Coast,Flatfish
+2012,american plaice nafo-5yz,1.130006867,0.6633,US East Coast,Flatfish
+2013,american plaice nafo-5yz,1.100709545,0.5102,US East Coast,Flatfish
+2014,american plaice nafo-5yz,1.109559777,0.4082,US East Coast,Flatfish
+2015,american plaice nafo-5yz,1.109559777,0.4082,US East Coast,Flatfish
+1980,atlantic cod eastern georges bank,0.866744594,2.0526,US East Coast,Gadids
+1981,atlantic cod eastern georges bank,0.889843214,2.3684,US East Coast,Gadids
+1982,atlantic cod eastern georges bank,0.821360506,3.7368,US East Coast,Gadids
+1983,atlantic cod eastern georges bank,0.840240897,3.2105,US East Coast,Gadids
+1984,atlantic cod eastern georges bank,0.702589383,3.1053,US East Coast,Gadids
+1985,atlantic cod eastern georges bank,0.495489543,4.3158,US East Coast,Gadids
+1986,atlantic cod eastern georges bank,0.510278759,3.4211,US East Coast,Gadids
+1987,atlantic cod eastern georges bank,0.463039667,3.1053,US East Coast,Gadids
+1988,atlantic cod eastern georges bank,0.840850761,3.3684,US East Coast,Gadids
+1989,atlantic cod eastern georges bank,0.65507077,2.4211,US East Coast,Gadids
+1990,atlantic cod eastern georges bank,0.774502579,3.3684,US East Coast,Gadids
+1991,atlantic cod eastern georges bank,0.573780906,4.7368,US East Coast,Gadids
+1992,atlantic cod eastern georges bank,0.371509161,5.3684,US East Coast,Gadids
+1993,atlantic cod eastern georges bank,0.322110131,6.0526,US East Coast,Gadids
+1994,atlantic cod eastern georges bank,0.161385409,8.0526,US East Coast,Gadids
+1995,atlantic cod eastern georges bank,0.154829365,2.1579,US East Coast,Gadids
+1996,atlantic cod eastern georges bank,0.187126776,2.6842,US East Coast,Gadids
+1997,atlantic cod eastern georges bank,0.167306177,4.4211,US East Coast,Gadids
+1998,atlantic cod eastern georges bank,0.163367469,3.5263,US East Coast,Gadids
+1999,atlantic cod eastern georges bank,0.202398801,3.5789,US East Coast,Gadids
+2000,atlantic cod eastern georges bank,0.181002719,2.2632,US East Coast,Gadids
+2001,atlantic cod eastern georges bank,0.212232867,3.8947,US East Coast,Gadids
+2002,atlantic cod eastern georges bank,0.177623053,2.8947,US East Coast,Gadids
+2003,atlantic cod eastern georges bank,0.149772571,4.3158,US East Coast,Gadids
+2004,atlantic cod eastern georges bank,0.116357076,3.9474,US East Coast,Gadids
+2005,atlantic cod eastern georges bank,0.080476711,2.5263,US East Coast,Gadids
+2006,atlantic cod eastern georges bank,0.097629152,3.4737,US East Coast,Gadids
+2007,atlantic cod eastern georges bank,0.082179249,3.7368,US East Coast,Gadids
+2008,atlantic cod eastern georges bank,0.073793612,4.0526,US East Coast,Gadids
+2009,atlantic cod eastern georges bank,0.074022311,5.3684,US East Coast,Gadids
+2010,atlantic cod eastern georges bank,0.04990725,5.5263,US East Coast,Gadids
+2011,atlantic cod eastern georges bank,0.032017889,7.1579,US East Coast,Gadids
+2012,atlantic cod eastern georges bank,0.02358143,5.8421,US East Coast,Gadids
+2013,atlantic cod eastern georges bank,0.038929688,2.5263,US East Coast,Gadids
+2014,atlantic cod eastern georges bank,0.05712398,1.9474,US East Coast,Gadids
+2015,atlantic cod eastern georges bank,0.05712398,1.9474,US East Coast,Gadids
+1980,Atlantic cod Georges Bank,0.489813673,3.0769,US East Coast,Gadids
+1981,Atlantic cod Georges Bank,0.452558264,3.0178,US East Coast,Gadids
+1982,Atlantic cod Georges Bank,0.422222996,4.0828,US East Coast,Gadids
+1983,Atlantic cod Georges Bank,0.391778357,4.0237,US East Coast,Gadids
+1984,Atlantic cod Georges Bank,0.328830934,3.6686,US East Coast,Gadids
+1985,Atlantic cod Georges Bank,0.286629017,5.0888,US East Coast,Gadids
+1986,Atlantic cod Georges Bank,0.244148703,3.432,US East Coast,Gadids
+1987,Atlantic cod Georges Bank,0.297605791,3.2544,US East Coast,Gadids
+1988,Atlantic cod Georges Bank,0.344018454,3.787,US East Coast,Gadids
+1989,Atlantic cod Georges Bank,0.315855671,3.1953,US East Coast,Gadids
+1990,Atlantic cod Georges Bank,0.294866569,4.3195,US East Coast,Gadids
+1991,Atlantic cod Georges Bank,0.241727649,5.2663,US East Coast,Gadids
+1992,Atlantic cod Georges Bank,0.183279311,5.0296,US East Coast,Gadids
+1993,Atlantic cod Georges Bank,0.152998727,5.4438,US East Coast,Gadids
+1994,Atlantic cod Georges Bank,0.102022351,6.568,US East Coast,Gadids
+1995,Atlantic cod Georges Bank,0.099163816,4.0828,US East Coast,Gadids
+1996,Atlantic cod Georges Bank,0.105502307,3.5503,US East Coast,Gadids
+1997,Atlantic cod Georges Bank,0.10231069,5.2071,US East Coast,Gadids
+1998,Atlantic cod Georges Bank,0.099223473,4.7337,US East Coast,Gadids
+1999,Atlantic cod Georges Bank,0.105228882,4.5562,US East Coast,Gadids
+2000,Atlantic cod Georges Bank,0.110632755,3.7278,US East Coast,Gadids
+2001,Atlantic cod Georges Bank,0.125497136,5.0296,US East Coast,Gadids
+2002,Atlantic cod Georges Bank,0.098094973,4.6154,US East Coast,Gadids
+2003,Atlantic cod Georges Bank,0.070508869,4.8521,US East Coast,Gadids
+2004,Atlantic cod Georges Bank,0.056529391,3.432,US East Coast,Gadids
+2005,Atlantic cod Georges Bank,0.046919742,4.142,US East Coast,Gadids
+2006,Atlantic cod Georges Bank,0.046541919,3.432,US East Coast,Gadids
+2007,Atlantic cod Georges Bank,0.0457465,4.8521,US East Coast,Gadids
+2008,Atlantic cod Georges Bank,0.039661549,5.3254,US East Coast,Gadids
+2009,Atlantic cod Georges Bank,0.038140312,5.3254,US East Coast,Gadids
+2010,Atlantic cod Georges Bank,0.030365097,5.4438,US East Coast,Gadids
+2011,Atlantic cod Georges Bank,0.02600521,7.8698,US East Coast,Gadids
+2012,Atlantic cod Georges Bank,0.02021357,5.9172,US East Coast,Gadids
+2013,Atlantic cod Georges Bank,0.02586104,2.8402,US East Coast,Gadids
+2014,Atlantic cod Georges Bank,0.030723035,2.7219,US East Coast,Gadids
+2015,Atlantic cod Georges Bank,0.030723035,2.7219,US East Coast,Gadids
+1980,atlantic cod gulf of maine,0.558538831,3.9622,US East Coast,Gadids
+1981,atlantic cod gulf of maine,0.558538831,3.9622,US East Coast,Gadids
+1982,atlantic cod gulf of maine,0.558538831,3.9622,US East Coast,Gadids
+1983,atlantic cod gulf of maine,0.415781223,4.7243,US East Coast,Gadids
+1984,atlantic cod gulf of maine,0.341677657,4.227,US East Coast,Gadids
+1985,atlantic cod gulf of maine,0.313783064,4.9405,US East Coast,Gadids
+1986,atlantic cod gulf of maine,0.292383109,4.5135,US East Coast,Gadids
+1987,atlantic cod gulf of maine,0.283275686,4.4432,US East Coast,Gadids
+1988,atlantic cod gulf of maine,0.295095429,3.3784,US East Coast,Gadids
+1989,atlantic cod gulf of maine,0.393510339,5.0162,US East Coast,Gadids
+1990,atlantic cod gulf of maine,0.510364048,6.1838,US East Coast,Gadids
+1991,atlantic cod gulf of maine,0.436360017,6.8541,US East Coast,Gadids
+1992,atlantic cod gulf of maine,0.271779431,7.373,US East Coast,Gadids
+1993,atlantic cod gulf of maine,0.19113146,8.3838,US East Coast,Gadids
+1994,atlantic cod gulf of maine,0.177196606,7.8973,US East Coast,Gadids
+1995,atlantic cod gulf of maine,0.202577948,5.3946,US East Coast,Gadids
+1996,atlantic cod gulf of maine,0.211461418,5.5784,US East Coast,Gadids
+1997,atlantic cod gulf of maine,0.179013114,5,US East Coast,Gadids
+1998,atlantic cod gulf of maine,0.158608505,4.4378,US East Coast,Gadids
+1999,atlantic cod gulf of maine,0.173240103,2.5838,US East Coast,Gadids
+2000,atlantic cod gulf of maine,0.229502078,3.3081,US East Coast,Gadids
+2001,atlantic cod gulf of maine,0.300345883,3.8216,US East Coast,Gadids
+2002,atlantic cod gulf of maine,0.300072163,2.973,US East Coast,Gadids
+2003,atlantic cod gulf of maine,0.250702964,3.4919,US East Coast,Gadids
+2004,atlantic cod gulf of maine,0.217209545,3.6216,US East Coast,Gadids
+2005,atlantic cod gulf of maine,0.181177993,4.5514,US East Coast,Gadids
+2006,atlantic cod gulf of maine,0.170254062,3.8919,US East Coast,Gadids
+2007,atlantic cod gulf of maine,0.214198621,3.8703,US East Coast,Gadids
+2008,atlantic cod gulf of maine,0.241769727,5.0054,US East Coast,Gadids
+2009,atlantic cod gulf of maine,0.251026451,5.6378,US East Coast,Gadids
+2010,atlantic cod gulf of maine,0.214945132,5.8,US East Coast,Gadids
+2011,atlantic cod gulf of maine,0.139746684,8.4486,US East Coast,Gadids
+2012,atlantic cod gulf of maine,0.073506358,9.6108,US East Coast,Gadids
+2013,atlantic cod gulf of maine,0.051359893,7.2108,US East Coast,Gadids
+2014,atlantic cod gulf of maine,0.055366163,5.1676,US East Coast,Gadids
+2015,atlantic cod gulf of maine,0.055366163,5.1676,US East Coast,Gadids
+1980,haddock eastern georges bank,NA,1.546153846,US East Coast,Gadids
+1981,haddock eastern georges bank,NA,1.338461538,US East Coast,Gadids
+1982,haddock eastern georges bank,NA,1.326923077,US East Coast,Gadids
+1983,haddock eastern georges bank,NA,1.480769231,US East Coast,Gadids
+1984,haddock eastern georges bank,NA,1.942307692,US East Coast,Gadids
+1985,haddock eastern georges bank,NA,1.269230769,US East Coast,Gadids
+1986,haddock eastern georges bank,NA,1.311538462,US East Coast,Gadids
+1987,haddock eastern georges bank,NA,1.057692308,US East Coast,Gadids
+1988,haddock eastern georges bank,NA,1.680769231,US East Coast,Gadids
+1989,haddock eastern georges bank,NA,1.226923077,US East Coast,Gadids
+1990,haddock eastern georges bank,NA,1.365384615,US East Coast,Gadids
+1991,haddock eastern georges bank,NA,1.215384615,US East Coast,Gadids
+1992,haddock eastern georges bank,NA,2.092307692,US East Coast,Gadids
+1993,haddock eastern georges bank,NA,2,US East Coast,Gadids
+1994,haddock eastern georges bank,NA,1.873076923,US East Coast,Gadids
+1995,haddock eastern georges bank,NA,0.661538462,US East Coast,Gadids
+1996,haddock eastern georges bank,NA,0.857692308,US East Coast,Gadids
+1997,haddock eastern georges bank,NA,0.553846154,US East Coast,Gadids
+1998,haddock eastern georges bank,NA,0.626923077,US East Coast,Gadids
+1999,haddock eastern georges bank,NA,0.55,US East Coast,Gadids
+2000,haddock eastern georges bank,NA,0.580769231,US East Coast,Gadids
+2001,haddock eastern georges bank,NA,0.757692308,US East Coast,Gadids
+2002,haddock eastern georges bank,NA,0.726923077,US East Coast,Gadids
+2003,haddock eastern georges bank,NA,0.861538462,US East Coast,Gadids
+2004,haddock eastern georges bank,NA,1.292307692,US East Coast,Gadids
+2005,haddock eastern georges bank,NA,1.238461538,US East Coast,Gadids
+2006,haddock eastern georges bank,NA,1.357692308,US East Coast,Gadids
+2007,haddock eastern georges bank,NA,0.757692308,US East Coast,Gadids
+2008,haddock eastern georges bank,NA,0.515384615,US East Coast,Gadids
+2009,haddock eastern georges bank,NA,0.853846154,US East Coast,Gadids
+2010,haddock eastern georges bank,NA,1.203846154,US East Coast,Gadids
+2011,haddock eastern georges bank,NA,1.273076923,US East Coast,Gadids
+2012,haddock eastern georges bank,NA,1.411538462,US East Coast,Gadids
+2013,haddock eastern georges bank,NA,0.830769231,US East Coast,Gadids
+2014,haddock eastern georges bank,NA,0.880769231,US East Coast,Gadids
+2015,haddock eastern georges bank,NA,0.880769231,US East Coast,Gadids
+1980,Haddock Georges Bank,0.657636196,1.7436,US East Coast,Gadids
+1981,Haddock Georges Bank,0.568162512,1.4359,US East Coast,Gadids
+1982,Haddock Georges Bank,0.457045245,0.9744,US East Coast,Gadids
+1983,Haddock Georges Bank,0.357119114,1.0256,US East Coast,Gadids
+1984,Haddock Georges Bank,0.249021237,1.3846,US East Coast,Gadids
+1985,Haddock Georges Bank,0.184967682,1.2564,US East Coast,Gadids
+1986,Haddock Georges Bank,0.193878116,0.9744,US East Coast,Gadids
+1987,Haddock Georges Bank,0.192169898,1,US East Coast,Gadids
+1988,Haddock Georges Bank,0.182271468,1.0769,US East Coast,Gadids
+1989,Haddock Georges Bank,0.189168975,0.9744,US East Coast,Gadids
+1990,Haddock Georges Bank,0.224404432,1.0769,US East Coast,Gadids
+1991,Haddock Georges Bank,0.202631579,1.6923,US East Coast,Gadids
+1992,Haddock Georges Bank,0.151532779,1.5641,US East Coast,Gadids
+1993,Haddock Georges Bank,0.135632502,1.2821,US East Coast,Gadids
+1994,Haddock Georges Bank,0.184275162,1.6667,US East Coast,Gadids
+1995,Haddock Georges Bank,0.24245614,0.359,US East Coast,Gadids
+1996,Haddock Georges Bank,0.322197599,0.5641,US East Coast,Gadids
+1997,Haddock Georges Bank,0.392705448,0.3333,US East Coast,Gadids
+1998,Haddock Georges Bank,0.456066482,0.4615,US East Coast,Gadids
+1999,Haddock Georges Bank,0.531348107,0.4615,US East Coast,Gadids
+2000,Haddock Georges Bank,0.651385042,0.4872,US East Coast,Gadids
+2001,Haddock Georges Bank,0.769427516,0.7179,US East Coast,Gadids
+2002,Haddock Georges Bank,0.86265928,0.7179,US East Coast,Gadids
+2003,Haddock Georges Bank,1.00644506,0.6923,US East Coast,Gadids
+2004,Haddock Georges Bank,0.892179132,1.1538,US East Coast,Gadids
+2005,Haddock Georges Bank,0.946805171,1.0256,US East Coast,Gadids
+2006,Haddock Georges Bank,1.552345337,1.0769,US East Coast,Gadids
+2007,Haddock Georges Bank,1.685392428,0.641,US East Coast,Gadids
+2008,Haddock Georges Bank,1.539482918,0.6154,US East Coast,Gadids
+2009,Haddock Georges Bank,1.295272392,0.6923,US East Coast,Gadids
+2010,Haddock Georges Bank,0.959270545,0.8462,US East Coast,Gadids
+2011,Haddock Georges Bank,0.656288089,1.0256,US East Coast,Gadids
+2012,Haddock Georges Bank,0.608014774,0.8974,US East Coast,Gadids
+2013,Haddock Georges Bank,1.496565097,0.6154,US East Coast,Gadids
+2014,Haddock Georges Bank,2.078301016,0.5897,US East Coast,Gadids
+2015,Haddock Georges Bank,2.078301016,0.5897,US East Coast,Gadids
+1980,haddock nafo-5y,3.253947653,1.5192,US East Coast,Gadids
+1981,haddock nafo-5y,3.137789314,1.3632,US East Coast,Gadids
+1982,haddock nafo-5y,2.995673805,1.4893,US East Coast,Gadids
+1983,haddock nafo-5y,2.262600043,2.3825,US East Coast,Gadids
+1984,haddock nafo-5y,1.506164828,1.8675,US East Coast,Gadids
+1985,haddock nafo-5y,1.096257841,2.359,US East Coast,Gadids
+1986,haddock nafo-5y,0.618862211,3.3782,US East Coast,Gadids
+1987,haddock nafo-5y,0.322734155,2.0043,US East Coast,Gadids
+1988,haddock nafo-5y,0.231451438,1.6197,US East Coast,Gadids
+1989,haddock nafo-5y,0.168937919,1.2372,US East Coast,Gadids
+1990,haddock nafo-5y,0.178455548,2.3504,US East Coast,Gadids
+1991,haddock nafo-5y,0.154012546,2.703,US East Coast,Gadids
+1992,haddock nafo-5y,0.138005624,2.6944,US East Coast,Gadids
+1993,haddock nafo-5y,0.143197058,1.6218,US East Coast,Gadids
+1994,haddock nafo-5y,0.235993943,0.891,US East Coast,Gadids
+1995,haddock nafo-5y,0.423534501,1.2009,US East Coast,Gadids
+1996,haddock nafo-5y,0.686567164,0.5769,US East Coast,Gadids
+1997,haddock nafo-5y,1.050400173,0.9316,US East Coast,Gadids
+1998,haddock nafo-5y,1.302833658,0.688,US East Coast,Gadids
+1999,haddock nafo-5y,1.299589011,0.4167,US East Coast,Gadids
+2000,haddock nafo-5y,1.552887735,0.5534,US East Coast,Gadids
+2001,haddock nafo-5y,2.506597448,0.453,US East Coast,Gadids
+2002,haddock nafo-5y,3.036123729,0.3868,US East Coast,Gadids
+2003,haddock nafo-5y,2.61929483,0.3953,US East Coast,Gadids
+2004,haddock nafo-5y,2.241185377,0.3654,US East Coast,Gadids
+2005,haddock nafo-5y,1.913908717,0.5641,US East Coast,Gadids
+2006,haddock nafo-5y,1.777849881,0.4829,US East Coast,Gadids
+2007,haddock nafo-5y,1.572788233,0.688,US East Coast,Gadids
+2008,haddock nafo-5y,1.377676833,0.6368,US East Coast,Gadids
+2009,haddock nafo-5y,1.240536448,0.5278,US East Coast,Gadids
+2010,haddock nafo-5y,1.054942678,0.6132,US East Coast,Gadids
+2011,haddock nafo-5y,0.883841661,0.5556,US East Coast,Gadids
+2012,haddock nafo-5y,0.984425698,0.7201,US East Coast,Gadids
+2013,haddock nafo-5y,1.494051482,0.6325,US East Coast,Gadids
+2014,haddock nafo-5y,2.233398226,0.5491,US East Coast,Gadids
+2015,haddock nafo-5y,2.233398226,0.5491,US East Coast,Gadids
+1980,Pollock NAFO-5YZ,2.69895273,0.8664,US East Coast,Gadids
+1981,Pollock NAFO-5YZ,2.432858799,0.9964,US East Coast,Gadids
+1982,Pollock NAFO-5YZ,2.290308479,0.9819,US East Coast,Gadids
+1983,Pollock NAFO-5YZ,2.166764868,0.9567,US East Coast,Gadids
+1984,Pollock NAFO-5YZ,1.786630681,1.1516,US East Coast,Gadids
+1985,Pollock NAFO-5YZ,1.748617262,1.231,US East Coast,Gadids
+1986,Pollock NAFO-5YZ,1.558550168,1.8845,US East Coast,Gadids
+1987,Pollock NAFO-5YZ,1.33997301,1.8809,US East Coast,Gadids
+1988,Pollock NAFO-5YZ,1.121395853,1.7762,US East Coast,Gadids
+1989,Pollock NAFO-5YZ,1.05487237,1.3899,US East Coast,Gadids
+1990,Pollock NAFO-5YZ,0.959838823,1.1516,US East Coast,Gadids
+1991,Pollock NAFO-5YZ,1.016858951,0.8881,US East Coast,Gadids
+1992,Pollock NAFO-5YZ,1.064375725,0.722,US East Coast,Gadids
+1993,Pollock NAFO-5YZ,1.083382434,0.574,US East Coast,Gadids
+1994,Pollock NAFO-5YZ,1.102389143,0.5018,US East Coast,Gadids
+1995,Pollock NAFO-5YZ,1.273449528,0.4368,US East Coast,Gadids
+1996,Pollock NAFO-5YZ,1.368483075,0.3249,US East Coast,Gadids
+1997,Pollock NAFO-5YZ,1.530040104,0.3285,US East Coast,Gadids
+1998,Pollock NAFO-5YZ,1.625073651,0.3502,US East Coast,Gadids
+1999,Pollock NAFO-5YZ,1.748617262,0.296,US East Coast,Gadids
+2000,Pollock NAFO-5YZ,1.834147454,0.2708,US East Coast,Gadids
+2001,Pollock NAFO-5YZ,2.052724612,0.2671,US East Coast,Gadids
+2002,Pollock NAFO-5YZ,2.261798415,0.2094,US East Coast,Gadids
+2003,Pollock NAFO-5YZ,2.632429248,0.2094,US East Coast,Gadids
+2004,Pollock NAFO-5YZ,2.812992987,0.1661,US East Coast,Gadids
+2005,Pollock NAFO-5YZ,2.774979568,0.1697,US East Coast,Gadids
+2006,Pollock NAFO-5YZ,2.784482922,0.1625,US East Coast,Gadids
+2007,Pollock NAFO-5YZ,2.679946021,0.2383,US East Coast,Gadids
+2008,Pollock NAFO-5YZ,2.575409119,0.3899,US East Coast,Gadids
+2009,Pollock NAFO-5YZ,2.385342026,0.343,US East Coast,Gadids
+2010,Pollock NAFO-5YZ,2.166764868,0.3357,US East Coast,Gadids
+2011,Pollock NAFO-5YZ,2.138254804,0.4477,US East Coast,Gadids
+2012,Pollock NAFO-5YZ,1.995704484,0.3755,US East Coast,Gadids
+2013,Pollock NAFO-5YZ,1.957691065,0.361,US East Coast,Gadids
+2014,Pollock NAFO-5YZ,1.891167582,0.1841,US East Coast,Gadids
+2015,Pollock NAFO-5YZ,1.891167582,0.1841,US East Coast,Gadids
+1980,White hake Georges Bank / Gulf of Maine,1.068940092,0.9787,US East Coast,Gadids
+1981,White hake Georges Bank / Gulf of Maine,1.013671275,1.2872,US East Coast,Gadids
+1982,White hake Georges Bank / Gulf of Maine,0.920061444,1.5904,US East Coast,Gadids
+1983,White hake Georges Bank / Gulf of Maine,0.814101382,1.6649,US East Coast,Gadids
+1984,White hake Georges Bank / Gulf of Maine,0.723625192,2.0106,US East Coast,Gadids
+1985,White hake Georges Bank / Gulf of Maine,0.622734255,2.4521,US East Coast,Gadids
+1986,White hake Georges Bank / Gulf of Maine,0.516835637,2.7021,US East Coast,Gadids
+1987,White hake Georges Bank / Gulf of Maine,0.452104455,3.2394,US East Coast,Gadids
+1988,White hake Georges Bank / Gulf of Maine,0.421443932,3.3298,US East Coast,Gadids
+1989,White hake Georges Bank / Gulf of Maine,0.395391705,3.2128,US East Coast,Gadids
+1990,White hake Georges Bank / Gulf of Maine,0.399815668,3.3564,US East Coast,Gadids
+1991,White hake Georges Bank / Gulf of Maine,0.402396313,3.0106,US East Coast,Gadids
+1992,White hake Georges Bank / Gulf of Maine,0.430138249,4.6968,US East Coast,Gadids
+1993,White hake Georges Bank / Gulf of Maine,0.364024578,5.6862,US East Coast,Gadids
+1994,White hake Georges Bank / Gulf of Maine,0.28187404,4,US East Coast,Gadids
+1995,White hake Georges Bank / Gulf of Maine,0.250721966,3.7128,US East Coast,Gadids
+1996,White hake Georges Bank / Gulf of Maine,0.251428571,2.8511,US East Coast,Gadids
+1997,White hake Georges Bank / Gulf of Maine,0.251459293,1.8564,US East Coast,Gadids
+1998,White hake Georges Bank / Gulf of Maine,0.290076805,1.6968,US East Coast,Gadids
+1999,White hake Georges Bank / Gulf of Maine,0.302089094,2.4096,US East Coast,Gadids
+2000,White hake Georges Bank / Gulf of Maine,0.294162826,2.2394,US East Coast,Gadids
+2001,White hake Georges Bank / Gulf of Maine,0.331705069,2.2766,US East Coast,Gadids
+2002,White hake Georges Bank / Gulf of Maine,0.393917051,1.7181,US East Coast,Gadids
+2003,White hake Georges Bank / Gulf of Maine,0.416221198,2.2926,US East Coast,Gadids
+2004,White hake Georges Bank / Gulf of Maine,0.376989247,1.766,US East Coast,Gadids
+2005,White hake Georges Bank / Gulf of Maine,0.330322581,1.6277,US East Coast,Gadids
+2006,White hake Georges Bank / Gulf of Maine,0.337941628,1.0106,US East Coast,Gadids
+2007,White hake Georges Bank / Gulf of Maine,0.421536098,0.6702,US East Coast,Gadids
+2008,White hake Georges Bank / Gulf of Maine,0.460460829,0.6543,US East Coast,Gadids
+2009,White hake Georges Bank / Gulf of Maine,0.450445469,0.7926,US East Coast,Gadids
+2010,White hake Georges Bank / Gulf of Maine,0.577019969,0.6277,US East Coast,Gadids
+2011,White hake Georges Bank / Gulf of Maine,0.701198157,0.8032,US East Coast,Gadids
+2012,White hake Georges Bank / Gulf of Maine,0.742119816,0.7234,US East Coast,Gadids
+2013,White hake Georges Bank / Gulf of Maine,0.770875576,0.5479,US East Coast,Gadids
+2014,White hake Georges Bank / Gulf of Maine,0.877204301,0.4043,US East Coast,Gadids
+2015,White hake Georges Bank / Gulf of Maine,0.877204301,0.4043,US East Coast,Gadids
+1980,Winter flounder Georges Bank,2.594029851,0.7817,US East Coast,Flatfish
+1981,Winter flounder Georges Bank,2.594029851,0.7817,US East Coast,Flatfish
+1982,Winter flounder Georges Bank,2.594029851,0.7817,US East Coast,Flatfish
+1983,Winter flounder Georges Bank,2.45880597,0.8116,US East Coast,Flatfish
+1984,Winter flounder Georges Bank,1.572089552,2.1922,US East Coast,Flatfish
+1985,Winter flounder Georges Bank,0.933731343,1.5075,US East Coast,Flatfish
+1986,Winter flounder Georges Bank,1.166716418,1.0672,US East Coast,Flatfish
+1987,Winter flounder Georges Bank,1.206268657,1.4104,US East Coast,Flatfish
+1988,Winter flounder Georges Bank,0.997313433,1.7183,US East Coast,Flatfish
+1989,Winter flounder Georges Bank,0.790746269,1.5728,US East Coast,Flatfish
+1990,Winter flounder Georges Bank,1.029104478,1.6996,US East Coast,Flatfish
+1991,Winter flounder Georges Bank,1.013432836,1.084,US East Coast,Flatfish
+1992,Winter flounder Georges Bank,0.83358209,1.4179,US East Coast,Flatfish
+1993,Winter flounder Georges Bank,0.722537313,1.6567,US East Coast,Flatfish
+1994,Winter flounder Georges Bank,0.563880597,0.8657,US East Coast,Flatfish
+1995,Winter flounder Georges Bank,0.510447761,0.5784,US East Coast,Flatfish
+1996,Winter flounder Georges Bank,0.703731343,0.8601,US East Coast,Flatfish
+1997,Winter flounder Georges Bank,1.026119403,0.8507,US East Coast,Flatfish
+1998,Winter flounder Georges Bank,1.102835821,0.9515,US East Coast,Flatfish
+1999,Winter flounder Georges Bank,1.447014925,0.4907,US East Coast,Flatfish
+2000,Winter flounder Georges Bank,2.040298507,0.5149,US East Coast,Flatfish
+2001,Winter flounder Georges Bank,1.579850746,0.9739,US East Coast,Flatfish
+2002,Winter flounder Georges Bank,1.490298507,1.0429,US East Coast,Flatfish
+2003,Winter flounder Georges Bank,1.356716418,1.6642,US East Coast,Flatfish
+2004,Winter flounder Georges Bank,0.74880597,1.2985,US East Coast,Flatfish
+2005,Winter flounder Georges Bank,0.660597015,1.2668,US East Coast,Flatfish
+2006,Winter flounder Georges Bank,0.668358209,0.4944,US East Coast,Flatfish
+2007,Winter flounder Georges Bank,0.644179104,0.5765,US East Coast,Flatfish
+2008,Winter flounder Georges Bank,0.586716418,0.6922,US East Coast,Flatfish
+2009,Winter flounder Georges Bank,0.639104478,0.8563,US East Coast,Flatfish
+2010,Winter flounder Georges Bank,0.745820896,0.681,US East Coast,Flatfish
+2011,Winter flounder Georges Bank,0.769701493,0.9459,US East Coast,Flatfish
+2012,Winter flounder Georges Bank,0.720746269,0.9328,US East Coast,Flatfish
+2013,Winter flounder Georges Bank,0.693283582,0.9944,US East Coast,Flatfish
+2014,Winter flounder Georges Bank,0.787313433,0.7071,US East Coast,Flatfish
+2015,Winter flounder Georges Bank,0.787313433,0.7071,US East Coast,Flatfish
+1980,Winter flounder Southern New England /Mid Atlantic,0.763851753,2.0338,US East Coast,Flatfish
+1981,Winter flounder Southern New England /Mid Atlantic,0.763851753,2.0338,US East Coast,Flatfish
+1982,Winter flounder Southern New England /Mid Atlantic,0.803475936,1.7138,US East Coast,Flatfish
+1983,Winter flounder Southern New England /Mid Atlantic,0.717914439,1.9754,US East Coast,Flatfish
+1984,Winter flounder Southern New England /Mid Atlantic,0.627525253,2.3969,US East Coast,Flatfish
+1985,Winter flounder Southern New England /Mid Atlantic,0.446598336,3.1415,US East Coast,Flatfish
+1986,Winter flounder Southern New England /Mid Atlantic,0.357211824,2.4831,US East Coast,Flatfish
+1987,Winter flounder Southern New England /Mid Atlantic,0.291815211,2.9538,US East Coast,Flatfish
+1988,Winter flounder Southern New England /Mid Atlantic,0.240047534,3.3662,US East Coast,Flatfish
+1989,Winter flounder Southern New England /Mid Atlantic,0.209707368,3.0677,US East Coast,Flatfish
+1990,Winter flounder Southern New England /Mid Atlantic,0.211044266,2.56,US East Coast,Flatfish
+1991,Winter flounder Southern New England /Mid Atlantic,0.222110814,2.9969,US East Coast,Flatfish
+1992,Winter flounder Southern New England /Mid Atlantic,0.193961676,2.5631,US East Coast,Flatfish
+1993,Winter flounder Southern New England /Mid Atlantic,0.154820261,2.7292,US East Coast,Flatfish
+1994,Winter flounder Southern New England /Mid Atlantic,0.157791147,1.7938,US East Coast,Flatfish
+1995,Winter flounder Southern New England /Mid Atlantic,0.227866904,1.5631,US East Coast,Flatfish
+1996,Winter flounder Southern New England /Mid Atlantic,0.256164587,1.5323,US East Coast,Flatfish
+1997,Winter flounder Southern New England /Mid Atlantic,0.300207962,1.56,US East Coast,Flatfish
+1998,Winter flounder Southern New England /Mid Atlantic,0.310866013,1.3077,US East Coast,Flatfish
+1999,Winter flounder Southern New England /Mid Atlantic,0.329953951,1.3138,US East Coast,Flatfish
+2000,Winter flounder Southern New England /Mid Atlantic,0.359068627,1.5508,US East Coast,Flatfish
+2001,Winter flounder Southern New England /Mid Atlantic,0.332553476,1.9692,US East Coast,Flatfish
+2002,Winter flounder Southern New England /Mid Atlantic,0.25207962,1.7538,US East Coast,Flatfish
+2003,Winter flounder Southern New England /Mid Atlantic,0.231431967,1.56,US East Coast,Flatfish
+2004,Winter flounder Southern New England /Mid Atlantic,0.205325312,1.3169,US East Coast,Flatfish
+2005,Winter flounder Southern New England /Mid Atlantic,0.18646019,1.0892,US East Coast,Flatfish
+2006,Winter flounder Southern New England /Mid Atlantic,0.204879679,1.2677,US East Coast,Flatfish
+2007,Winter flounder Southern New England /Mid Atlantic,0.23536839,1.1138,US East Coast,Flatfish
+2008,Winter flounder Southern New England /Mid Atlantic,0.206179441,0.8462,US East Coast,Flatfish
+2009,Winter flounder Southern New England /Mid Atlantic,0.187091503,0.3538,US East Coast,Flatfish
+2010,Winter flounder Southern New England /Mid Atlantic,0.021761735,0.2092,US East Coast,Flatfish
+2011,Winter flounder Southern New England /Mid Atlantic,0.257947118,0.2831,US East Coast,Flatfish
+2012,Winter flounder Southern New England /Mid Atlantic,0.26426025,0.3385,US East Coast,Flatfish
+2013,Winter flounder Southern New England /Mid Atlantic,0.262811943,0.5754,US East Coast,Flatfish
+2014,Winter flounder Southern New England /Mid Atlantic,0.228423945,0.4862,US East Coast,Flatfish
+2015,Winter flounder Southern New England /Mid Atlantic,0.228423945,0.4862,US East Coast,Flatfish
+1980,Witch flounder Gulf of Maine,1.784334424,0.9391,US East Coast,Flatfish
+1981,Witch flounder Gulf of Maine,1.784334424,0.9391,US East Coast,Flatfish
+1982,Witch flounder Gulf of Maine,1.784334424,0.9391,US East Coast,Flatfish
+1983,Witch flounder Gulf of Maine,1.41866357,1.81,US East Coast,Flatfish
+1984,Witch flounder Gulf of Maine,1.218304655,2.2616,US East Coast,Flatfish
+1985,Witch flounder Gulf of Maine,1.101129526,2.4301,US East Coast,Flatfish
+1986,Witch flounder Gulf of Maine,1.008022802,1.8065,US East Coast,Flatfish
+1987,Witch flounder Gulf of Maine,0.944790457,2.1613,US East Coast,Flatfish
+1988,Witch flounder Gulf of Maine,0.877335585,2.5197,US East Coast,Flatfish
+1989,Witch flounder Gulf of Maine,0.776945002,1.5735,US East Coast,Flatfish
+1990,Witch flounder Gulf of Maine,0.668426053,0.9068,US East Coast,Flatfish
+1991,Witch flounder Gulf of Maine,0.733241845,0.8889,US East Coast,Flatfish
+1992,Witch flounder Gulf of Maine,0.743798163,0.8065,US East Coast,Flatfish
+1993,Witch flounder Gulf of Maine,0.614694395,1.595,US East Coast,Flatfish
+1994,Witch flounder Gulf of Maine,0.459727647,2.147,US East Coast,Flatfish
+1995,Witch flounder Gulf of Maine,0.430169957,2.2366,US East Coast,Flatfish
+1996,Witch flounder Gulf of Maine,0.409585137,4.0753,US East Coast,Flatfish
+1997,Witch flounder Gulf of Maine,0.439353953,3.8781,US East Coast,Flatfish
+1998,Witch flounder Gulf of Maine,0.543650375,2.3513,US East Coast,Flatfish
+1999,Witch flounder Gulf of Maine,0.630951124,1.9427,US East Coast,Flatfish
+2000,Witch flounder Gulf of Maine,0.718357437,2.0251,US East Coast,Flatfish
+2001,Witch flounder Gulf of Maine,0.704634224,3.2545,US East Coast,Flatfish
+2002,Witch flounder Gulf of Maine,0.64974137,1.9534,US East Coast,Flatfish
+2003,Witch flounder Gulf of Maine,0.578275098,2.7061,US East Coast,Flatfish
+2004,Witch flounder Gulf of Maine,0.439881769,3.3548,US East Coast,Flatfish
+2005,Witch flounder Gulf of Maine,0.3844611,3.0789,US East Coast,Flatfish
+2006,Witch flounder Gulf of Maine,0.273619761,3.2222,US East Coast,Flatfish
+2007,Witch flounder Gulf of Maine,0.252823815,2.0358,US East Coast,Flatfish
+2008,Witch flounder Gulf of Maine,0.271402935,2.3584,US East Coast,Flatfish
+2009,Witch flounder Gulf of Maine,0.280059115,2.0896,US East Coast,Flatfish
+2010,Witch flounder Gulf of Maine,0.249445793,2.405,US East Coast,Flatfish
+2011,Witch flounder Gulf of Maine,0.243745382,2.2688,US East Coast,Flatfish
+2012,Witch flounder Gulf of Maine,0.261479996,2.7957,US East Coast,Flatfish
+2013,Witch flounder Gulf of Maine,0.26327457,2.2832,US East Coast,Flatfish
+2014,Witch flounder Gulf of Maine,0.330307189,1.5341,US East Coast,Flatfish
+2015,Witch flounder Gulf of Maine,0.330307189,1.5341,US East Coast,Flatfish
+1980,Yellowtail flounder Cape Cod / Gulf of Maine,0.13880966,7.3754,US East Coast,Flatfish
+1981,Yellowtail flounder Cape Cod / Gulf of Maine,0.13880966,7.3754,US East Coast,Flatfish
+1982,Yellowtail flounder Cape Cod / Gulf of Maine,0.13880966,7.3754,US East Coast,Flatfish
+1983,Yellowtail flounder Cape Cod / Gulf of Maine,0.13880966,7.3754,US East Coast,Flatfish
+1984,Yellowtail flounder Cape Cod / Gulf of Maine,0.13880966,7.3754,US East Coast,Flatfish
+1985,Yellowtail flounder Cape Cod / Gulf of Maine,0.13880966,7.3754,US East Coast,Flatfish
+1986,Yellowtail flounder Cape Cod / Gulf of Maine,0.172656399,2.7736,US East Coast,Flatfish
+1987,Yellowtail flounder Cape Cod / Gulf of Maine,0.220003803,2.8282,US East Coast,Flatfish
+1988,Yellowtail flounder Cape Cod / Gulf of Maine,0.127400647,9.2907,US East Coast,Flatfish
+1989,Yellowtail flounder Cape Cod / Gulf of Maine,0.288077581,5.5675,US East Coast,Flatfish
+1990,Yellowtail flounder Cape Cod / Gulf of Maine,0.500665526,2.8114,US East Coast,Flatfish
+1991,Yellowtail flounder Cape Cod / Gulf of Maine,0.261456551,7.2257,US East Coast,Flatfish
+1992,Yellowtail flounder Cape Cod / Gulf of Maine,0.20041833,5.5579,US East Coast,Flatfish
+1993,Yellowtail flounder Cape Cod / Gulf of Maine,0.195664575,4.2714,US East Coast,Flatfish
+1994,Yellowtail flounder Cape Cod / Gulf of Maine,0.248716486,4.8443,US East Coast,Flatfish
+1995,Yellowtail flounder Cape Cod / Gulf of Maine,0.221334855,7.2043,US East Coast,Flatfish
+1996,Yellowtail flounder Cape Cod / Gulf of Maine,0.236166572,4.3586,US East Coast,Flatfish
+1997,Yellowtail flounder Cape Cod / Gulf of Maine,0.204031185,5.9111,US East Coast,Flatfish
+1998,Yellowtail flounder Cape Cod / Gulf of Maine,0.180452558,8.9161,US East Coast,Flatfish
+1999,Yellowtail flounder Cape Cod / Gulf of Maine,0.3040502,4.0979,US East Coast,Flatfish
+2000,Yellowtail flounder Cape Cod / Gulf of Maine,0.332002282,7.2468,US East Coast,Flatfish
+2001,Yellowtail flounder Cape Cod / Gulf of Maine,0.325537174,6.4089,US East Coast,Flatfish
+2002,Yellowtail flounder Cape Cod / Gulf of Maine,0.341319643,5.5621,US East Coast,Flatfish
+2003,Yellowtail flounder Cape Cod / Gulf of Maine,0.256892945,5.2414,US East Coast,Flatfish
+2004,Yellowtail flounder Cape Cod / Gulf of Maine,0.166571592,6.1786,US East Coast,Flatfish
+2005,Yellowtail flounder Cape Cod / Gulf of Maine,0.1306332,6.0168,US East Coast,Flatfish
+2006,Yellowtail flounder Cape Cod / Gulf of Maine,0.127020346,5.2854,US East Coast,Flatfish
+2007,Yellowtail flounder Cape Cod / Gulf of Maine,0.150028523,3.7729,US East Coast,Flatfish
+2008,Yellowtail flounder Cape Cod / Gulf of Maine,0.179501806,4.1529,US East Coast,Flatfish
+2009,Yellowtail flounder Cape Cod / Gulf of Maine,0.212968245,2.6614,US East Coast,Flatfish
+2010,Yellowtail flounder Cape Cod / Gulf of Maine,0.280281422,1.7529,US East Coast,Flatfish
+2011,Yellowtail flounder Cape Cod / Gulf of Maine,0.315459213,2.305,US East Coast,Flatfish
+2012,Yellowtail flounder Cape Cod / Gulf of Maine,0.244343031,3.4886,US East Coast,Flatfish
+2013,Yellowtail flounder Cape Cod / Gulf of Maine,0.224187108,2.9229,US East Coast,Flatfish
+2014,Yellowtail flounder Cape Cod / Gulf of Maine,0.322304621,1.2664,US East Coast,Flatfish
+2015,Yellowtail flounder Cape Cod / Gulf of Maine,0.322304621,1.2664,US East Coast,Flatfish
+1980,Yellowtail flounder Georges Bank,0.251944444,2.8346,US East Coast,Flatfish
+1981,Yellowtail flounder Georges Bank,0.234814815,4.8819,US East Coast,Flatfish
+1982,Yellowtail flounder Georges Bank,0.300347222,4.3307,US East Coast,Flatfish
+1983,Yellowtail flounder Georges Bank,0.257013889,2.6378,US East Coast,Flatfish
+1984,Yellowtail flounder Georges Bank,0.089050926,7.126,US East Coast,Flatfish
+1985,Yellowtail flounder Georges Bank,0.059212963,4.0551,US East Coast,Flatfish
+1986,Yellowtail flounder Georges Bank,0.074305556,3.1496,US East Coast,Flatfish
+1987,Yellowtail flounder Georges Bank,0.063657407,5.2756,US East Coast,Flatfish
+1988,Yellowtail flounder Georges Bank,0.05087963,6.1417,US East Coast,Flatfish
+1989,Yellowtail flounder Georges Bank,0.096527778,3.6614,US East Coast,Flatfish
+1990,Yellowtail flounder Georges Bank,0.109953704,3.7008,US East Coast,Flatfish
+1991,Yellowtail flounder Georges Bank,0.080671296,5.2756,US East Coast,Flatfish
+1992,Yellowtail flounder Georges Bank,0.103518519,4.685,US East Coast,Flatfish
+1993,Yellowtail flounder Georges Bank,0.091805556,5.7874,US East Coast,Flatfish
+1994,Yellowtail flounder Georges Bank,0.065347222,7.2047,US East Coast,Flatfish
+1995,Yellowtail flounder Georges Bank,0.068078704,3.6614,US East Coast,Flatfish
+1996,Yellowtail flounder Georges Bank,0.115578704,2.2441,US East Coast,Flatfish
+1997,Yellowtail flounder Georges Bank,0.147685185,2.0079,US East Coast,Flatfish
+1998,Yellowtail flounder Georges Bank,0.168101852,2.6378,US East Coast,Flatfish
+1999,Yellowtail flounder Georges Bank,0.222222222,2.6378,US East Coast,Flatfish
+2000,Yellowtail flounder Georges Bank,0.237962963,3.7795,US East Coast,Flatfish
+2001,Yellowtail flounder Georges Bank,0.215277778,3.8189,US East Coast,Flatfish
+2002,Yellowtail flounder Georges Bank,0.236134259,2.5197,US East Coast,Flatfish
+2003,Yellowtail flounder Georges Bank,0.236550926,2.3622,US East Coast,Flatfish
+2004,Yellowtail flounder Georges Bank,0.135856481,7.1654,US East Coast,Flatfish
+2005,Yellowtail flounder Georges Bank,0.096226852,4.5669,US East Coast,Flatfish
+2006,Yellowtail flounder Georges Bank,0.102476852,3.5039,US East Coast,Flatfish
+2007,Yellowtail flounder Georges Bank,0.220509259,1.1417,US East Coast,Flatfish
+2008,Yellowtail flounder Georges Bank,0.220509259,1.1417,US East Coast,Flatfish
+2009,Yellowtail flounder Georges Bank,0.220509259,1.1417,US East Coast,Flatfish
+2010,Yellowtail flounder Georges Bank,0.220509259,1.1417,US East Coast,Flatfish
+2011,Yellowtail flounder Georges Bank,0.220509259,1.1417,US East Coast,Flatfish
+2012,Yellowtail flounder Georges Bank,0.220509259,1.1417,US East Coast,Flatfish
+2013,Yellowtail flounder Georges Bank,0.220509259,1.1417,US East Coast,Flatfish
+2014,Yellowtail flounder Georges Bank,0.220509259,1.1417,US East Coast,Flatfish
+2015,Yellowtail flounder Georges Bank,0.220509259,1.1417,US East Coast,Flatfish
+1980,Yellowtail flounder Southern New England /Mid Atlantic,4.310673813,2.6966,US East Coast,Flatfish
+1981,Yellowtail flounder Southern New England /Mid Atlantic,5.028836141,1.9534,US East Coast,Flatfish
+1982,Yellowtail flounder Southern New England /Mid Atlantic,8.749617152,2.6541,US East Coast,Flatfish
+1983,Yellowtail flounder Southern New England /Mid Atlantic,8.388412455,3.9534,US East Coast,Flatfish
+1984,Yellowtail flounder Southern New England /Mid Atlantic,2.871837672,5.579,US East Coast,Flatfish
+1985,Yellowtail flounder Southern New England /Mid Atlantic,1.284338948,5.1884,US East Coast,Flatfish
+1986,Yellowtail flounder Southern New England /Mid Atlantic,1.362276672,3.4971,US East Coast,Flatfish
+1987,Yellowtail flounder Southern New England /Mid Atlantic,0.960985197,3.1974,US East Coast,Flatfish
+1988,Yellowtail flounder Southern New England /Mid Atlantic,1.33993364,1.1496,US East Coast,Flatfish
+1989,Yellowtail flounder Southern New England /Mid Atlantic,5.727871363,4.9213,US East Coast,Flatfish
+1990,Yellowtail flounder Southern New England /Mid Atlantic,5.514854518,8.9677,US East Coast,Flatfish
+1991,Yellowtail flounder Southern New England /Mid Atlantic,2.014589076,6.7657,US East Coast,Flatfish
+1992,Yellowtail flounder Southern New England /Mid Atlantic,0.832531904,5.9075,US East Coast,Flatfish
+1993,Yellowtail flounder Southern New England /Mid Atlantic,0.505567637,3.0562,US East Coast,Flatfish
+1994,Yellowtail flounder Southern New England /Mid Atlantic,0.306095967,5.0128,US East Coast,Flatfish
+1995,Yellowtail flounder Southern New England /Mid Atlantic,0.406038795,2.2723,US East Coast,Flatfish
+1996,Yellowtail flounder Southern New England /Mid Atlantic,0.746140888,2.5063,US East Coast,Flatfish
+1997,Yellowtail flounder Southern New England /Mid Atlantic,0.668014293,4.2409,US East Coast,Flatfish
+1998,Yellowtail flounder Southern New England /Mid Atlantic,0.707886677,4.2592,US East Coast,Flatfish
+1999,Yellowtail flounder Southern New England /Mid Atlantic,0.825410924,4.5821,US East Coast,Flatfish
+2000,Yellowtail flounder Southern New England /Mid Atlantic,0.828330781,4.42,US East Coast,Flatfish
+2001,Yellowtail flounder Southern New England /Mid Atlantic,0.774624809,5.0974,US East Coast,Flatfish
+2002,Yellowtail flounder Southern New England /Mid Atlantic,0.62935171,3.5296,US East Coast,Flatfish
+2003,Yellowtail flounder Southern New England /Mid Atlantic,0.502784074,2.6716,US East Coast,Flatfish
+2004,Yellowtail flounder Southern New England /Mid Atlantic,0.336965799,3.1589,US East Coast,Flatfish
+2005,Yellowtail flounder Southern New England /Mid Atlantic,0.3076927,2.3185,US East Coast,Flatfish
+2006,Yellowtail flounder Southern New England /Mid Atlantic,0.457217458,2.3323,US East Coast,Flatfish
+2007,Yellowtail flounder Southern New England /Mid Atlantic,0.689086269,1.8743,US East Coast,Flatfish
+2008,Yellowtail flounder Southern New England /Mid Atlantic,0.709433384,1.6923,US East Coast,Flatfish
+2009,Yellowtail flounder Southern New England /Mid Atlantic,0.651750893,1.3139,US East Coast,Flatfish
+2010,Yellowtail flounder Southern New England /Mid Atlantic,0.685028076,0.8466,US East Coast,Flatfish
+2011,Yellowtail flounder Southern New England /Mid Atlantic,0.698009188,1.1668,US East Coast,Flatfish
+2012,Yellowtail flounder Southern New England /Mid Atlantic,0.614548239,2.0561,US East Coast,Flatfish
+2013,Yellowtail flounder Southern New England /Mid Atlantic,0.455706993,2.8722,US East Coast,Flatfish
+2014,Yellowtail flounder Southern New England /Mid Atlantic,0.256231751,4.6963,US East Coast,Flatfish
+2015,Yellowtail flounder Southern New England /Mid Atlantic,0.256231751,4.6963,US East Coast,Flatfish
+1980,Arrowtooth flounder Pacific Coast,1.309858366,0.472727273,US West Coast,Flatfish
+1981,Arrowtooth flounder Pacific Coast,1.418754864,0.590909091,US West Coast,Flatfish
+1982,Arrowtooth flounder Pacific Coast,1.480983658,0.918181818,US West Coast,Flatfish
+1983,Arrowtooth flounder Pacific Coast,1.48743035,0.8,US West Coast,Flatfish
+1984,Arrowtooth flounder Pacific Coast,1.553615564,0.818181818,US West Coast,Flatfish
+1985,Arrowtooth flounder Pacific Coast,1.647943969,0.872727273,US West Coast,Flatfish
+1986,Arrowtooth flounder Pacific Coast,1.715825681,0.7,US West Coast,Flatfish
+1987,Arrowtooth flounder Pacific Coast,1.757148638,0.818181818,US West Coast,Flatfish
+1988,Arrowtooth flounder Pacific Coast,1.752068482,0.609090909,US West Coast,Flatfish
+1989,Arrowtooth flounder Pacific Coast,1.779277821,0.927272727,US West Coast,Flatfish
+1990,Arrowtooth flounder Pacific Coast,1.75551751,1.336363636,US West Coast,Flatfish
+1991,Arrowtooth flounder Pacific Coast,1.656498054,1.245454545,US West Coast,Flatfish
+1992,Arrowtooth flounder Pacific Coast,1.605789883,0.972727273,US West Coast,Flatfish
+1993,Arrowtooth flounder Pacific Coast,1.602471595,0.772727273,US West Coast,Flatfish
+1994,Arrowtooth flounder Pacific Coast,1.635887938,0.818181818,US West Coast,Flatfish
+1995,Arrowtooth flounder Pacific Coast,1.70505214,0.627272727,US West Coast,Flatfish
+1996,Arrowtooth flounder Pacific Coast,1.735654475,0.6,US West Coast,Flatfish
+1997,Arrowtooth flounder Pacific Coast,1.700329961,0.6,US West Coast,Flatfish
+1998,Arrowtooth flounder Pacific Coast,1.674754864,0.727272727,US West Coast,Flatfish
+1999,Arrowtooth flounder Pacific Coast,1.648619455,1.236363636,US West Coast,Flatfish
+2000,Arrowtooth flounder Pacific Coast,1.508715953,0.909090909,US West Coast,Flatfish
+2001,Arrowtooth flounder Pacific Coast,1.396196109,0.772727273,US West Coast,Flatfish
+2002,Arrowtooth flounder Pacific Coast,1.317671595,0.718181818,US West Coast,Flatfish
+2003,Arrowtooth flounder Pacific Coast,1.38423035,0.745454545,US West Coast,Flatfish
+2004,Arrowtooth flounder Pacific Coast,1.588202335,0.690909091,US West Coast,Flatfish
+2005,Arrowtooth flounder Pacific Coast,1.758328405,0.563636364,US West Coast,Flatfish
+2006,Arrowtooth flounder Pacific Coast,1.887421012,0.4,US West Coast,Flatfish
+2007,Arrowtooth flounder Pacific Coast,1.970474708,0.4,US West Coast,Flatfish
+2008,Arrowtooth flounder Pacific Coast,1.970474708,0.4,US West Coast,Flatfish
+2009,Arrowtooth flounder Pacific Coast,1.970474708,0.4,US West Coast,Flatfish
+2010,Arrowtooth flounder Pacific Coast,1.970474708,0.4,US West Coast,Flatfish
+2011,Arrowtooth flounder Pacific Coast,1.970474708,0.4,US West Coast,Flatfish
+2012,Arrowtooth flounder Pacific Coast,1.970474708,0.4,US West Coast,Flatfish
+2013,Arrowtooth flounder Pacific Coast,1.970474708,0.4,US West Coast,Flatfish
+2014,Arrowtooth flounder Pacific Coast,1.970474708,0.4,US West Coast,Flatfish
+2015,Arrowtooth flounder Pacific Coast,1.970474708,0.4,US West Coast,Flatfish
+2016,Arrowtooth flounder Pacific Coast,1.970474708,0.4,US West Coast,Flatfish
+2017,Arrowtooth flounder Pacific Coast,1.970474708,NA,US West Coast,Flatfish
+1980,Bocaccio Southern Pacific Coast,1.968433956,1.7,US West Coast,Rockfish
+1981,Bocaccio Southern Pacific Coast,2.065890285,1.828571429,US West Coast,Rockfish
+1982,Bocaccio Southern Pacific Coast,2.011032792,2.314285714,US West Coast,Rockfish
+1983,Bocaccio Southern Pacific Coast,1.769843702,2.342857143,US West Coast,Rockfish
+1984,Bocaccio Southern Pacific Coast,1.476861784,2.271428571,US West Coast,Rockfish
+1985,Bocaccio Southern Pacific Coast,1.198283788,1.671428571,US West Coast,Rockfish
+1986,Bocaccio Southern Pacific Coast,1.031566044,2.042857143,US West Coast,Rockfish
+1987,Bocaccio Southern Pacific Coast,0.955562366,1.9,US West Coast,Rockfish
+1988,Bocaccio Southern Pacific Coast,0.904995403,1.814285714,US West Coast,Rockfish
+1989,Bocaccio Southern Pacific Coast,0.829604658,2.271428571,US West Coast,Rockfish
+1990,Bocaccio Southern Pacific Coast,0.732761263,2.357142857,US West Coast,Rockfish
+1991,Bocaccio Southern Pacific Coast,0.687097763,1.657142857,US West Coast,Rockfish
+1992,Bocaccio Southern Pacific Coast,0.675452038,1.842857143,US West Coast,Rockfish
+1993,Bocaccio Southern Pacific Coast,0.63224027,1.742857143,US West Coast,Rockfish
+1994,Bocaccio Southern Pacific Coast,0.589947901,1.542857143,US West Coast,Rockfish
+1995,Bocaccio Southern Pacific Coast,0.555010726,0.957142857,US West Coast,Rockfish
+1996,Bocaccio Southern Pacific Coast,0.535090408,0.757142857,US West Coast,Rockfish
+1997,Bocaccio Southern Pacific Coast,0.51762182,0.7,US West Coast,Rockfish
+1998,Bocaccio Southern Pacific Coast,0.495862703,0.314285714,US West Coast,Rockfish
+1999,Bocaccio Southern Pacific Coast,0.482684646,0.328571429,US West Coast,Rockfish
+2000,Bocaccio Southern Pacific Coast,0.467974257,0.228571429,US West Coast,Rockfish
+2001,Bocaccio Southern Pacific Coast,0.476248851,0.171428571,US West Coast,Rockfish
+2002,Bocaccio Southern Pacific Coast,0.545816733,0.171428571,US West Coast,Rockfish
+2003,Bocaccio Southern Pacific Coast,0.611400552,0.014285714,US West Coast,Rockfish
+2004,Bocaccio Southern Pacific Coast,0.649708857,0.085714286,US West Coast,Rockfish
+2005,Bocaccio Southern Pacific Coast,0.665338645,0.228571429,US West Coast,Rockfish
+2006,Bocaccio Southern Pacific Coast,0.672387374,0.085714286,US West Coast,Rockfish
+2007,Bocaccio Southern Pacific Coast,0.676064971,0.114285714,US West Coast,Rockfish
+2008,Bocaccio Southern Pacific Coast,0.671467974,0.071428571,US West Coast,Rockfish
+2009,Bocaccio Southern Pacific Coast,0.659822249,0.085714286,US West Coast,Rockfish
+2010,Bocaccio Southern Pacific Coast,0.638982531,0.085714286,US West Coast,Rockfish
+2011,Bocaccio Southern Pacific Coast,0.615691082,0.128571429,US West Coast,Rockfish
+2012,Bocaccio Southern Pacific Coast,0.607416488,0.142857143,US West Coast,Rockfish
+2013,Bocaccio Southern Pacific Coast,0.636837266,0.142857143,US West Coast,Rockfish
+2014,Bocaccio Southern Pacific Coast,0.694146491,0.085714286,US West Coast,Rockfish
+2015,Bocaccio Southern Pacific Coast,0.798958014,0.085714286,US West Coast,Rockfish
+2016,Bocaccio Southern Pacific Coast,0.798958014,0.085714286,US West Coast,Rockfish
+2017,Bocaccio Southern Pacific Coast,0.798958014,NA,US West Coast,Rockfish
+1980,Canary rockfish Pacific Coast,1.26635514,3.227272727,US West Coast,Rockfish
+1981,Canary rockfish Pacific Coast,1.160881175,2.340909091,US West Coast,Rockfish
+1982,Canary rockfish Pacific Coast,1.097463284,3.886363636,US West Coast,Rockfish
+1983,Canary rockfish Pacific Coast,0.956275033,4.068181818,US West Coast,Rockfish
+1984,Canary rockfish Pacific Coast,0.825433912,2.386363636,US West Coast,Rockfish
+1985,Canary rockfish Pacific Coast,0.793391188,2.704545455,US West Coast,Rockfish
+1986,Canary rockfish Pacific Coast,0.761348465,2.454545455,US West Coast,Rockfish
+1987,Canary rockfish Pacific Coast,0.752336449,3.068181818,US West Coast,Rockfish
+1988,Canary rockfish Pacific Coast,0.719626168,3.159090909,US West Coast,Rockfish
+1989,Canary rockfish Pacific Coast,0.681909212,3.659090909,US West Coast,Rockfish
+1990,Canary rockfish Pacific Coast,0.62082777,3.363636364,US West Coast,Rockfish
+1991,Canary rockfish Pacific Coast,0.573431242,4.090909091,US West Coast,Rockfish
+1992,Canary rockfish Pacific Coast,0.507343124,4,US West Coast,Rockfish
+1993,Canary rockfish Pacific Coast,0.455273698,3.340909091,US West Coast,Rockfish
+1994,Canary rockfish Pacific Coast,0.429906542,1.840909091,US West Coast,Rockfish
+1995,Canary rockfish Pacific Coast,0.447930574,1.545454545,US West Coast,Rockfish
+1996,Canary rockfish Pacific Coast,0.473965287,1.886363636,US West Coast,Rockfish
+1997,Canary rockfish Pacific Coast,0.490654206,1.772727273,US West Coast,Rockfish
+1998,Canary rockfish Pacific Coast,0.512683578,1.727272727,US West Coast,Rockfish
+1999,Canary rockfish Pacific Coast,0.531708945,1.045454545,US West Coast,Rockfish
+2000,Canary rockfish Pacific Coast,0.570761015,0.181818182,US West Coast,Rockfish
+2001,Canary rockfish Pacific Coast,0.635514019,0.113636364,US West Coast,Rockfish
+2002,Canary rockfish Pacific Coast,0.704272363,0.090909091,US West Coast,Rockfish
+2003,Canary rockfish Pacific Coast,0.776368491,0.068181818,US West Coast,Rockfish
+2004,Canary rockfish Pacific Coast,0.850801068,0.045454545,US West Coast,Rockfish
+2005,Canary rockfish Pacific Coast,0.92423231,0.045454545,US West Coast,Rockfish
+2006,Canary rockfish Pacific Coast,0.992990654,0.045454545,US West Coast,Rockfish
+2007,Canary rockfish Pacific Coast,1.05540721,0.045454545,US West Coast,Rockfish
+2008,Canary rockfish Pacific Coast,1.112149533,0.022727273,US West Coast,Rockfish
+2009,Canary rockfish Pacific Coast,1.166221629,0.045454545,US West Coast,Rockfish
+2010,Canary rockfish Pacific Coast,1.218291055,0.022727273,US West Coast,Rockfish
+2011,Canary rockfish Pacific Coast,1.267022697,0.045454545,US West Coast,Rockfish
+2012,Canary rockfish Pacific Coast,1.308077437,0.022727273,US West Coast,Rockfish
+2013,Canary rockfish Pacific Coast,1.340787717,0.022727273,US West Coast,Rockfish
+2014,Canary rockfish Pacific Coast,1.366154873,0.022727273,US West Coast,Rockfish
+2015,Canary rockfish Pacific Coast,1.387182911,0.022727273,US West Coast,Rockfish
+2016,Canary rockfish Pacific Coast,1.387182911,0.022727273,US West Coast,Rockfish
+2017,Canary rockfish Pacific Coast,1.387182911,NA,US West Coast,Rockfish
+1980,Chilipepper Southern Pacific Coast,1.252038284,1.231707317,US West Coast,Rockfish
+1981,Chilipepper Southern Pacific Coast,1.202056009,1.134146341,US West Coast,Rockfish
+1982,Chilipepper Southern Pacific Coast,1.160935838,1.06097561,US West Coast,Rockfish
+1983,Chilipepper Southern Pacific Coast,1.114852889,1.12195122,US West Coast,Rockfish
+1984,Chilipepper Southern Pacific Coast,1.036157391,1.475609756,US West Coast,Rockfish
+1985,Chilipepper Southern Pacific Coast,0.918823112,1.890243902,US West Coast,Rockfish
+1986,Chilipepper Southern Pacific Coast,0.760014179,1.780487805,US West Coast,Rockfish
+1987,Chilipepper Southern Pacific Coast,0.72988302,1.12195122,US West Coast,Rockfish
+1988,Chilipepper Southern Pacific Coast,0.820276498,1.414634146,US West Coast,Rockfish
+1989,Chilipepper Southern Pacific Coast,0.865650479,1.719512195,US West Coast,Rockfish
+1990,Chilipepper Southern Pacific Coast,0.829847572,1.646341463,US West Coast,Rockfish
+1991,Chilipepper Southern Pacific Coast,0.793335697,1.780487805,US West Coast,Rockfish
+1992,Chilipepper Southern Pacific Coast,0.750088621,1.573170732,US West Coast,Rockfish
+1993,Chilipepper Southern Pacific Coast,0.698333924,1.463414634,US West Coast,Rockfish
+1994,Chilipepper Southern Pacific Coast,0.660404112,1.231707317,US West Coast,Rockfish
+1995,Chilipepper Southern Pacific Coast,0.638071606,1.329268293,US West Coast,Rockfish
+1996,Chilipepper Southern Pacific Coast,0.613612194,1.292682927,US West Coast,Rockfish
+1997,Chilipepper Southern Pacific Coast,0.592697625,1.56097561,US West Coast,Rockfish
+1998,Chilipepper Southern Pacific Coast,0.546260191,1.170731707,US West Coast,Rockfish
+1999,Chilipepper Southern Pacific Coast,0.521446296,0.865853659,US West Coast,Rockfish
+2000,Chilipepper Southern Pacific Coast,0.543778802,0.548780488,US West Coast,Rockfish
+2001,Chilipepper Southern Pacific Coast,0.583481035,0.292682927,US West Coast,Rockfish
+2002,Chilipepper Southern Pacific Coast,0.795108118,0.146341463,US West Coast,Rockfish
+2003,Chilipepper Southern Pacific Coast,1.075859624,0.012195122,US West Coast,Rockfish
+2004,Chilipepper Southern Pacific Coast,1.320808224,0.048780488,US West Coast,Rockfish
+2005,Chilipepper Southern Pacific Coast,1.485643389,0.024390244,US West Coast,Rockfish
+2006,Chilipepper Southern Pacific Coast,1.59482453,0.036585366,US West Coast,Rockfish
+2007,Chilipepper Southern Pacific Coast,1.643388869,0.048780488,US West Coast,Rockfish
+2008,Chilipepper Southern Pacific Coast,1.636653669,0.048780488,US West Coast,Rockfish
+2009,Chilipepper Southern Pacific Coast,1.58560794,0.12195122,US West Coast,Rockfish
+2010,Chilipepper Southern Pacific Coast,1.51506558,0.158536585,US West Coast,Rockfish
+2011,Chilipepper Southern Pacific Coast,1.43707905,0.134146341,US West Coast,Rockfish
+2012,Chilipepper Southern Pacific Coast,1.422545197,0.109756098,US West Coast,Rockfish
+2013,Chilipepper Southern Pacific Coast,1.480326125,0.146341463,US West Coast,Rockfish
+2014,Chilipepper Southern Pacific Coast,1.54696916,0.109756098,US West Coast,Rockfish
+2015,Chilipepper Southern Pacific Coast,1.600496278,0.109756098,US West Coast,Rockfish
+2016,Chilipepper Southern Pacific Coast,1.600496278,0.109756098,US West Coast,Rockfish
+2017,Chilipepper Southern Pacific Coast,1.600496278,NA,US West Coast,Rockfish
+1980,Cowcod Southern California,0.828064516,4.36,US West Coast,Rockfish
+1981,Cowcod Southern California,0.734354839,4.74,US West Coast,Rockfish
+1982,Cowcod Southern California,0.652096774,8.1,US West Coast,Rockfish
+1983,Cowcod Southern California,0.484032258,5.9,US West Coast,Rockfish
+1984,Cowcod Southern California,0.441612903,8.32,US West Coast,Rockfish
+1985,Cowcod Southern California,0.358387097,9.36,US West Coast,Rockfish
+1986,Cowcod Southern California,0.293225806,10.7,US West Coast,Rockfish
+1987,Cowcod Southern California,0.237741935,7.18,US West Coast,Rockfish
+1988,Cowcod Southern California,0.252741935,6.42,US West Coast,Rockfish
+1989,Cowcod Southern California,0.265483871,2.34,US West Coast,Rockfish
+1990,Cowcod Southern California,0.322580645,1.52,US West Coast,Rockfish
+1991,Cowcod Southern California,0.373870968,1.14,US West Coast,Rockfish
+1992,Cowcod Southern California,0.420967742,1.38,US West Coast,Rockfish
+1993,Cowcod Southern California,0.449354839,0.88,US West Coast,Rockfish
+1994,Cowcod Southern California,0.47016129,1.36,US West Coast,Rockfish
+1995,Cowcod Southern California,0.473387097,0.86,US West Coast,Rockfish
+1996,Cowcod Southern California,0.480645161,1,US West Coast,Rockfish
+1997,Cowcod Southern California,0.472419355,0.32,US West Coast,Rockfish
+1998,Cowcod Southern California,0.47516129,0.14,US West Coast,Rockfish
+1999,Cowcod Southern California,0.485,0.24,US West Coast,Rockfish
+2000,Cowcod Southern California,0.494354839,0.16,US West Coast,Rockfish
+2001,Cowcod Southern California,0.512903226,0.02,US West Coast,Rockfish
+2002,Cowcod Southern California,0.540483871,0.02,US West Coast,Rockfish
+2003,Cowcod Southern California,0.573064516,0.02,US West Coast,Rockfish
+2004,Cowcod Southern California,0.604354839,0.02,US West Coast,Rockfish
+2005,Cowcod Southern California,0.638064516,0,US West Coast,Rockfish
+2006,Cowcod Southern California,0.668548387,0,US West Coast,Rockfish
+2007,Cowcod Southern California,0.698709677,0,US West Coast,Rockfish
+2008,Cowcod Southern California,0.721935484,0,US West Coast,Rockfish
+2009,Cowcod Southern California,0.747096774,0,US West Coast,Rockfish
+2010,Cowcod Southern California,0.772741935,0,US West Coast,Rockfish
+2011,Cowcod Southern California,0.798225806,0.02,US West Coast,Rockfish
+2012,Cowcod Southern California,0.820967742,0.02,US West Coast,Rockfish
+2013,Cowcod Southern California,0.845967742,0.02,US West Coast,Rockfish
+2014,Cowcod Southern California,0.845967742,0.02,US West Coast,Rockfish
+2015,Cowcod Southern California,0.845967742,0.02,US West Coast,Rockfish
+2016,Cowcod Southern California,0.845967742,0.02,US West Coast,Rockfish
+2017,Cowcod Southern California,0.845967742,NA,US West Coast,Rockfish
+1980,Darkblotched rockfish Pacific Coast,1.596409055,0.597045455,US West Coast,Rockfish
+1981,Darkblotched rockfish Pacific Coast,1.570647931,0.820454545,US West Coast,Rockfish
+1982,Darkblotched rockfish Pacific Coast,1.525370804,1.142954545,US West Coast,Rockfish
+1983,Darkblotched rockfish Pacific Coast,1.457455113,1.174545455,US West Coast,Rockfish
+1984,Darkblotched rockfish Pacific Coast,1.391100703,1.4275,US West Coast,Rockfish
+1985,Darkblotched rockfish Pacific Coast,1.317720531,2.001818182,US West Coast,Rockfish
+1986,Darkblotched rockfish Pacific Coast,1.220921155,1.527954545,US West Coast,Rockfish
+1987,Darkblotched rockfish Pacific Coast,1.162373146,3.082045455,US West Coast,Rockfish
+1988,Darkblotched rockfish Pacific Coast,1.032006245,2.408181818,US West Coast,Rockfish
+1989,Darkblotched rockfish Pacific Coast,0.944574551,2.03,US West Coast,Rockfish
+1990,Darkblotched rockfish Pacific Coast,0.87587822,2.866136364,US West Coast,Rockfish
+1991,Darkblotched rockfish Pacific Coast,0.777517564,2.287272727,US West Coast,Rockfish
+1992,Darkblotched rockfish Pacific Coast,0.711943794,1.406590909,US West Coast,Rockfish
+1993,Darkblotched rockfish Pacific Coast,0.68462139,2.535454545,US West Coast,Rockfish
+1994,Darkblotched rockfish Pacific Coast,0.629195941,2.021363636,US West Coast,Rockfish
+1995,Darkblotched rockfish Pacific Coast,0.592505855,1.970681818,US West Coast,Rockfish
+1996,Darkblotched rockfish Pacific Coast,0.558157689,1.989772727,US West Coast,Rockfish
+1997,Darkblotched rockfish Pacific Coast,0.521467603,2.325227273,US West Coast,Rockfish
+1998,Darkblotched rockfish Pacific Coast,0.476971116,2.779090909,US West Coast,Rockfish
+1999,Darkblotched rockfish Pacific Coast,0.423887588,1.157045455,US West Coast,Rockfish
+2000,Darkblotched rockfish Pacific Coast,0.412177986,0.809090909,US West Coast,Rockfish
+2001,Darkblotched rockfish Pacific Coast,0.416081187,0.517727273,US West Coast,Rockfish
+2002,Darkblotched rockfish Pacific Coast,0.433255269,0.6725,US West Coast,Rockfish
+2003,Darkblotched rockfish Pacific Coast,0.451209992,0.485,US West Coast,Rockfish
+2004,Darkblotched rockfish Pacific Coast,0.474629196,0.538636364,US West Coast,Rockfish
+2005,Darkblotched rockfish Pacific Coast,0.506635441,0.269772727,US West Coast,Rockfish
+2006,Darkblotched rockfish Pacific Coast,0.558938329,0.379318182,US West Coast,Rockfish
+2007,Darkblotched rockfish Pacific Coast,0.616705699,0.480681818,US West Coast,Rockfish
+2008,Darkblotched rockfish Pacific Coast,0.668227947,0.440681818,US West Coast,Rockfish
+2009,Darkblotched rockfish Pacific Coast,0.712724434,0.486136364,US West Coast,Rockfish
+2010,Darkblotched rockfish Pacific Coast,0.75019516,0.565,US West Coast,Rockfish
+2011,Darkblotched rockfish Pacific Coast,0.782201405,0.181590909,US West Coast,Rockfish
+2012,Darkblotched rockfish Pacific Coast,0.828259173,0.138636364,US West Coast,Rockfish
+2013,Darkblotched rockfish Pacific Coast,0.87665886,0.174090909,US West Coast,Rockfish
+2014,Darkblotched rockfish Pacific Coast,0.928181109,0.138181818,US West Coast,Rockfish
+2015,Darkblotched rockfish Pacific Coast,0.984387198,0.138181818,US West Coast,Rockfish
+2016,Darkblotched rockfish Pacific Coast,0.984387198,0.138181818,US West Coast,Rockfish
+2017,Darkblotched rockfish Pacific Coast,0.984387198,NA,US West Coast,Rockfish
+1980,Dover sole Pacific Coast,3.658346599,0.178294574,US West Coast,Flatfish
+1981,Dover sole Pacific Coast,3.572254335,0.224806202,US West Coast,Flatfish
+1982,Dover sole Pacific Coast,3.47340104,0.294573643,US West Coast,Flatfish
+1983,Dover sole Pacific Coast,3.353435433,0.286821705,US West Coast,Flatfish
+1984,Dover sole Pacific Coast,3.247039594,0.294573643,US West Coast,Flatfish
+1985,Dover sole Pacific Coast,3.150842364,0.317829457,US West Coast,Flatfish
+1986,Dover sole Pacific Coast,3.052516877,0.279069767,US West Coast,Flatfish
+1987,Dover sole Pacific Coast,2.976682813,0.302325581,US West Coast,Flatfish
+1988,Dover sole Pacific Coast,2.901819234,0.302325581,US West Coast,Flatfish
+1989,Dover sole Pacific Coast,2.833595818,0.333333333,US West Coast,Flatfish
+1990,Dover sole Pacific Coast,2.761618157,0.286821705,US West Coast,Flatfish
+1991,Dover sole Pacific Coast,2.705602425,0.333333333,US West Coast,Flatfish
+1992,Dover sole Pacific Coast,2.635778559,0.302325581,US West Coast,Flatfish
+1993,Dover sole Pacific Coast,2.578630594,0.271317829,US West Coast,Flatfish
+1994,Dover sole Pacific Coast,2.542458733,0.178294574,US West Coast,Flatfish
+1995,Dover sole Pacific Coast,2.55515166,0.19379845,US West Coast,Flatfish
+1996,Dover sole Pacific Coast,2.586888232,0.201550388,US West Coast,Flatfish
+1997,Dover sole Pacific Coast,2.628099807,0.162790698,US West Coast,Flatfish
+1998,Dover sole Pacific Coast,2.697404377,0.124031008,US West Coast,Flatfish
+1999,Dover sole Pacific Coast,2.79661522,0.139534884,US West Coast,Flatfish
+2000,Dover sole Pacific Coast,2.900397558,0.131782946,US West Coast,Flatfish
+2001,Dover sole Pacific Coast,2.996645866,0.100775194,US West Coast,Flatfish
+2002,Dover sole Pacific Coast,3.077519644,0.093023256,US West Coast,Flatfish
+2003,Dover sole Pacific Coast,3.13621698,0.100775194,US West Coast,Flatfish
+2004,Dover sole Pacific Coast,3.179718559,0.085271318,US West Coast,Flatfish
+2005,Dover sole Pacific Coast,3.227391523,0.085271318,US West Coast,Flatfish
+2006,Dover sole Pacific Coast,3.273736454,0.069767442,US West Coast,Flatfish
+2007,Dover sole Pacific Coast,3.32768352,0.108527132,US West Coast,Flatfish
+2008,Dover sole Pacific Coast,3.371908706,0.139534884,US West Coast,Flatfish
+2009,Dover sole Pacific Coast,3.396026118,0.147286822,US West Coast,Flatfish
+2010,Dover sole Pacific Coast,3.386789481,0.131782946,US West Coast,Flatfish
+2011,Dover sole Pacific Coast,3.349936578,0.131782946,US West Coast,Flatfish
+2012,Dover sole Pacific Coast,3.349936578,0.131782946,US West Coast,Flatfish
+2013,Dover sole Pacific Coast,3.349936578,0.131782946,US West Coast,Flatfish
+2014,Dover sole Pacific Coast,3.349936578,0.131782946,US West Coast,Flatfish
+2015,Dover sole Pacific Coast,3.349936578,0.131782946,US West Coast,Flatfish
+2016,Dover sole Pacific Coast,3.349936578,0.131782946,US West Coast,Flatfish
+2017,Dover sole Pacific Coast,3.349936578,NA,US West Coast,Flatfish
+1980,English sole Pacific Coast,0.973689691,1.076923077,US West Coast,Flatfish
+1981,English sole Pacific Coast,0.96945505,1.076923077,US West Coast,Flatfish
+1982,English sole Pacific Coast,0.851509892,1.230769231,US West Coast,Flatfish
+1983,English sole Pacific Coast,0.726969802,1.153846154,US West Coast,Flatfish
+1984,English sole Pacific Coast,0.656091635,0.923076923,US West Coast,Flatfish
+1985,English sole Pacific Coast,0.639361333,1.153846154,US West Coast,Flatfish
+1986,English sole Pacific Coast,0.621381465,1.230769231,US West Coast,Flatfish
+1987,English sole Pacific Coast,0.632835821,1.461538462,US West Coast,Flatfish
+1988,English sole Pacific Coast,0.640680319,1.230769231,US West Coast,Flatfish
+1989,English sole Pacific Coast,0.64901076,1.461538462,US West Coast,Flatfish
+1990,English sole Pacific Coast,0.587920861,1.230769231,US West Coast,Flatfish
+1991,English sole Pacific Coast,0.610621312,1.461538462,US West Coast,Flatfish
+1992,English sole Pacific Coast,0.563137799,1.230769231,US West Coast,Flatfish
+1993,English sole Pacific Coast,0.580076362,1.153846154,US West Coast,Flatfish
+1994,English sole Pacific Coast,0.614578271,0.769230769,US West Coast,Flatfish
+1995,English sole Pacific Coast,0.663519611,0.769230769,US West Coast,Flatfish
+1996,English sole Pacific Coast,0.675737591,0.692307692,US West Coast,Flatfish
+1997,English sole Pacific Coast,0.696355432,0.846153846,US West Coast,Flatfish
+1998,English sole Pacific Coast,0.765150989,0.538461538,US West Coast,Flatfish
+1999,English sole Pacific Coast,0.922596321,0.384615385,US West Coast,Flatfish
+2000,English sole Pacific Coast,1.111141965,0.307692308,US West Coast,Flatfish
+2001,English sole Pacific Coast,1.396737244,0.307692308,US West Coast,Flatfish
+2002,English sole Pacific Coast,1.84276293,0.230769231,US West Coast,Flatfish
+2003,English sole Pacific Coast,2.328913572,0.153846154,US West Coast,Flatfish
+2004,English sole Pacific Coast,2.675043388,0.153846154,US West Coast,Flatfish
+2005,English sole Pacific Coast,2.848247136,0.153846154,US West Coast,Flatfish
+2006,English sole Pacific Coast,2.929052412,0.153846154,US West Coast,Flatfish
+2007,English sole Pacific Coast,2.909198195,0.153846154,US West Coast,Flatfish
+2008,English sole Pacific Coast,2.909198195,0.153846154,US West Coast,Flatfish
+2009,English sole Pacific Coast,2.909198195,0.153846154,US West Coast,Flatfish
+2010,English sole Pacific Coast,2.909198195,0.153846154,US West Coast,Flatfish
+2011,English sole Pacific Coast,2.909198195,0.153846154,US West Coast,Flatfish
+2012,English sole Pacific Coast,2.909198195,0.153846154,US West Coast,Flatfish
+2013,English sole Pacific Coast,2.909198195,0.153846154,US West Coast,Flatfish
+2014,English sole Pacific Coast,2.909198195,0.153846154,US West Coast,Flatfish
+2015,English sole Pacific Coast,2.909198195,0.153846154,US West Coast,Flatfish
+2016,English sole Pacific Coast,2.909198195,0.153846154,US West Coast,Flatfish
+2017,English sole Pacific Coast,2.909198195,NA,US West Coast,Flatfish
+1980,Lingcod Northern Pacific Coast,1.764399093,1.065714286,US West Coast,Other Marine
+1981,Lingcod Northern Pacific Coast,1.603099017,1.132857143,US West Coast,Other Marine
+1982,Lingcod Northern Pacific Coast,1.47467876,1.436428571,US West Coast,Other Marine
+1983,Lingcod Northern Pacific Coast,1.353363568,1.21,US West Coast,Other Marine
+1984,Lingcod Northern Pacific Coast,1.209826153,1.248571429,US West Coast,Other Marine
+1985,Lingcod Northern Pacific Coast,1.057596372,1.005,US West Coast,Other Marine
+1986,Lingcod Northern Pacific Coast,0.890249433,0.835714286,US West Coast,Other Marine
+1987,Lingcod Northern Pacific Coast,0.826681784,1.227142857,US West Coast,Other Marine
+1988,Lingcod Northern Pacific Coast,0.74021164,1.425714286,US West Coast,Other Marine
+1989,Lingcod Northern Pacific Coast,0.663794407,1.872142857,US West Coast,Other Marine
+1990,Lingcod Northern Pacific Coast,0.571428571,1.783571429,US West Coast,Other Marine
+1991,Lingcod Northern Pacific Coast,0.489720333,1.440714286,US West Coast,Other Marine
+1992,Lingcod Northern Pacific Coast,0.365457294,1.219285714,US West Coast,Other Marine
+1993,Lingcod Northern Pacific Coast,0.302040816,1.418571429,US West Coast,Other Marine
+1994,Lingcod Northern Pacific Coast,0.25313681,1.082857143,US West Coast,Other Marine
+1995,Lingcod Northern Pacific Coast,0.243159486,0.926428571,US West Coast,Other Marine
+1996,Lingcod Northern Pacific Coast,0.269009826,0.789285714,US West Coast,Other Marine
+1997,Lingcod Northern Pacific Coast,0.289115646,0.815,US West Coast,Other Marine
+1998,Lingcod Northern Pacific Coast,0.301738473,0.444285714,US West Coast,Other Marine
+1999,Lingcod Northern Pacific Coast,0.348450491,0.375714286,US West Coast,Other Marine
+2000,Lingcod Northern Pacific Coast,0.396371882,0.131428571,US West Coast,Other Marine
+2001,Lingcod Northern Pacific Coast,0.455782313,0.122857143,US West Coast,Other Marine
+2002,Lingcod Northern Pacific Coast,0.517006803,0.13,US West Coast,Other Marine
+2003,Lingcod Northern Pacific Coast,0.592365835,0.062857143,US West Coast,Other Marine
+2004,Lingcod Northern Pacific Coast,0.713303099,0.059285714,US West Coast,Other Marine
+2005,Lingcod Northern Pacific Coast,0.883522298,0.043571429,US West Coast,Other Marine
+2006,Lingcod Northern Pacific Coast,1.078684807,0.036428571,US West Coast,Other Marine
+2007,Lingcod Northern Pacific Coast,1.263038549,0.040714286,US West Coast,Other Marine
+2008,Lingcod Northern Pacific Coast,1.419047619,0.032142857,US West Coast,Other Marine
+2009,Lingcod Northern Pacific Coast,1.54829932,0.032142857,US West Coast,Other Marine
+2010,Lingcod Northern Pacific Coast,1.54829932,0.032142857,US West Coast,Other Marine
+2011,Lingcod Northern Pacific Coast,1.54829932,0.032142857,US West Coast,Other Marine
+2012,Lingcod Northern Pacific Coast,1.54829932,0.032142857,US West Coast,Other Marine
+2013,Lingcod Northern Pacific Coast,1.54829932,0.032142857,US West Coast,Other Marine
+2014,Lingcod Northern Pacific Coast,1.54829932,0.032142857,US West Coast,Other Marine
+2015,Lingcod Northern Pacific Coast,1.54829932,0.032142857,US West Coast,Other Marine
+2016,Lingcod Northern Pacific Coast,1.54829932,0.032142857,US West Coast,Other Marine
+2017,Lingcod Northern Pacific Coast,1.54829932,NA,US West Coast,Other Marine
+1980,Lingcod Southern Pacific Coast,0.579217701,1.448543689,US West Coast,Other Marine
+1981,Lingcod Southern Pacific Coast,0.486171474,1.539805825,US West Coast,Other Marine
+1982,Lingcod Southern Pacific Coast,0.412287633,1.952427184,US West Coast,Other Marine
+1983,Lingcod Southern Pacific Coast,0.343342552,1.644660194,US West Coast,Other Marine
+1984,Lingcod Southern Pacific Coast,0.314796523,1.697087379,US West Coast,Other Marine
+1985,Lingcod Southern Pacific Coast,0.282694587,1.366019417,US West Coast,Other Marine
+1986,Lingcod Southern Pacific Coast,0.232911893,1.13592233,US West Coast,Other Marine
+1987,Lingcod Southern Pacific Coast,0.217107863,1.667961165,US West Coast,Other Marine
+1988,Lingcod Southern Pacific Coast,0.21592256,1.937864078,US West Coast,Other Marine
+1989,Lingcod Southern Pacific Coast,0.207427894,2.544660194,US West Coast,Other Marine
+1990,Lingcod Southern Pacific Coast,0.180956144,2.424271845,US West Coast,Other Marine
+1991,Lingcod Southern Pacific Coast,0.164855788,1.958252427,US West Coast,Other Marine
+1992,Lingcod Southern Pacific Coast,0.155274595,1.657281553,US West Coast,Other Marine
+1993,Lingcod Southern Pacific Coast,0.147668906,1.92815534,US West Coast,Other Marine
+1994,Lingcod Southern Pacific Coast,0.153990518,1.47184466,US West Coast,Other Marine
+1995,Lingcod Southern Pacific Coast,0.183030423,1.259223301,US West Coast,Other Marine
+1996,Lingcod Southern Pacific Coast,0.211280126,1.072815534,US West Coast,Other Marine
+1997,Lingcod Southern Pacific Coast,0.228763335,1.10776699,US West Coast,Other Marine
+1998,Lingcod Southern Pacific Coast,0.245456341,0.603883495,US West Coast,Other Marine
+1999,Lingcod Southern Pacific Coast,0.277459502,0.510679612,US West Coast,Other Marine
+2000,Lingcod Southern Pacific Coast,0.311833267,0.178640777,US West Coast,Other Marine
+2001,Lingcod Southern Pacific Coast,0.37623469,0.166990291,US West Coast,Other Marine
+2002,Lingcod Southern Pacific Coast,0.463551956,0.176699029,US West Coast,Other Marine
+2003,Lingcod Southern Pacific Coast,0.571710786,0.085436893,US West Coast,Other Marine
+2004,Lingcod Southern Pacific Coast,0.718885816,0.080582524,US West Coast,Other Marine
+2005,Lingcod Southern Pacific Coast,0.958020545,0.059223301,US West Coast,Other Marine
+2006,Lingcod Southern Pacific Coast,1.208316871,0.049514563,US West Coast,Other Marine
+2007,Lingcod Southern Pacific Coast,1.44725405,0.055339806,US West Coast,Other Marine
+2008,Lingcod Southern Pacific Coast,1.665448439,0.04368932,US West Coast,Other Marine
+2009,Lingcod Southern Pacific Coast,1.665448439,0.04368932,US West Coast,Other Marine
+2010,Lingcod Southern Pacific Coast,1.665448439,0.04368932,US West Coast,Other Marine
+2011,Lingcod Southern Pacific Coast,1.665448439,0.04368932,US West Coast,Other Marine
+2012,Lingcod Southern Pacific Coast,1.665448439,0.04368932,US West Coast,Other Marine
+2013,Lingcod Southern Pacific Coast,1.665448439,0.04368932,US West Coast,Other Marine
+2014,Lingcod Southern Pacific Coast,1.665448439,0.04368932,US West Coast,Other Marine
+2015,Lingcod Southern Pacific Coast,1.665448439,0.04368932,US West Coast,Other Marine
+2016,Lingcod Southern Pacific Coast,1.665448439,0.04368932,US West Coast,Other Marine
+2017,Lingcod Southern Pacific Coast,1.665448439,NA,US West Coast,Other Marine
+1980,Longspine thornyhead Pacific Coast,2.163089306,0.166666667,US West Coast,Rockfish
+1981,Longspine thornyhead Pacific Coast,2.127507346,0,US West Coast,Rockfish
+1982,Longspine thornyhead Pacific Coast,2.107384694,0.166666667,US West Coast,Rockfish
+1983,Longspine thornyhead Pacific Coast,2.084770666,0,US West Coast,Rockfish
+1984,Longspine thornyhead Pacific Coast,2.077488182,0.166666667,US West Coast,Rockfish
+1985,Longspine thornyhead Pacific Coast,2.079276862,0.166666667,US West Coast,Rockfish
+1986,Longspine thornyhead Pacific Coast,2.075827265,0.166666667,US West Coast,Rockfish
+1987,Longspine thornyhead Pacific Coast,2.098824582,0.333333333,US West Coast,Rockfish
+1988,Longspine thornyhead Pacific Coast,2.127507346,0.666666667,US West Coast,Rockfish
+1989,Longspine thornyhead Pacific Coast,2.106170947,0.833333333,US West Coast,Rockfish
+1990,Longspine thornyhead Pacific Coast,2.063498147,1.666666667,US West Coast,Rockfish
+1991,Longspine thornyhead Pacific Coast,1.908905072,1,US West Coast,Rockfish
+1992,Longspine thornyhead Pacific Coast,1.854350326,1.5,US West Coast,Rockfish
+1993,Longspine thornyhead Pacific Coast,1.721221413,1.666666667,US West Coast,Rockfish
+1994,Longspine thornyhead Pacific Coast,1.589817299,1.5,US West Coast,Rockfish
+1995,Longspine thornyhead Pacific Coast,1.488565223,1.833333333,US West Coast,Rockfish
+1996,Longspine thornyhead Pacific Coast,1.359716366,1.833333333,US West Coast,Rockfish
+1997,Longspine thornyhead Pacific Coast,1.256739492,1.666666667,US West Coast,Rockfish
+1998,Longspine thornyhead Pacific Coast,1.179570717,1,US West Coast,Rockfish
+1999,Longspine thornyhead Pacific Coast,1.161620033,0.833333333,US West Coast,Rockfish
+2000,Longspine thornyhead Pacific Coast,1.16193944,0.666666667,US West Coast,Rockfish
+2001,Longspine thornyhead Pacific Coast,1.180784464,0.5,US West Coast,Rockfish
+2002,Longspine thornyhead Pacific Coast,1.217835697,0.833333333,US West Coast,Rockfish
+2003,Longspine thornyhead Pacific Coast,1.237894468,0.666666667,US West Coast,Rockfish
+2004,Longspine thornyhead Pacific Coast,1.274945701,0.333333333,US West Coast,Rockfish
+2005,Longspine thornyhead Pacific Coast,1.345343043,0.166666667,US West Coast,Rockfish
+2006,Longspine thornyhead Pacific Coast,1.420978664,0.333333333,US West Coast,Rockfish
+2007,Longspine thornyhead Pacific Coast,1.497380861,0.333333333,US West Coast,Rockfish
+2008,Longspine thornyhead Pacific Coast,1.576210553,0.333333333,US West Coast,Rockfish
+2009,Longspine thornyhead Pacific Coast,1.642072314,0.333333333,US West Coast,Rockfish
+2010,Longspine thornyhead Pacific Coast,1.710169925,0.333333333,US West Coast,Rockfish
+2011,Longspine thornyhead Pacific Coast,1.768813083,0.166666667,US West Coast,Rockfish
+2012,Longspine thornyhead Pacific Coast,1.833269452,0.166666667,US West Coast,Rockfish
+2013,Longspine thornyhead Pacific Coast,1.87811422,0.166666667,US West Coast,Rockfish
+2014,Longspine thornyhead Pacific Coast,1.87811422,0.166666667,US West Coast,Rockfish
+2015,Longspine thornyhead Pacific Coast,1.87811422,0.166666667,US West Coast,Rockfish
+2016,Longspine thornyhead Pacific Coast,1.87811422,0.166666667,US West Coast,Rockfish
+2017,Longspine thornyhead Pacific Coast,1.87811422,NA,US West Coast,Rockfish
+1980,Pacific hake Pacific Coast,1.639952153,0.112612613,US West Coast,Gadids
+1981,Pacific hake Pacific Coast,1.605263158,0.207207207,US West Coast,Gadids
+1982,Pacific hake Pacific Coast,2.16507177,0.193693694,US West Coast,Gadids
+1983,Pacific hake Pacific Coast,2.698564593,0.099099099,US West Coast,Gadids
+1984,Pacific hake Pacific Coast,2.854066986,0.121621622,US West Coast,Gadids
+1985,Pacific hake Pacific Coast,2.714114833,0.108108108,US West Coast,Gadids
+1986,Pacific hake Pacific Coast,2.958133971,0.238738739,US West Coast,Gadids
+1987,Pacific hake Pacific Coast,3.094497608,0.189189189,US West Coast,Gadids
+1988,Pacific hake Pacific Coast,2.942583732,0.220720721,US West Coast,Gadids
+1989,Pacific hake Pacific Coast,2.814593301,0.342342342,US West Coast,Gadids
+1990,Pacific hake Pacific Coast,2.647129187,0.265765766,US West Coast,Gadids
+1991,Pacific hake Pacific Coast,2.397129187,0.355855856,US West Coast,Gadids
+1992,Pacific hake Pacific Coast,2.161483254,0.427927928,US West Coast,Gadids
+1993,Pacific hake Pacific Coast,1.93062201,0.333333333,US West Coast,Gadids
+1994,Pacific hake Pacific Coast,1.684210526,0.653153153,US West Coast,Gadids
+1995,Pacific hake Pacific Coast,1.389952153,0.554054054,US West Coast,Gadids
+1996,Pacific hake Pacific Coast,1.318181818,0.693693694,US West Coast,Gadids
+1997,Pacific hake Pacific Coast,1.21291866,0.684684685,US West Coast,Gadids
+1998,Pacific hake Pacific Coast,1.086124402,0.824324324,US West Coast,Gadids
+1999,Pacific hake Pacific Coast,0.938995215,0.936936937,US West Coast,Gadids
+2000,Pacific hake Pacific Coast,0.811004785,0.671171171,US West Coast,Gadids
+2001,Pacific hake Pacific Coast,1.200956938,0.608108108,US West Coast,Gadids
+2002,Pacific hake Pacific Coast,1.568181818,0.193693694,US West Coast,Gadids
+2003,Pacific hake Pacific Coast,1.735645933,0.261261261,US West Coast,Gadids
+2004,Pacific hake Pacific Coast,1.66507177,0.522522523,US West Coast,Gadids
+2005,Pacific hake Pacific Coast,1.429425837,0.743243243,US West Coast,Gadids
+2006,Pacific hake Pacific Coast,1.126794258,0.864864865,US West Coast,Gadids
+2007,Pacific hake Pacific Coast,0.900717703,1,US West Coast,Gadids
+2008,Pacific hake Pacific Coast,0.805023923,1.018018018,US West Coast,Gadids
+2009,Pacific hake Pacific Coast,0.675837321,0.630630631,US West Coast,Gadids
+2010,Pacific hake Pacific Coast,0.779904306,1.018018018,US West Coast,Gadids
+2011,Pacific hake Pacific Coast,0.866028708,0.824324324,US West Coast,Gadids
+2012,Pacific hake Pacific Coast,1.395933014,0.648648649,US West Coast,Gadids
+2013,Pacific hake Pacific Coast,1.88277512,0.324324324,US West Coast,Gadids
+2014,Pacific hake Pacific Coast,2.055023923,0.355855856,US West Coast,Gadids
+2015,Pacific hake Pacific Coast,1.959330144,0.274774775,US West Coast,Gadids
+2016,Pacific hake Pacific Coast,2.383971292,0.626126126,US West Coast,Gadids
+2017,Pacific hake Pacific Coast,2.546650718,NA,US West Coast,Gadids
+1980,Pacific ocean perch Pacific Coast,0.635482989,3.59,US West Coast,Rockfish
+1981,Pacific ocean perch Pacific Coast,0.594781454,2.5,US West Coast,Rockfish
+1982,Pacific ocean perch Pacific Coast,0.571227686,2.045,US West Coast,Rockfish
+1983,Pacific ocean perch Pacific Coast,0.557868833,3.15,US West Coast,Rockfish
+1984,Pacific ocean perch Pacific Coast,0.534783798,3.295,US West Coast,Rockfish
+1985,Pacific ocean perch Pacific Coast,0.511347213,3.11,US West Coast,Rockfish
+1986,Pacific ocean perch Pacific Coast,0.492012031,3.125,US West Coast,Rockfish
+1987,Pacific ocean perch Pacific Coast,0.473575251,2.525,US West Coast,Rockfish
+1988,Pacific ocean perch Pacific Coast,0.463067849,3.22,US West Coast,Rockfish
+1989,Pacific ocean perch Pacific Coast,0.44627163,3.465,US West Coast,Rockfish
+1990,Pacific ocean perch Pacific Coast,0.42861607,2.73,US West Coast,Rockfish
+1991,Pacific ocean perch Pacific Coast,0.41818679,3.64,US West Coast,Rockfish
+1992,Pacific ocean perch Pacific Coast,0.400492168,3.67,US West Coast,Rockfish
+1993,Pacific ocean perch Pacific Coast,0.383852193,3.425,US West Coast,Rockfish
+1994,Pacific ocean perch Pacific Coast,0.371079255,2.915,US West Coast,Rockfish
+1995,Pacific ocean perch Pacific Coast,0.363384243,2.575,US West Coast,Rockfish
+1996,Pacific ocean perch Pacific Coast,0.360806219,2.425,US West Coast,Rockfish
+1997,Pacific ocean perch Pacific Coast,0.359439084,1.99,US West Coast,Rockfish
+1998,Pacific ocean perch Pacific Coast,0.359712511,1.975,US West Coast,Rockfish
+1999,Pacific ocean perch Pacific Coast,0.358111011,1.59,US West Coast,Rockfish
+2000,Pacific ocean perch Pacific Coast,0.358501621,0.42,US West Coast,Rockfish
+2001,Pacific ocean perch Pacific Coast,0.367368462,0.81,US West Coast,Rockfish
+2002,Pacific ocean perch Pacific Coast,0.373774462,0.445,US West Coast,Rockfish
+2003,Pacific ocean perch Pacific Coast,0.382602242,0.38,US West Coast,Rockfish
+2004,Pacific ocean perch Pacific Coast,0.393422132,0.335,US West Coast,Rockfish
+2005,Pacific ocean perch Pacific Coast,0.407718448,0.17,US West Coast,Rockfish
+2006,Pacific ocean perch Pacific Coast,0.427366119,0.185,US West Coast,Rockfish
+2007,Pacific ocean perch Pacific Coast,0.449552752,0.33,US West Coast,Rockfish
+2008,Pacific ocean perch Pacific Coast,0.468145776,0.28,US West Coast,Rockfish
+2009,Pacific ocean perch Pacific Coast,0.48115308,0.415,US West Coast,Rockfish
+2010,Pacific ocean perch Pacific Coast,0.486309129,0.29,US West Coast,Rockfish
+2011,Pacific ocean perch Pacific Coast,0.486309129,0.29,US West Coast,Rockfish
+2012,Pacific ocean perch Pacific Coast,0.486309129,0.29,US West Coast,Rockfish
+2013,Pacific ocean perch Pacific Coast,0.486309129,0.29,US West Coast,Rockfish
+2014,Pacific ocean perch Pacific Coast,0.486309129,0.29,US West Coast,Rockfish
+2015,Pacific ocean perch Pacific Coast,0.486309129,0.29,US West Coast,Rockfish
+2016,Pacific ocean perch Pacific Coast,0.486309129,0.29,US West Coast,Rockfish
+2017,Pacific ocean perch Pacific Coast,0.486309129,NA,US West Coast,Rockfish
+1980,Petrale sole Pacific Coast,0.478671287,1.523809524,US West Coast,Flatfish
+1981,Petrale sole Pacific Coast,0.443063687,1.523809524,US West Coast,Flatfish
+1982,Petrale sole Pacific Coast,0.423945513,1.666666667,US West Coast,Flatfish
+1983,Petrale sole Pacific Coast,0.396104672,1.619047619,US West Coast,Flatfish
+1984,Petrale sole Pacific Coast,0.376389055,1.333333333,US West Coast,Flatfish
+1985,Petrale sole Pacific Coast,0.380929621,1.333333333,US West Coast,Flatfish
+1986,Petrale sole Pacific Coast,0.384514279,1.523809524,US West Coast,Flatfish
+1987,Petrale sole Pacific Coast,0.364559685,1.761904762,US West Coast,Flatfish
+1988,Petrale sole Pacific Coast,0.318915044,1.761904762,US West Coast,Flatfish
+1989,Petrale sole Pacific Coast,0.296809655,1.904761905,US West Coast,Flatfish
+1990,Petrale sole Pacific Coast,0.279961764,1.857142857,US West Coast,Flatfish
+1991,Petrale sole Pacific Coast,0.26168001,2.142857143,US West Coast,Flatfish
+1992,Petrale sole Pacific Coast,0.215437926,1.904761905,US West Coast,Flatfish
+1993,Petrale sole Pacific Coast,0.199187478,1.571428571,US West Coast,Flatfish
+1994,Petrale sole Pacific Coast,0.217110766,1.333333333,US West Coast,Flatfish
+1995,Petrale sole Pacific Coast,0.272553471,1.380952381,US West Coast,Flatfish
+1996,Petrale sole Pacific Coast,0.322021747,1.476190476,US West Coast,Flatfish
+1997,Petrale sole Pacific Coast,0.333970606,1.523809524,US West Coast,Flatfish
+1998,Petrale sole Pacific Coast,0.319751464,1.333333333,US West Coast,Flatfish
+1999,Petrale sole Pacific Coast,0.329907994,1.19047619,US West Coast,Flatfish
+2000,Petrale sole Pacific Coast,0.355000597,1.380952381,US West Coast,Flatfish
+2001,Petrale sole Pacific Coast,0.360138607,1.285714286,US West Coast,Flatfish
+2002,Petrale sole Pacific Coast,0.365396105,1.238095238,US West Coast,Flatfish
+2003,Petrale sole Pacific Coast,0.397060581,1,US West Coast,Flatfish
+2004,Petrale sole Pacific Coast,0.473413789,1.19047619,US West Coast,Flatfish
+2005,Petrale sole Pacific Coast,0.519775361,1.523809524,US West Coast,Flatfish
+2006,Petrale sole Pacific Coast,0.493368383,1.238095238,US West Coast,Flatfish
+2007,Petrale sole Pacific Coast,0.483928785,1.380952381,US West Coast,Flatfish
+2008,Petrale sole Pacific Coast,0.447365277,1.333333333,US West Coast,Flatfish
+2009,Petrale sole Pacific Coast,0.423706536,1.333333333,US West Coast,Flatfish
+2010,Petrale sole Pacific Coast,0.404827339,0.476190476,US West Coast,Flatfish
+2011,Petrale sole Pacific Coast,0.514517864,0.285714286,US West Coast,Flatfish
+2012,Petrale sole Pacific Coast,0.696140519,0.380952381,US West Coast,Flatfish
+2013,Petrale sole Pacific Coast,0.921376509,0.523809524,US West Coast,Flatfish
+2014,Petrale sole Pacific Coast,1.111243876,0.619047619,US West Coast,Flatfish
+2015,Petrale sole Pacific Coast,1.229537579,0.761904762,US West Coast,Flatfish
+2016,Petrale sole Pacific Coast,1.229537579,0.761904762,US West Coast,Flatfish
+2017,Petrale sole Pacific Coast,1.229537579,NA,US West Coast,Flatfish
+1980,Sablefish Pacific Coast,2.030672708,0.667532468,US West Coast,Other Marine
+1981,Sablefish Pacific Coast,1.998688775,0.867532468,US West Coast,Other Marine
+1982,Sablefish Pacific Coast,1.972397882,1.52987013,US West Coast,Other Marine
+1983,Sablefish Pacific Coast,1.893508606,1.197402597,US West Coast,Other Marine
+1984,Sablefish Pacific Coast,1.845341831,1.171428571,US West Coast,Other Marine
+1985,Sablefish Pacific Coast,1.792195721,1.18961039,US West Coast,Other Marine
+1986,Sablefish Pacific Coast,1.710667397,1.166233766,US West Coast,Other Marine
+1987,Sablefish Pacific Coast,1.630964829,1.202597403,US West Coast,Other Marine
+1988,Sablefish Pacific Coast,1.574017826,1.05974026,US West Coast,Other Marine
+1989,Sablefish Pacific Coast,1.542896978,1.012987013,US West Coast,Other Marine
+1990,Sablefish Pacific Coast,1.516207738,0.896103896,US West Coast,Other Marine
+1991,Sablefish Pacific Coast,1.493784129,0.955844156,US West Coast,Other Marine
+1992,Sablefish Pacific Coast,1.473833591,0.963636364,US West Coast,Other Marine
+1993,Sablefish Pacific Coast,1.470995369,0.836363636,US West Coast,Other Marine
+1994,Sablefish Pacific Coast,1.461335458,0.753246753,US West Coast,Other Marine
+1995,Sablefish Pacific Coast,1.439974107,0.81038961,US West Coast,Other Marine
+1996,Sablefish Pacific Coast,1.396537702,0.893506494,US West Coast,Other Marine
+1997,Sablefish Pacific Coast,1.347872994,0.898701299,US West Coast,Other Marine
+1998,Sablefish Pacific Coast,1.315225149,0.503896104,US West Coast,Other Marine
+1999,Sablefish Pacific Coast,1.29062723,0.750649351,US West Coast,Other Marine
+2000,Sablefish Pacific Coast,1.237713489,0.771428571,US West Coast,Other Marine
+2001,Sablefish Pacific Coast,1.17953825,0.750649351,US West Coast,Other Marine
+2002,Sablefish Pacific Coast,1.168915667,0.519480519,US West Coast,Other Marine
+2003,Sablefish Pacific Coast,1.199090441,0.657142857,US West Coast,Other Marine
+2004,Sablefish Pacific Coast,1.231422928,0.67012987,US West Coast,Other Marine
+2005,Sablefish Pacific Coast,1.248153496,0.709090909,US West Coast,Other Marine
+2006,Sablefish Pacific Coast,1.236286079,0.724675325,US West Coast,Other Marine
+2007,Sablefish Pacific Coast,1.205148633,0.641558442,US West Coast,Other Marine
+2008,Sablefish Pacific Coast,1.157546183,0.750649351,US West Coast,Other Marine
+2009,Sablefish Pacific Coast,1.090441335,1.01038961,US West Coast,Other Marine
+2010,Sablefish Pacific Coast,1.001842354,1.031168831,US West Coast,Other Marine
+2011,Sablefish Pacific Coast,0.956646583,1.038961039,US West Coast,Other Marine
+2012,Sablefish Pacific Coast,0.909558665,0.8,US West Coast,Other Marine
+2013,Sablefish Pacific Coast,0.893641388,0.662337662,US West Coast,Other Marine
+2014,Sablefish Pacific Coast,0.881757374,0.67012987,US West Coast,Other Marine
+2015,Sablefish Pacific Coast,0.863101462,1.01038961,US West Coast,Other Marine
+2016,Sablefish Pacific Coast,0.863101462,1.01038961,US West Coast,Other Marine
+2017,Sablefish Pacific Coast,0.863101462,NA,US West Coast,Other Marine
+1980,Shortspine thornyhead Pacific Coast,2.470160462,0.266666667,US West Coast,Rockfish
+1981,Shortspine thornyhead Pacific Coast,2.455668854,0.4,US West Coast,Rockfish
+1982,Shortspine thornyhead Pacific Coast,2.437224989,0.466666667,US West Coast,Rockfish
+1983,Shortspine thornyhead Pacific Coast,2.416146286,0.666666667,US West Coast,Rockfish
+1984,Shortspine thornyhead Pacific Coast,2.38716307,0.8,US West Coast,Rockfish
+1985,Shortspine thornyhead Pacific Coast,2.351592759,0.866666667,US West Coast,Rockfish
+1986,Shortspine thornyhead Pacific Coast,2.31470503,0.666666667,US West Coast,Rockfish
+1987,Shortspine thornyhead Pacific Coast,2.285721814,0.6,US West Coast,Rockfish
+1988,Shortspine thornyhead Pacific Coast,2.259373436,0.666666667,US West Coast,Rockfish
+1989,Shortspine thornyhead Pacific Coast,2.229072801,1.2,US West Coast,Rockfish
+1990,Shortspine thornyhead Pacific Coast,2.182963139,1.066666667,US West Coast,Rockfish
+1991,Shortspine thornyhead Pacific Coast,2.142123152,0.933333333,US West Coast,Rockfish
+1992,Shortspine thornyhead Pacific Coast,2.107870261,0.866666667,US West Coast,Rockfish
+1993,Shortspine thornyhead Pacific Coast,2.074934788,1.066666667,US West Coast,Rockfish
+1994,Shortspine thornyhead Pacific Coast,2.038047058,0.933333333,US West Coast,Rockfish
+1995,Shortspine thornyhead Pacific Coast,2.005111585,0.533333333,US West Coast,Rockfish
+1996,Shortspine thornyhead Pacific Coast,1.986667721,0.466666667,US West Coast,Rockfish
+1997,Shortspine thornyhead Pacific Coast,1.970858694,0.4,US West Coast,Rockfish
+1998,Shortspine thornyhead Pacific Coast,1.957684505,0.333333333,US West Coast,Rockfish
+1999,Shortspine thornyhead Pacific Coast,1.945827734,0.266666667,US West Coast,Rockfish
+2000,Shortspine thornyhead Pacific Coast,1.93924064,0.266666667,US West Coast,Rockfish
+2001,Shortspine thornyhead Pacific Coast,1.932653545,0.133333333,US West Coast,Rockfish
+2002,Shortspine thornyhead Pacific Coast,1.928701288,0.2,US West Coast,Rockfish
+2003,Shortspine thornyhead Pacific Coast,1.923431613,0.266666667,US West Coast,Rockfish
+2004,Shortspine thornyhead Pacific Coast,1.916844518,0.2,US West Coast,Rockfish
+2005,Shortspine thornyhead Pacific Coast,1.910257424,0.2,US West Coast,Rockfish
+2006,Shortspine thornyhead Pacific Coast,1.906305167,0.2,US West Coast,Rockfish
+2007,Shortspine thornyhead Pacific Coast,1.901035491,0.266666667,US West Coast,Rockfish
+2008,Shortspine thornyhead Pacific Coast,1.894448397,0.4,US West Coast,Rockfish
+2009,Shortspine thornyhead Pacific Coast,1.885226464,0.466666667,US West Coast,Rockfish
+2010,Shortspine thornyhead Pacific Coast,1.874687113,0.4,US West Coast,Rockfish
+2011,Shortspine thornyhead Pacific Coast,1.865465181,0.266666667,US West Coast,Rockfish
+2012,Shortspine thornyhead Pacific Coast,1.860195505,0.266666667,US West Coast,Rockfish
+2013,Shortspine thornyhead Pacific Coast,1.860195505,0.266666667,US West Coast,Rockfish
+2014,Shortspine thornyhead Pacific Coast,1.860195505,0.266666667,US West Coast,Rockfish
+2015,Shortspine thornyhead Pacific Coast,1.860195505,0.266666667,US West Coast,Rockfish
+2016,Shortspine thornyhead Pacific Coast,1.860195505,0.266666667,US West Coast,Rockfish
+2017,Shortspine thornyhead Pacific Coast,1.860195505,NA,US West Coast,Rockfish
+1980,Splitnose rockfish Pacific Coast,1.544057576,0.399371069,US West Coast,Rockfish
+1981,Splitnose rockfish Pacific Coast,1.49854114,0.553459119,US West Coast,Rockfish
+1982,Splitnose rockfish Pacific Coast,1.446411204,0.424528302,US West Coast,Rockfish
+1983,Splitnose rockfish Pacific Coast,1.40225637,0.745283019,US West Coast,Rockfish
+1984,Splitnose rockfish Pacific Coast,1.346430656,0.993710692,US West Coast,Rockfish
+1985,Splitnose rockfish Pacific Coast,1.285158529,1.179245283,US West Coast,Rockfish
+1986,Splitnose rockfish Pacific Coast,1.221941257,0.830188679,US West Coast,Rockfish
+1987,Splitnose rockfish Pacific Coast,1.178564482,0.509433962,US West Coast,Rockfish
+1988,Splitnose rockfish Pacific Coast,1.150943396,0.672955975,US West Coast,Rockfish
+1989,Splitnose rockfish Pacific Coast,1.119821046,0.58490566,US West Coast,Rockfish
+1990,Splitnose rockfish Pacific Coast,1.095312196,0.704402516,US West Coast,Rockfish
+1991,Splitnose rockfish Pacific Coast,1.070219802,0.91509434,US West Coast,Rockfish
+1992,Splitnose rockfish Pacific Coast,1.042015172,0.566037736,US West Coast,Rockfish
+1993,Splitnose rockfish Pacific Coast,1.029760747,0.801886792,US West Coast,Rockfish
+1994,Splitnose rockfish Pacific Coast,1.012059911,0.726415094,US West Coast,Rockfish
+1995,Splitnose rockfish Pacific Coast,0.998443883,0.663522013,US West Coast,Rockfish
+1996,Splitnose rockfish Pacific Coast,0.986967516,0.754716981,US West Coast,Rockfish
+1997,Splitnose rockfish Pacific Coast,0.972573429,0.911949686,US West Coast,Rockfish
+1998,Splitnose rockfish Pacific Coast,0.955650652,2.408805031,US West Coast,Rockfish
+1999,Splitnose rockfish Pacific Coast,0.895156584,0.455974843,US West Coast,Rockfish
+2000,Splitnose rockfish Pacific Coast,0.904687804,0.216981132,US West Coast,Rockfish
+2001,Splitnose rockfish Pacific Coast,0.926473449,0.182389937,US West Coast,Rockfish
+2002,Splitnose rockfish Pacific Coast,0.954872593,0.103773585,US West Coast,Rockfish
+2003,Splitnose rockfish Pacific Coast,0.996887765,0.235849057,US West Coast,Rockfish
+2004,Splitnose rockfish Pacific Coast,1.051157362,0.257861635,US West Coast,Rockfish
+2005,Splitnose rockfish Pacific Coast,1.129546781,0.128930818,US West Coast,Rockfish
+2006,Splitnose rockfish Pacific Coast,1.238085975,0.339622642,US West Coast,Rockfish
+2007,Splitnose rockfish Pacific Coast,1.35615639,0.078616352,US West Coast,Rockfish
+2008,Splitnose rockfish Pacific Coast,1.495817934,0.072327044,US West Coast,Rockfish
+2009,Splitnose rockfish Pacific Coast,1.638980743,0.072327044,US West Coast,Rockfish
+2010,Splitnose rockfish Pacific Coast,1.638980743,0.072327044,US West Coast,Rockfish
+2011,Splitnose rockfish Pacific Coast,1.638980743,0.072327044,US West Coast,Rockfish
+2012,Splitnose rockfish Pacific Coast,1.638980743,0.072327044,US West Coast,Rockfish
+2013,Splitnose rockfish Pacific Coast,1.638980743,0.072327044,US West Coast,Rockfish
+2014,Splitnose rockfish Pacific Coast,1.638980743,0.072327044,US West Coast,Rockfish
+2015,Splitnose rockfish Pacific Coast,1.638980743,0.072327044,US West Coast,Rockfish
+2016,Splitnose rockfish Pacific Coast,1.638980743,0.072327044,US West Coast,Rockfish
+2017,Splitnose rockfish Pacific Coast,1.638980743,NA,US West Coast,Rockfish
+1980,Starry flounder Northern Pacific Coast,0.584455959,1.159763314,US West Coast,Flatfish
+1981,Starry flounder Northern Pacific Coast,0.576683938,1.112426036,US West Coast,Flatfish
+1982,Starry flounder Northern Pacific Coast,0.588082902,0.816568047,US West Coast,Flatfish
+1983,Starry flounder Northern Pacific Coast,0.649740933,0.431952663,US West Coast,Flatfish
+1984,Starry flounder Northern Pacific Coast,0.762176166,0.218934911,US West Coast,Flatfish
+1985,Starry flounder Northern Pacific Coast,0.898963731,0.828402367,US West Coast,Flatfish
+1986,Starry flounder Northern Pacific Coast,0.911398964,0.26035503,US West Coast,Flatfish
+1987,Starry flounder Northern Pacific Coast,1.014507772,0.076923077,US West Coast,Flatfish
+1988,Starry flounder Northern Pacific Coast,2.270984456,0.100591716,US West Coast,Flatfish
+1989,Starry flounder Northern Pacific Coast,3.666839378,0.159763314,US West Coast,Flatfish
+1990,Starry flounder Northern Pacific Coast,4.486010363,0.118343195,US West Coast,Flatfish
+1991,Starry flounder Northern Pacific Coast,4.634715026,0.319526627,US West Coast,Flatfish
+1992,Starry flounder Northern Pacific Coast,4.161139896,0.076923077,US West Coast,Flatfish
+1993,Starry flounder Northern Pacific Coast,3.632642487,0.088757396,US West Coast,Flatfish
+1994,Starry flounder Northern Pacific Coast,3.034196891,0.071005917,US West Coast,Flatfish
+1995,Starry flounder Northern Pacific Coast,2.499481865,0.059171598,US West Coast,Flatfish
+1996,Starry flounder Northern Pacific Coast,2.067875648,0.035502959,US West Coast,Flatfish
+1997,Starry flounder Northern Pacific Coast,1.824352332,0.041420118,US West Coast,Flatfish
+1998,Starry flounder Northern Pacific Coast,2.09015544,0.041420118,US West Coast,Flatfish
+1999,Starry flounder Northern Pacific Coast,2.311917098,0.017751479,US West Coast,Flatfish
+2000,Starry flounder Northern Pacific Coast,2.257512953,0.029585799,US West Coast,Flatfish
+2001,Starry flounder Northern Pacific Coast,2.069948187,0.01183432,US West Coast,Flatfish
+2002,Starry flounder Northern Pacific Coast,1.798963731,0.029585799,US West Coast,Flatfish
+2003,Starry flounder Northern Pacific Coast,1.489637306,0.035502959,US West Coast,Flatfish
+2004,Starry flounder Northern Pacific Coast,1.239896373,0.124260355,US West Coast,Flatfish
+2005,Starry flounder Northern Pacific Coast,1.098963731,0.124260355,US West Coast,Flatfish
+2006,Starry flounder Northern Pacific Coast,1.098963731,0.124260355,US West Coast,Flatfish
+2007,Starry flounder Northern Pacific Coast,1.098963731,0.124260355,US West Coast,Flatfish
+2008,Starry flounder Northern Pacific Coast,1.098963731,0.124260355,US West Coast,Flatfish
+2009,Starry flounder Northern Pacific Coast,1.098963731,0.124260355,US West Coast,Flatfish
+2010,Starry flounder Northern Pacific Coast,1.098963731,0.124260355,US West Coast,Flatfish
+2011,Starry flounder Northern Pacific Coast,1.098963731,0.124260355,US West Coast,Flatfish
+2012,Starry flounder Northern Pacific Coast,1.098963731,0.124260355,US West Coast,Flatfish
+2013,Starry flounder Northern Pacific Coast,1.098963731,0.124260355,US West Coast,Flatfish
+2014,Starry flounder Northern Pacific Coast,1.098963731,0.124260355,US West Coast,Flatfish
+2015,Starry flounder Northern Pacific Coast,1.098963731,0.124260355,US West Coast,Flatfish
+2016,Starry flounder Northern Pacific Coast,1.098963731,0.124260355,US West Coast,Flatfish
+2017,Starry flounder Northern Pacific Coast,1.098963731,NA,US West Coast,Flatfish
+1980,Starry flounder Southern Pacific Coast,0.457173448,1.923076923,US West Coast,Flatfish
+1981,Starry flounder Southern Pacific Coast,0.338329764,1.195266272,US West Coast,Flatfish
+1982,Starry flounder Southern Pacific Coast,0.449678801,0.49704142,US West Coast,Flatfish
+1983,Starry flounder Southern Pacific Coast,0.804068522,0.633136095,US West Coast,Flatfish
+1984,Starry flounder Southern Pacific Coast,0.993576017,0.289940828,US West Coast,Flatfish
+1985,Starry flounder Southern Pacific Coast,1.776231263,0.24852071,US West Coast,Flatfish
+1986,Starry flounder Southern Pacific Coast,2.611349036,0.213017751,US West Coast,Flatfish
+1987,Starry flounder Southern Pacific Coast,2.917558887,0.165680473,US West Coast,Flatfish
+1988,Starry flounder Southern Pacific Coast,2.921841542,0.165680473,US West Coast,Flatfish
+1989,Starry flounder Southern Pacific Coast,2.799785867,0.159763314,US West Coast,Flatfish
+1990,Starry flounder Southern Pacific Coast,2.516059957,0.112426036,US West Coast,Flatfish
+1991,Starry flounder Southern Pacific Coast,2.156316916,0.136094675,US West Coast,Flatfish
+1992,Starry flounder Southern Pacific Coast,1.794432548,0.153846154,US West Coast,Flatfish
+1993,Starry flounder Southern Pacific Coast,1.466809422,0.118343195,US West Coast,Flatfish
+1994,Starry flounder Southern Pacific Coast,1.205567452,0.088757396,US West Coast,Flatfish
+1995,Starry flounder Southern Pacific Coast,0.978586724,0.082840237,US West Coast,Flatfish
+1996,Starry flounder Southern Pacific Coast,0.827623126,0.112426036,US West Coast,Flatfish
+1997,Starry flounder Southern Pacific Coast,0.825481799,0.159763314,US West Coast,Flatfish
+1998,Starry flounder Southern Pacific Coast,0.900428266,0.142011834,US West Coast,Flatfish
+1999,Starry flounder Southern Pacific Coast,1.152034261,0.100591716,US West Coast,Flatfish
+2000,Starry flounder Southern Pacific Coast,1.446466809,0.053254438,US West Coast,Flatfish
+2001,Starry flounder Southern Pacific Coast,1.687366167,0.106508876,US West Coast,Flatfish
+2002,Starry flounder Southern Pacific Coast,1.736616702,0.076923077,US West Coast,Flatfish
+2003,Starry flounder Southern Pacific Coast,1.635974304,0.071005917,US West Coast,Flatfish
+2004,Starry flounder Southern Pacific Coast,1.58993576,0.071005917,US West Coast,Flatfish
+2005,Starry flounder Southern Pacific Coast,1.547109208,0.071005917,US West Coast,Flatfish
+2006,Starry flounder Southern Pacific Coast,1.547109208,0.071005917,US West Coast,Flatfish
+2007,Starry flounder Southern Pacific Coast,1.547109208,0.071005917,US West Coast,Flatfish
+2008,Starry flounder Southern Pacific Coast,1.547109208,0.071005917,US West Coast,Flatfish
+2009,Starry flounder Southern Pacific Coast,1.547109208,0.071005917,US West Coast,Flatfish
+2010,Starry flounder Southern Pacific Coast,1.547109208,0.071005917,US West Coast,Flatfish
+2011,Starry flounder Southern Pacific Coast,1.547109208,0.071005917,US West Coast,Flatfish
+2012,Starry flounder Southern Pacific Coast,1.547109208,0.071005917,US West Coast,Flatfish
+2013,Starry flounder Southern Pacific Coast,1.547109208,0.071005917,US West Coast,Flatfish
+2014,Starry flounder Southern Pacific Coast,1.547109208,0.071005917,US West Coast,Flatfish
+2015,Starry flounder Southern Pacific Coast,1.547109208,0.071005917,US West Coast,Flatfish
+2016,Starry flounder Southern Pacific Coast,1.547109208,0.071005917,US West Coast,Flatfish
+2017,Starry flounder Southern Pacific Coast,1.547109208,NA,US West Coast,Flatfish
+1980,Widow rockfish Pacific Coast,2.293770596,1.508695652,US West Coast,Rockfish
+1981,Widow rockfish Pacific Coast,1.941745509,2.24673913,US West Coast,Rockfish
+1982,Widow rockfish Pacific Coast,1.538668013,2.523913043,US West Coast,Rockfish
+1983,Widow rockfish Pacific Coast,1.213590943,1.392391304,US West Coast,Rockfish
+1984,Widow rockfish Pacific Coast,1.146114596,1.40326087,US West Coast,Rockfish
+1985,Widow rockfish Pacific Coast,1.133039226,1.202173913,US West Coast,Rockfish
+1986,Widow rockfish Pacific Coast,1.152041033,1.235869565,US West Coast,Rockfish
+1987,Widow rockfish Pacific Coast,1.171149144,1.686956522,US West Coast,Rockfish
+1988,Widow rockfish Pacific Coast,1.134766663,1.427173913,US West Coast,Rockfish
+1989,Widow rockfish Pacific Coast,1.110848304,1.759782609,US West Coast,Rockfish
+1990,Widow rockfish Pacific Coast,1.035372595,1.80326087,US West Coast,Rockfish
+1991,Widow rockfish Pacific Coast,0.956893802,1.243478261,US West Coast,Rockfish
+1992,Widow rockfish Pacific Coast,0.933932178,1.233695652,US West Coast,Rockfish
+1993,Widow rockfish Pacific Coast,0.910173275,1.684782609,US West Coast,Rockfish
+1994,Widow rockfish Pacific Coast,0.849367492,1.39673913,US West Coast,Rockfish
+1995,Widow rockfish Pacific Coast,0.824997342,1.406521739,US West Coast,Rockfish
+1996,Widow rockfish Pacific Coast,0.804613586,1.297826087,US West Coast,Rockfish
+1997,Widow rockfish Pacific Coast,0.805942383,1.392391304,US West Coast,Rockfish
+1998,Widow rockfish Pacific Coast,0.799457851,1.060869565,US West Coast,Rockfish
+1999,Widow rockfish Pacific Coast,0.806075263,0.976086957,US West Coast,Rockfish
+2000,Widow rockfish Pacific Coast,0.804560434,0.813043478,US West Coast,Rockfish
+2001,Widow rockfish Pacific Coast,0.803789731,0.406521739,US West Coast,Rockfish
+2002,Widow rockfish Pacific Coast,0.823269905,0.081521739,US West Coast,Rockfish
+2003,Widow rockfish Pacific Coast,0.86685447,0.007608696,US West Coast,Rockfish
+2004,Widow rockfish Pacific Coast,0.924045923,0.014130435,US West Coast,Rockfish
+2005,Widow rockfish Pacific Coast,0.985436377,0.02826087,US West Coast,Rockfish
+2006,Widow rockfish Pacific Coast,1.040820665,0.029347826,US West Coast,Rockfish
+2007,Widow rockfish Pacific Coast,1.084963325,0.032608696,US West Coast,Rockfish
+2008,Widow rockfish Pacific Coast,1.117013926,0.034782609,US West Coast,Rockfish
+2009,Widow rockfish Pacific Coast,1.14568938,0.022826087,US West Coast,Rockfish
+2010,Widow rockfish Pacific Coast,1.176783247,0.02173913,US West Coast,Rockfish
+2011,Widow rockfish Pacific Coast,1.217524184,0.025,US West Coast,Rockfish
+2012,Widow rockfish Pacific Coast,1.273307112,0.02826087,US West Coast,Rockfish
+2013,Widow rockfish Pacific Coast,1.361087488,0.045652174,US West Coast,Rockfish
+2014,Widow rockfish Pacific Coast,1.479456787,0.061956522,US West Coast,Rockfish
+2015,Widow rockfish Pacific Coast,1.610715425,0.061956522,US West Coast,Rockfish
+2016,Widow rockfish Pacific Coast,1.610715425,0.061956522,US West Coast,Rockfish
+2017,Widow rockfish Pacific Coast,1.610715425,NA,US West Coast,Rockfish
+1980,Yelloweye rockfish Pacific Coast,1.547445255,2.9375,US West Coast,Rockfish
+1981,Yelloweye rockfish Pacific Coast,1.486618005,4.1875,US West Coast,Rockfish
+1982,Yelloweye rockfish Pacific Coast,1.396593674,5.5625,US West Coast,Rockfish
+1983,Yelloweye rockfish Pacific Coast,1.284671533,4.3125,US West Coast,Rockfish
+1984,Yelloweye rockfish Pacific Coast,1.206812652,3.8125,US West Coast,Rockfish
+1985,Yelloweye rockfish Pacific Coast,1.145985401,4.6875,US West Coast,Rockfish
+1986,Yelloweye rockfish Pacific Coast,1.072992701,3.3125,US West Coast,Rockfish
+1987,Yelloweye rockfish Pacific Coast,1.03163017,3.9375,US West Coast,Rockfish
+1988,Yelloweye rockfish Pacific Coast,0.98053528,4.5625,US West Coast,Rockfish
+1989,Yelloweye rockfish Pacific Coast,0.924574209,6,US West Coast,Rockfish
+1990,Yelloweye rockfish Pacific Coast,0.849148418,4.4375,US West Coast,Rockfish
+1991,Yelloweye rockfish Pacific Coast,0.805352798,7.1875,US West Coast,Rockfish
+1992,Yelloweye rockfish Pacific Coast,0.727493917,7.9375,US West Coast,Rockfish
+1993,Yelloweye rockfish Pacific Coast,0.649635036,7.5,US West Coast,Rockfish
+1994,Yelloweye rockfish Pacific Coast,0.583941606,5.75,US West Coast,Rockfish
+1995,Yelloweye rockfish Pacific Coast,0.545012165,6.9375,US West Coast,Rockfish
+1996,Yelloweye rockfish Pacific Coast,0.498783455,6.4375,US West Coast,Rockfish
+1997,Yelloweye rockfish Pacific Coast,0.462287105,7.6875,US West Coast,Rockfish
+1998,Yelloweye rockfish Pacific Coast,0.420924574,3.625,US West Coast,Rockfish
+1999,Yelloweye rockfish Pacific Coast,0.413625304,5.375,US West Coast,Rockfish
+2000,Yelloweye rockfish Pacific Coast,0.391727494,1.4375,US West Coast,Rockfish
+2001,Yelloweye rockfish Pacific Coast,0.399026764,2,US West Coast,Rockfish
+2002,Yelloweye rockfish Pacific Coast,0.403892944,0.4375,US West Coast,Rockfish
+2003,Yelloweye rockfish Pacific Coast,0.418491484,0.375,US West Coast,Rockfish
+2004,Yelloweye rockfish Pacific Coast,0.435523114,0.4375,US West Coast,Rockfish
+2005,Yelloweye rockfish Pacific Coast,0.450121655,0.5,US West Coast,Rockfish
+2006,Yelloweye rockfish Pacific Coast,0.464720195,0.4375,US West Coast,Rockfish
+2007,Yelloweye rockfish Pacific Coast,0.479318735,0.6875,US West Coast,Rockfish
+2008,Yelloweye rockfish Pacific Coast,0.491484185,0.4375,US West Coast,Rockfish
+2009,Yelloweye rockfish Pacific Coast,0.506082725,0.3125,US West Coast,Rockfish
+2010,Yelloweye rockfish Pacific Coast,0.520681265,0.3125,US West Coast,Rockfish
+2011,Yelloweye rockfish Pacific Coast,0.532846715,0.3125,US West Coast,Rockfish
+2012,Yelloweye rockfish Pacific Coast,0.532846715,0.3125,US West Coast,Rockfish
+2013,Yelloweye rockfish Pacific Coast,0.532846715,0.3125,US West Coast,Rockfish
+2014,Yelloweye rockfish Pacific Coast,0.532846715,0.3125,US West Coast,Rockfish
+2015,Yelloweye rockfish Pacific Coast,0.532846715,0.3125,US West Coast,Rockfish
+2016,Yelloweye rockfish Pacific Coast,0.532846715,0.3125,US West Coast,Rockfish
+2017,Yelloweye rockfish Pacific Coast,0.532846715,NA,US West Coast,Rockfish
+1980,Yellowtail Rockfish Eureka (S) Col,0.773782431,1.869863014,US West Coast,Rockfish
+1981,Yellowtail Rockfish Eureka (S) Col,0.773782431,1.869863014,US West Coast,Rockfish
+1982,Yellowtail Rockfish Eureka (S) Col,0.773782431,1.869863014,US West Coast,Rockfish
+1983,Yellowtail Rockfish Eureka (S) Col,0.773782431,1.869863014,US West Coast,Rockfish
+1984,Yellowtail Rockfish Eureka (S) Col,0.773782431,1.869863014,US West Coast,Rockfish
+1985,Yellowtail Rockfish Eureka (S) Col,0.773782431,1.869863014,US West Coast,Rockfish
+1986,Yellowtail Rockfish Eureka (S) Col,0.773782431,1.869863014,US West Coast,Rockfish
+1987,Yellowtail Rockfish Eureka (S) Col,0.773782431,1.869863014,US West Coast,Rockfish
+1988,Yellowtail Rockfish Eureka (S) Col,0.773782431,1.869863014,US West Coast,Rockfish
+1989,Yellowtail Rockfish Eureka (S) Col,0.773782431,1.869863014,US West Coast,Rockfish
+1990,Yellowtail Rockfish Eureka (S) Col,0.773782431,1.869863014,US West Coast,Rockfish
+1991,Yellowtail Rockfish Eureka (S) Col,0.773782431,1.869863014,US West Coast,Rockfish
+1992,Yellowtail Rockfish Eureka (S) Col,0.773782431,1.869863014,US West Coast,Rockfish
+1993,Yellowtail Rockfish Eureka (S) Col,0.773782431,1.869863014,US West Coast,Rockfish
+1994,Yellowtail Rockfish Eureka (S) Col,0.773782431,1.869863014,US West Coast,Rockfish
+1995,Yellowtail Rockfish Eureka (S) Col,0.773782431,1.869863014,US West Coast,Rockfish
+1996,Yellowtail Rockfish Eureka (S) Col,0.606736459,2.961643836,US West Coast,Rockfish
+1997,Yellowtail Rockfish Eureka (S) Col,0.657715066,0.834246575,US West Coast,Rockfish
+1998,Yellowtail Rockfish Eureka (S) Col,0.601274465,1.273972603,US West Coast,Rockfish
+1999,Yellowtail Rockfish Eureka (S) Col,0.638598088,1.017808219,US West Coast,Rockfish
+2000,Yellowtail Rockfish Eureka (S) Col,0.713245335,0.2,US West Coast,Rockfish
+2001,Yellowtail Rockfish Eureka (S) Col,0.811106054,0.293150685,US West Coast,Rockfish
+2002,Yellowtail Rockfish Eureka (S) Col,0.873463814,0.119178082,US West Coast,Rockfish
+2003,Yellowtail Rockfish Eureka (S) Col,0.878015476,0.016438356,US West Coast,Rockfish
+2004,Yellowtail Rockfish Eureka (S) Col,1.077378243,0.01369863,US West Coast,Rockfish
+2005,Yellowtail Rockfish Eureka (S) Col,1,0.010958904,US West Coast,Rockfish
+2006,Yellowtail Rockfish Eureka (S) Col,1,0.010958904,US West Coast,Rockfish
+2007,Yellowtail Rockfish Eureka (S) Col,1,0.010958904,US West Coast,Rockfish
+2008,Yellowtail Rockfish Eureka (S) Col,1,0.010958904,US West Coast,Rockfish
+2009,Yellowtail Rockfish Eureka (S) Col,1,0.010958904,US West Coast,Rockfish
+2010,Yellowtail Rockfish Eureka (S) Col,1,0.010958904,US West Coast,Rockfish
+2011,Yellowtail Rockfish Eureka (S) Col,1,0.010958904,US West Coast,Rockfish
+2012,Yellowtail Rockfish Eureka (S) Col,1,0.010958904,US West Coast,Rockfish
+2013,Yellowtail Rockfish Eureka (S) Col,1,0.010958904,US West Coast,Rockfish
+2014,Yellowtail Rockfish Eureka (S) Col,1,0.010958904,US West Coast,Rockfish
+2015,Yellowtail Rockfish Eureka (S) Col,1,0.010958904,US West Coast,Rockfish
+2016,Yellowtail Rockfish Eureka (S) Col,1,0.010958904,US West Coast,Rockfish
+2017,Yellowtail Rockfish Eureka (S) Col,1,NA,US West Coast,Rockfish
+1980,Yellowtail Rockfish (N),1.252465078,1.986075949,US West Coast,Rockfish
+1981,Yellowtail Rockfish (N),1.252465078,1.986075949,US West Coast,Rockfish
+1982,Yellowtail Rockfish (N),1.252465078,1.986075949,US West Coast,Rockfish
+1983,Yellowtail Rockfish (N),1.252465078,1.986075949,US West Coast,Rockfish
+1984,Yellowtail Rockfish (N),1.252465078,1.986075949,US West Coast,Rockfish
+1985,Yellowtail Rockfish (N),1.252465078,1.986075949,US West Coast,Rockfish
+1986,Yellowtail Rockfish (N),1.252465078,1.986075949,US West Coast,Rockfish
+1987,Yellowtail Rockfish (N),1.252465078,1.986075949,US West Coast,Rockfish
+1988,Yellowtail Rockfish (N),1.252465078,1.986075949,US West Coast,Rockfish
+1989,Yellowtail Rockfish (N),1.252465078,1.986075949,US West Coast,Rockfish
+1990,Yellowtail Rockfish (N),1.252465078,1.986075949,US West Coast,Rockfish
+1991,Yellowtail Rockfish (N),1.252465078,1.986075949,US West Coast,Rockfish
+1992,Yellowtail Rockfish (N),1.252465078,1.986075949,US West Coast,Rockfish
+1993,Yellowtail Rockfish (N),1.252465078,1.986075949,US West Coast,Rockfish
+1994,Yellowtail Rockfish (N),1.252465078,1.986075949,US West Coast,Rockfish
+1995,Yellowtail Rockfish (N),1.252465078,1.986075949,US West Coast,Rockfish
+1996,Yellowtail Rockfish (N),1.206039441,1.721518987,US West Coast,Rockfish
+1997,Yellowtail Rockfish (N),1.22082991,0.675949367,US West Coast,Rockfish
+1998,Yellowtail Rockfish (N),1.2331553,0.813924051,US West Coast,Rockfish
+1999,Yellowtail Rockfish (N),1.329909614,0.937974684,US West Coast,Rockfish
+2000,Yellowtail Rockfish (N),1.412284306,1.353164557,US West Coast,Rockfish
+2001,Yellowtail Rockfish (N),1.39441249,0.643037975,US West Coast,Rockfish
+2002,Yellowtail Rockfish (N),1.457682827,0.229113924,US West Coast,Rockfish
+2003,Yellowtail Rockfish (N),1.187345933,0.044303797,US West Coast,Rockfish
+2004,Yellowtail Rockfish (N),1.205423172,0.072151899,US West Coast,Rockfish
+2005,Yellowtail Rockfish (N),1.208709942,0.072151899,US West Coast,Rockfish
+2006,Yellowtail Rockfish (N),1.208709942,0.072151899,US West Coast,Rockfish
+2007,Yellowtail Rockfish (N),1.208709942,0.072151899,US West Coast,Rockfish
+2008,Yellowtail Rockfish (N),1.208709942,0.072151899,US West Coast,Rockfish
+2009,Yellowtail Rockfish (N),1.208709942,0.072151899,US West Coast,Rockfish
+2010,Yellowtail Rockfish (N),1.208709942,0.072151899,US West Coast,Rockfish
+2011,Yellowtail Rockfish (N),1.208709942,0.072151899,US West Coast,Rockfish
+2012,Yellowtail Rockfish (N),1.208709942,0.072151899,US West Coast,Rockfish
+2013,Yellowtail Rockfish (N),1.208709942,0.072151899,US West Coast,Rockfish
+2014,Yellowtail Rockfish (N),1.208709942,0.072151899,US West Coast,Rockfish
+2015,Yellowtail Rockfish (N),1.208709942,0.072151899,US West Coast,Rockfish
+2016,Yellowtail Rockfish (N),1.208709942,0.072151899,US West Coast,Rockfish
+2017,Yellowtail Rockfish (N),1.208709942,NA,US West Coast,Rockfish
+1980,Yellowtail Rockfish (S) Vancouver,1.50224635,0.817894737,US West Coast,Rockfish
+1981,Yellowtail Rockfish (S) Vancouver,1.50224635,0.817894737,US West Coast,Rockfish
+1982,Yellowtail Rockfish (S) Vancouver,1.50224635,0.817894737,US West Coast,Rockfish
+1983,Yellowtail Rockfish (S) Vancouver,1.50224635,0.817894737,US West Coast,Rockfish
+1984,Yellowtail Rockfish (S) Vancouver,1.50224635,0.817894737,US West Coast,Rockfish
+1985,Yellowtail Rockfish (S) Vancouver,1.50224635,0.817894737,US West Coast,Rockfish
+1986,Yellowtail Rockfish (S) Vancouver,1.50224635,0.817894737,US West Coast,Rockfish
+1987,Yellowtail Rockfish (S) Vancouver,1.50224635,0.817894737,US West Coast,Rockfish
+1988,Yellowtail Rockfish (S) Vancouver,1.50224635,0.817894737,US West Coast,Rockfish
+1989,Yellowtail Rockfish (S) Vancouver,1.50224635,0.817894737,US West Coast,Rockfish
+1990,Yellowtail Rockfish (S) Vancouver,1.50224635,0.817894737,US West Coast,Rockfish
+1991,Yellowtail Rockfish (S) Vancouver,1.50224635,0.817894737,US West Coast,Rockfish
+1992,Yellowtail Rockfish (S) Vancouver,1.50224635,0.817894737,US West Coast,Rockfish
+1993,Yellowtail Rockfish (S) Vancouver,1.50224635,0.817894737,US West Coast,Rockfish
+1994,Yellowtail Rockfish (S) Vancouver,1.50224635,0.817894737,US West Coast,Rockfish
+1995,Yellowtail Rockfish (S) Vancouver,1.50224635,0.817894737,US West Coast,Rockfish
+1996,Yellowtail Rockfish (S) Vancouver,1.473231,1.343157895,US West Coast,Rockfish
+1997,Yellowtail Rockfish (S) Vancouver,1.561961812,0.414736842,US West Coast,Rockfish
+1998,Yellowtail Rockfish (S) Vancouver,1.574316735,0.617894737,US West Coast,Rockfish
+1999,Yellowtail Rockfish (S) Vancouver,1.699363534,0.794736842,US West Coast,Rockfish
+2000,Yellowtail Rockfish (S) Vancouver,1.771995507,0.814736842,US West Coast,Rockfish
+2001,Yellowtail Rockfish (S) Vancouver,1.8526769,0.630526316,US West Coast,Rockfish
+2002,Yellowtail Rockfish (S) Vancouver,1.828528641,0.690526316,US West Coast,Rockfish
+2003,Yellowtail Rockfish (S) Vancouver,1.612691876,0.587368421,US West Coast,Rockfish
+2004,Yellowtail Rockfish (S) Vancouver,1.76918757,0.508421053,US West Coast,Rockfish
+2005,Yellowtail Rockfish (S) Vancouver,1.653687757,0.529473684,US West Coast,Rockfish
+2006,Yellowtail Rockfish (S) Vancouver,1.653687757,0.529473684,US West Coast,Rockfish
+2007,Yellowtail Rockfish (S) Vancouver,1.653687757,0.529473684,US West Coast,Rockfish
+2008,Yellowtail Rockfish (S) Vancouver,1.653687757,0.529473684,US West Coast,Rockfish
+2009,Yellowtail Rockfish (S) Vancouver,1.653687757,0.529473684,US West Coast,Rockfish
+2010,Yellowtail Rockfish (S) Vancouver,1.653687757,0.529473684,US West Coast,Rockfish
+2011,Yellowtail Rockfish (S) Vancouver,1.653687757,0.529473684,US West Coast,Rockfish
+2012,Yellowtail Rockfish (S) Vancouver,1.653687757,0.529473684,US West Coast,Rockfish
+2013,Yellowtail Rockfish (S) Vancouver,1.653687757,0.529473684,US West Coast,Rockfish
+2014,Yellowtail Rockfish (S) Vancouver,1.653687757,0.529473684,US West Coast,Rockfish
+2015,Yellowtail Rockfish (S) Vancouver,1.653687757,0.529473684,US West Coast,Rockfish
+2016,Yellowtail Rockfish (S) Vancouver,1.653687757,0.529473684,US West Coast,Rockfish
+2017,Yellowtail Rockfish (S) Vancouver,1.653687757,NA,US West Coast,Rockfish
+1940,BC widow rockfish ,4.058040079,0.000554717,Canada West Coast,Rockfish
+1941,BC widow rockfish ,4.057745548,0.000282848,Canada West Coast,Rockfish
+1942,BC widow rockfish ,4.057609626,0.004513895,Canada West Coast,Rockfish
+1943,BC widow rockfish ,4.0552364,0.015385428,Canada West Coast,Rockfish
+1944,BC widow rockfish ,4.044293345,0.006662143,Canada West Coast,Rockfish
+1945,BC widow rockfish ,4.033455416,0.074245564,Canada West Coast,Rockfish
+1946,BC widow rockfish ,3.982577967,0.036811917,Canada West Coast,Rockfish
+1947,BC widow rockfish ,3.946147631,0.017746888,Canada West Coast,Rockfish
+1948,BC widow rockfish ,3.913437082,0.029819743,Canada West Coast,Rockfish
+1949,BC widow rockfish ,3.869054004,0.037087126,Canada West Coast,Rockfish
+1950,BC widow rockfish ,3.820071645,0.072518655,Canada West Coast,Rockfish
+1951,BC widow rockfish ,3.750859115,0.059725224,Canada West Coast,Rockfish
+1952,BC widow rockfish ,3.694788016,0.055404612,Canada West Coast,Rockfish
+1953,BC widow rockfish ,3.635482805,0.02577772,Canada West Coast,Rockfish
+1954,BC widow rockfish ,3.598415834,0.036831071,Canada West Coast,Rockfish
+1955,BC widow rockfish ,3.558836417,0.045295703,Canada West Coast,Rockfish
+1956,BC widow rockfish ,3.514276834,0.042889157,Canada West Coast,Rockfish
+1957,BC widow rockfish ,3.486971275,0.033661967,Canada West Coast,Rockfish
+1958,BC widow rockfish ,3.466461155,0.036504998,Canada West Coast,Rockfish
+1959,BC widow rockfish ,3.448642089,0.056243235,Canada West Coast,Rockfish
+1960,BC widow rockfish ,3.433484808,0.04987138,Canada West Coast,Rockfish
+1961,BC widow rockfish ,3.444048395,0.061040515,Canada West Coast,Rockfish
+1962,BC widow rockfish ,3.454380431,0.08250269,Canada West Coast,Rockfish
+1963,BC widow rockfish ,3.464922463,0.057375308,Canada West Coast,Rockfish
+1964,BC widow rockfish ,3.510162153,0.050806248,Canada West Coast,Rockfish
+1965,BC widow rockfish ,3.572651821,0.252324246,Canada West Coast,Rockfish
+1966,BC widow rockfish ,3.569550103,0.596945845,Canada West Coast,Rockfish
+1967,BC widow rockfish ,3.41258205,0.371436062,Canada West Coast,Rockfish
+1968,BC widow rockfish ,3.383433355,0.362230525,Canada West Coast,Rockfish
+1969,BC widow rockfish ,3.37496053,0.335284146,Canada West Coast,Rockfish
+1970,BC widow rockfish ,3.38639927,0.207612537,Canada West Coast,Rockfish
+1971,BC widow rockfish ,3.429722472,0.163758545,Canada West Coast,Rockfish
+1972,BC widow rockfish ,3.471467212,0.227287002,Canada West Coast,Rockfish
+1973,BC widow rockfish ,3.45070309,0.328526141,Canada West Coast,Rockfish
+1974,BC widow rockfish ,3.357056191,0.47275496,Canada West Coast,Rockfish
+1975,BC widow rockfish ,3.204384797,0.245313024,Canada West Coast,Rockfish
+1976,BC widow rockfish ,3.169469611,0.158598017,Canada West Coast,Rockfish
+1977,BC widow rockfish ,3.174665847,0.134882654,Canada West Coast,Rockfish
+1978,BC widow rockfish ,3.186738879,0.159351024,Canada West Coast,Rockfish
+1979,BC widow rockfish ,3.182465397,0.110767792,Canada West Coast,Rockfish
+1980,BC widow rockfish ,3.170095102,0.093002998,Canada West Coast,Rockfish
+1981,BC widow rockfish ,3.124984137,0.091070056,Canada West Coast,Rockfish
+1982,BC widow rockfish ,3.050982174,0.093945966,Canada West Coast,Rockfish
+1983,BC widow rockfish ,2.952694754,0.138821267,Canada West Coast,Rockfish
+1984,BC widow rockfish ,2.835443488,0.164708947,Canada West Coast,Rockfish
+1985,BC widow rockfish ,2.72313377,0.271808758,Canada West Coast,Rockfish
+1986,BC widow rockfish ,2.588334771,0.520767981,Canada West Coast,Rockfish
+1987,BC widow rockfish ,2.396391188,0.614714859,Canada West Coast,Rockfish
+1988,BC widow rockfish ,2.216259744,0.600037192,Canada West Coast,Rockfish
+1989,BC widow rockfish ,2.102546951,0.567890641,Canada West Coast,Rockfish
+1990,BC widow rockfish ,2.033583832,0.723915335,Canada West Coast,Rockfish
+1991,BC widow rockfish ,1.952903331,0.726405895,Canada West Coast,Rockfish
+1992,BC widow rockfish ,1.883886664,1.084017333,Canada West Coast,Rockfish
+1993,BC widow rockfish ,1.716726599,0.929380257,Canada West Coast,Rockfish
+1994,BC widow rockfish ,1.594922058,0.906851624,Canada West Coast,Rockfish
+1995,BC widow rockfish ,1.523785475,0.905804918,Canada West Coast,Rockfish
+1996,BC widow rockfish ,1.456839943,0.782264555,Canada West Coast,Rockfish
+1997,BC widow rockfish ,1.44281971,0.56061671,Canada West Coast,Rockfish
+1998,BC widow rockfish ,1.49762238,0.658679394,Canada West Coast,Rockfish
+1999,BC widow rockfish ,1.545409071,0.705487661,Canada West Coast,Rockfish
+2000,BC widow rockfish ,1.564570506,0.6180619,Canada West Coast,Rockfish
+2001,BC widow rockfish ,1.557590929,0.662317739,Canada West Coast,Rockfish
+2002,BC widow rockfish ,1.503301504,0.800644486,Canada West Coast,Rockfish
+2003,BC widow rockfish ,1.41051265,0.770100034,Canada West Coast,Rockfish
+2004,BC widow rockfish ,1.345547101,0.52763939,Canada West Coast,Rockfish
+2005,BC widow rockfish ,1.355374642,0.608062475,Canada West Coast,Rockfish
+2006,BC widow rockfish ,1.373847745,0.664316525,Canada West Coast,Rockfish
+2007,BC widow rockfish ,1.396562683,0.92499589,Canada West Coast,Rockfish
+2008,BC widow rockfish ,1.36514778,0.682574164,Canada West Coast,Rockfish
+2009,BC widow rockfish ,1.368138507,0.576549333,Canada West Coast,Rockfish
+2010,BC widow rockfish ,1.36961778,0.514696403,Canada West Coast,Rockfish
+2011,BC widow rockfish ,1.397477818,0.906728728,Canada West Coast,Rockfish
+2012,BC widow rockfish ,1.350048244,0.685435735,Canada West Coast,Rockfish
+2013,BC widow rockfish ,1.383885338,0.851320477,Canada West Coast,Rockfish
+2014,BC widow rockfish ,1.390728552,0.71672563,Canada West Coast,Rockfish
+2015,BC widow rockfish ,1.436959373,0.739117724,Canada West Coast,Rockfish
+2016,BC widow rockfish ,1.473518436,0.690671614,Canada West Coast,Rockfish
+2017,BC widow rockfish ,1.502472037,0.713879721,Canada West Coast,Rockfish
+2018,BC widow rockfish ,1.507785252,0.658203164,Canada West Coast,Rockfish
+2019,BC widow rockfish ,1.50821466,NA,Canada West Coast,Rockfish
+1940,ocean perch (queen charlotte sound),3.71941855,0.002127197,Canada West Coast,Rockfish
+1941,ocean perch (queen charlotte sound),3.718793682,0.001227015,Canada West Coast,Rockfish
+1942,ocean perch (queen charlotte sound),3.718447921,0.014017009,Canada West Coast,Rockfish
+1943,ocean perch (queen charlotte sound),3.714367581,0.042325321,Canada West Coast,Rockfish
+1944,ocean perch (queen charlotte sound),3.702378816,0.019461286,Canada West Coast,Rockfish
+1945,ocean perch (queen charlotte sound),3.696552547,0.166864077,Canada West Coast,Rockfish
+1946,ocean perch (queen charlotte sound),3.641011985,0.09286111,Canada West Coast,Rockfish
+1947,ocean perch (queen charlotte sound),3.607757155,0.048752365,Canada West Coast,Rockfish
+1948,ocean perch (queen charlotte sound),3.582266772,0.07754336,Canada West Coast,Rockfish
+1949,ocean perch (queen charlotte sound),3.553102146,0.094590248,Canada West Coast,Rockfish
+1950,ocean perch (queen charlotte sound),3.517057188,0.090407642,Canada West Coast,Rockfish
+1951,ocean perch (queen charlotte sound),3.483423603,0.099133984,Canada West Coast,Rockfish
+1952,ocean perch (queen charlotte sound),3.454728993,0.087657998,Canada West Coast,Rockfish
+1953,ocean perch (queen charlotte sound),3.411228813,0.069823911,Canada West Coast,Rockfish
+1954,ocean perch (queen charlotte sound),3.381060851,0.222581843,Canada West Coast,Rockfish
+1955,ocean perch (queen charlotte sound),3.312732686,0.052927222,Canada West Coast,Rockfish
+1956,ocean perch (queen charlotte sound),3.293469157,0.125303659,Canada West Coast,Rockfish
+1957,ocean perch (queen charlotte sound),3.26681537,0.095780404,Canada West Coast,Rockfish
+1958,ocean perch (queen charlotte sound),3.279251104,0.085100999,Canada West Coast,Rockfish
+1959,ocean perch (queen charlotte sound),3.354048469,0.167494588,Canada West Coast,Rockfish
+1960,ocean perch (queen charlotte sound),3.471962852,0.141344778,Canada West Coast,Rockfish
+1961,ocean perch (queen charlotte sound),3.647995932,0.084551023,Canada West Coast,Rockfish
+1962,ocean perch (queen charlotte sound),3.848757664,0.125104666,Canada West Coast,Rockfish
+1963,ocean perch (queen charlotte sound),4.048740556,0.24423647,Canada West Coast,Rockfish
+1964,ocean perch (queen charlotte sound),4.164292262,0.231691711,Canada West Coast,Rockfish
+1965,ocean perch (queen charlotte sound),4.262517727,0.536024001,Canada West Coast,Rockfish
+1966,ocean perch (queen charlotte sound),4.177922237,1.548529214,Canada West Coast,Rockfish
+1967,ocean perch (queen charlotte sound),3.691361033,1.413147072,Canada West Coast,Rockfish
+1968,ocean perch (queen charlotte sound),3.278820695,1.176101634,Canada West Coast,Rockfish
+1969,ocean perch (queen charlotte sound),2.980069476,0.990745536,Canada West Coast,Rockfish
+1970,ocean perch (queen charlotte sound),2.756110097,0.846830079,Canada West Coast,Rockfish
+1971,ocean perch (queen charlotte sound),2.586332834,0.490158155,Canada West Coast,Rockfish
+1972,ocean perch (queen charlotte sound),2.516146195,0.752416349,Canada West Coast,Rockfish
+1973,ocean perch (queen charlotte sound),2.408017274,0.717831511,Canada West Coast,Rockfish
+1974,ocean perch (queen charlotte sound),2.318537751,1.14560468,Canada West Coast,Rockfish
+1975,ocean perch (queen charlotte sound),2.152619909,0.741301965,Canada West Coast,Rockfish
+1976,ocean perch (queen charlotte sound),2.067436737,0.385093479,Canada West Coast,Rockfish
+1977,ocean perch (queen charlotte sound),2.041924353,0.174357269,Canada West Coast,Rockfish
+1978,ocean perch (queen charlotte sound),2.048257862,0.427210506,Canada West Coast,Rockfish
+1979,ocean perch (queen charlotte sound),2.003656242,0.267994096,Canada West Coast,Rockfish
+1980,ocean perch (queen charlotte sound),1.970148228,0.598758152,Canada West Coast,Rockfish
+1981,ocean perch (queen charlotte sound),1.887545745,0.616055357,Canada West Coast,Rockfish
+1982,ocean perch (queen charlotte sound),1.795541332,0.808533362,Canada West Coast,Rockfish
+1983,ocean perch (queen charlotte sound),1.693973387,0.811514991,Canada West Coast,Rockfish
+1984,ocean perch (queen charlotte sound),1.6427507,0.660267664,Canada West Coast,Rockfish
+1985,ocean perch (queen charlotte sound),1.648691672,0.631699419,Canada West Coast,Rockfish
+1986,ocean perch (queen charlotte sound),1.67820577,0.232311878,Canada West Coast,Rockfish
+1987,ocean perch (queen charlotte sound),1.782554975,0.62509974,Canada West Coast,Rockfish
+1988,ocean perch (queen charlotte sound),1.863443641,0.688529284,Canada West Coast,Rockfish
+1989,ocean perch (queen charlotte sound),1.933407553,0.455533381,Canada West Coast,Rockfish
+1990,ocean perch (queen charlotte sound),2.021504187,0.476014293,Canada West Coast,Rockfish
+1991,ocean perch (queen charlotte sound),2.081241159,0.503175867,Canada West Coast,Rockfish
+1992,ocean perch (queen charlotte sound),2.113483114,0.497454381,Canada West Coast,Rockfish
+1993,ocean perch (queen charlotte sound),2.136818626,0.41170955,Canada West Coast,Rockfish
+1994,ocean perch (queen charlotte sound),2.156357947,0.670555453,Canada West Coast,Rockfish
+1995,ocean perch (queen charlotte sound),2.108368797,0.816132948,Canada West Coast,Rockfish
+1996,ocean perch (queen charlotte sound),2.013235151,0.726609446,Canada West Coast,Rockfish
+1997,ocean perch (queen charlotte sound),1.927713948,0.716612504,Canada West Coast,Rockfish
+1998,ocean perch (queen charlotte sound),1.839944731,0.744706219,Canada West Coast,Rockfish
+1999,ocean perch (queen charlotte sound),1.735098899,0.75649717,Canada West Coast,Rockfish
+2000,ocean perch (queen charlotte sound),1.625850992,0.886744249,Canada West Coast,Rockfish
+2001,ocean perch (queen charlotte sound),1.506456251,0.832675347,Canada West Coast,Rockfish
+2002,ocean perch (queen charlotte sound),1.401328247,0.935441283,Canada West Coast,Rockfish
+2003,ocean perch (queen charlotte sound),1.298395979,1.111642178,Canada West Coast,Rockfish
+2004,ocean perch (queen charlotte sound),1.187871201,1.121143077,Canada West Coast,Rockfish
+2005,ocean perch (queen charlotte sound),1.095461757,0.980076713,Canada West Coast,Rockfish
+2006,ocean perch (queen charlotte sound),1.029356952,1.193903387,Canada West Coast,Rockfish
+2007,ocean perch (queen charlotte sound),0.970056891,1.077266027,Canada West Coast,Rockfish
+2008,ocean perch (queen charlotte sound),0.941753861,0.871045689,Canada West Coast,Rockfish
+2009,ocean perch (queen charlotte sound),0.942440969,0.904274811,Canada West Coast,Rockfish
+2010,ocean perch (queen charlotte sound),0.951077885,1.144338226,Canada West Coast,Rockfish
+2011,ocean perch (queen charlotte sound),0.946258265,0.834213096,Canada West Coast,Rockfish
+2012,ocean perch (queen charlotte sound),0.962492065,0.824609006,Canada West Coast,Rockfish
+2013,ocean perch (queen charlotte sound),0.972350448,0.575626503,Canada West Coast,Rockfish
+2014,ocean perch (queen charlotte sound),1.001584544,0.460642977,Canada West Coast,Rockfish
+2015,ocean perch (queen charlotte sound),1.032980647,0.684041097,Canada West Coast,Rockfish
+2016,ocean perch (queen charlotte sound),1.032936004,0.683509529,Canada West Coast,Rockfish
+2017,ocean perch (queen charlotte sound),1.028715388,NA,Canada West Coast,Rockfish
+1990,Bluefin tuna Mediterranean Sea,NA,2.16,Mediterranean-Black Sea,
+1991,Bluefin tuna Mediterranean Sea,NA,2.15,Mediterranean-Black Sea,
+1992,Bluefin tuna Mediterranean Sea,NA,2.74,Mediterranean-Black Sea,
+1993,Bluefin tuna Mediterranean Sea,NA,3.08,Mediterranean-Black Sea,
+1994,Bluefin tuna Mediterranean Sea,NA,2.46,Mediterranean-Black Sea,
+1995,Bluefin tuna Mediterranean Sea,NA,2.65,Mediterranean-Black Sea,
+1996,Bluefin tuna Mediterranean Sea,NA,2.8,Mediterranean-Black Sea,
+1997,Bluefin tuna Mediterranean Sea,NA,2.2,Mediterranean-Black Sea,
+1998,Bluefin tuna Mediterranean Sea,NA,4.51,Mediterranean-Black Sea,
+1999,Bluefin tuna Mediterranean Sea,NA,3.5,Mediterranean-Black Sea,
+2000,Bluefin tuna Mediterranean Sea,NA,2.33,Mediterranean-Black Sea,
+2001,Bluefin tuna Mediterranean Sea,NA,2.46,Mediterranean-Black Sea,
+2002,Bluefin tuna Mediterranean Sea,NA,2.93,Mediterranean-Black Sea,
+2003,Bluefin tuna Mediterranean Sea,NA,1.72,Mediterranean-Black Sea,
+2004,Bluefin tuna Mediterranean Sea,NA,1.76,Mediterranean-Black Sea,
+2005,Bluefin tuna Mediterranean Sea,NA,2.17,Mediterranean-Black Sea,
+2006,Bluefin tuna Mediterranean Sea,NA,2.04,Mediterranean-Black Sea,
+2007,Bluefin tuna Mediterranean Sea,NA,2.5,Mediterranean-Black Sea,
+2008,Bluefin tuna Mediterranean Sea,NA,0.73,Mediterranean-Black Sea,
+2009,Bluefin tuna Mediterranean Sea,NA,0.72,Mediterranean-Black Sea,
+2010,Bluefin tuna Mediterranean Sea,NA,0.39,Mediterranean-Black Sea,
+2011,Bluefin tuna Mediterranean Sea,NA,0.27,Mediterranean-Black Sea,
+2012,Bluefin tuna Mediterranean Sea,NA,0.33,Mediterranean-Black Sea,
+2013,Bluefin tuna Mediterranean Sea,NA,0.44,Mediterranean-Black Sea,
+2014,Bluefin tuna Mediterranean Sea,NA,0.29,Mediterranean-Black Sea,
+2015,Bluefin tuna Mediterranean Sea,NA,0.57,Mediterranean-Black Sea,

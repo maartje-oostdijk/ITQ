@@ -139,6 +139,27 @@ confidence_i$effect = ifelse(confidence_i$estimate >0  & confidence_i$probabilit
 confidence_i$effect = ifelse(confidence_i$lower == 0 & confidence_i$estimate ==0 &confidence_i$upper ==0, "", confidence_i$effect)
 
 
+f_series = series_did %>%
+  filter(!is.na(ffmsy_overfishing))%>%
+  filter(ffmsy>0)
+
+
+
+library(nlme)
+
+
+f_series=f_series%>%
+  mutate(ID=paste0(year,stocklong))
+
+
+length(unique(f_series$ID))
+
+x = lme(fixed = log(ffmsy) ~ ba*beforeaftercontrol,
+  random = (~ year | stocklong), correlation = corARMA(value = rep(0.2, 2),
+                                                    form = (~ year | stocklong), p = 1, q = 1),
+  method = "REML", data = f_series, na.action = na.omit)
+
+
 #plot confidence intervals
 ggplot(confidence_i, aes( x= rev(order), y = estimate, ymax = upper, ymin = lower, colour= effect, shape= effect)) +
   geom_pointrange(position=position_dodge(width=c(0.3)))+scale_x_continuous(breaks = rev(confidence_i$order), labels = confidence_i$outcome)+

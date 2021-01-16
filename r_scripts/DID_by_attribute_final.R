@@ -21,6 +21,9 @@ load("/Users/mtn1/Dropbox/RAM v4.491 Files (1-16-20)/RAM v4.491/DB Files With As
 class= read.csv(paste0(datadir, "attributes.csv"))%>%
   filter(!(quota==0 & effort==0))
 
+#cleaning script
+source("~/Documents/Development/ITQ/r_scripts/ramdata_clean.R")  # subset RAM data for analysis and make outcome variables
+
 
 #filter time series that are too short
 list = class%>%
@@ -115,66 +118,6 @@ classes = class%>%
   left_join(controls)
   ungroup()
 
-#timeseries values views contains the actual assessment data (ssb cpue etc) and the meta-data contains the stock data, these can be linked
-series1 =timeseries_values_views %>% left_join(metadata, by = c("stockid", "stocklong"))
-series= subset(series1, !is.na(BdivBmsypref | UdivUmsypref | BdivBmgtpref | UdivUmgtpref | SSBdivSSBmsy | SSBdivSSBmgt | FdivFmgt |
-                                 FdivFmsy))
-
-#stocks with extra data
-filter_out = unique(US_extra$stocklong)
-
-series = series %>%
-  filter(!(stocklong %in% filter_out))
-
-
-#bbmsy & ffmsy
-series$bbmsy = ifelse(!is.na(series$BdivBmsypref), series$BdivBmsypref, NA)
-series$bbmsy = ifelse(is.na(series$bbmsy) & !is.na(series$BdivBmgtpref), series$BdivBmsypref, series$bbmsy)
-series$bbmsy = ifelse(is.na(series$bbmsy) & !is.na(series$SSBdivSSBmsy), series$SSBdivSSBmsy, series$bbmsy)
-series$bbmsy = ifelse(is.na(series$bbmsy) & !is.na(series$SSBdivSSBmgt), series$SSBdivSSBmgt, series$bbmsy)
-
-series$ffmsy = ifelse(!is.na(series$UdivUmsypref), series$UdivUmsypref, NA)
-series$ffmsy = ifelse(is.na(series$ffmsy) & !is.na(series$UdivUmgtpref), series$UdivUmsypref, series$ffmsy)
-series$ffmsy = ifelse(is.na(series$ffmsy) & !is.na(series$FdivFmsy), series$FdivFmsy, series$ffmsy)
-series$ffmsy = ifelse(is.na(series$ffmsy) & !is.na(series$FdivFmgt), series$FdivFmgt, series$ffmsy)
-
-series = bind_rows(series, US_extra) #add additional datapoints from catchshareindicators.org!
-
-series = series %>%
-  select(stocklong, year, region, FisheryType, ffmsy, bbmsy)%>%
-  mutate(ffmsy = as.numeric(ffmsy), bbmsy = as.numeric(bbmsy))%>%
-  distinct()%>%
-  filter(year>1989)%>%
-  filter(!is.na(region))%>%
-  mutate(bbmsy_overfished = ifelse(bbmsy<0.8, 1, 0),
-         bbmsy_overfished = ifelse(is.na(bbmsy), NA, bbmsy_overfished),
-         bbmsy_overexploited = ifelse(bbmsy<0.5, 1, 0),
-         bbmsy_overexploited = ifelse(is.na(bbmsy), NA, bbmsy_overexploited),
-         overfishing =ifelse(ffmsy>1.1, 1, 0),
-         overfishing = ifelse(is.na(ffmsy), NA, overfishing),
-         high_overfishing = ifelse(ffmsy>1.5, 1, 0),
-         high_overfishing = ifelse(is.na(ffmsy), NA, high_overfishing))%>%
-  mutate(region = ifelse(region == "US Alaska" | region == "US West Coast" | region == "US East Coast" |
-                           region == "US Southeast and Gulf", "USA", as.character(region)))%>%
-  mutate(region = ifelse(region == "Canada West Coast"| region == "Canada East Coast", "Canada",  as.character(region)))%>%
-  mutate(region = ifelse(region == "European Union"| region == "Europe non EU", "Europe", as.character(region)))%>%
-  mutate(region = ifelse(region == "West Africa"| region == "South Africa", "Africa", as.character(region)))%>%
-  distinct()
-
-#filter observations from timeseries before first year f/fmsy >0.5
-min_years = series %>%
-  group_by(stocklong)%>%filter(ffmsy > 0.5)%>%
-  summarise(min_year_ffmsy0.5 = min(year))%>%
-  select(stocklong, min_year_ffmsy0.5)
-
-non_ffmsy = series %>%
-  group_by(stocklong)%>%filter(is.na(ffmsy))
-non_ffmsy_stocks = unique(non_ffmsy$stocklong)
-
-series = series %>%
-  left_join(min_years) %>%
-  filter(year >= min_year_ffmsy0.5|stocklong %in% non_ffmsy_stocks)
-
 series = series %>%
   left_join(classes)
 
@@ -211,7 +154,7 @@ model_Q_5 = glmmTMB(bbmsy_overfished ~before_after_Q +  ar1(year + 0 | stocklong
 
 # a bit of a pattern in the residuals though...
 simulationOutput <- simulateResiduals(fittedModel = model_Q_5, plot = T)
-testDispersion(simulationOutput)#?? shifts from being signficant and not significant
+testDispersion(simulationOutput)# significant but rather small
 
 
 

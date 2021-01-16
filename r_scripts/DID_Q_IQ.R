@@ -1,4 +1,5 @@
 #script for the final DiD analysis (Fig 4B) in which individual stocks are paired to one another
+#these are only stocks that already have TAC in place and shift to individual or individual transferable quota
 
 #clear workspace
 rm(list = ls())
@@ -10,15 +11,16 @@ require(DHARMa)
 require(patchwork)
 
 
-datadir = "~/Dropbox/ITQ_meta/Data/"
+datadir = "~/Documents/Development/ITQ/data/"
 
 did = read.csv(paste0(datadir, "Q_IQ_ITQ_strict2.csv"))
-US_pacific = read.csv(paste0(datadir, "extra_stocks.csv"))
+US_extra = read.csv(paste0(datadir, "extra_stocks.csv"))
 
 # read RAM legacy data
-load("/Users/mtn1/Dropbox/RAM v4.491 Files (1-16-20)/RAM v4.491/DB Files With Assessment Data/R Data/DBdata[asmt][v4.491].RData")
+load("~/Dropbox/RAM v4.491 Files (1-16-20)/RAM v4.491/DB Files With Assessment Data/R Data/DBdata[asmt][v4.491].RData")
 
-#these are only stocks that already have TAC in place and shift to individual or individual transferable quota
+#cleaning script
+source("~/Documents/Development/ITQ/r_scripts/ramdata_clean.R")  # subset RAM data for analysis and make outcome variables
 
 
 did = did %>%
@@ -44,30 +46,7 @@ did = did %>% left_join(vars)
 minimum = did %>% group_by(baci_pair)%>%
   summarise(minimum_year = min(min_year))
 
-
 did = did %>% left_join(minimum)
-
-series =timeseries_values_views %>% left_join(metadata, by = c("stockid", "stocklong"))
-series= subset(series, !is.na(BdivBmsypref | UdivUmsypref | BdivBmgtpref | UdivUmgtpref | SSBdivSSBmsy | SSBdivSSBmgt | FdivFmgt |
-                                FdivFmsy))%>%
-  filter(!(stocklong %in% US_pacific$stocklong))
-
-
-
-#bbmsy & ffmsy
-series$bbmsy = ifelse(!is.na(series$BdivBmsypref), series$BdivBmsypref, NA)
-series$bbmsy = ifelse(is.na(series$bbmsy) & !is.na(series$BdivBmgtpref), series$BdivBmsypref, series$bbmsy)
-series$bbmsy = ifelse(is.na(series$bbmsy) & !is.na(series$SSBdivSSBmsy), series$SSBdivSSBmsy, series$bbmsy)
-series$bbmsy = ifelse(is.na(series$bbmsy) & !is.na(series$SSBdivSSBmgt), series$SSBdivSSBmgt, series$bbmsy)
-
-series$ffmsy = ifelse(!is.na(series$UdivUmsypref), series$UdivUmsypref, NA)
-series$ffmsy = ifelse(is.na(series$ffmsy) & !is.na(series$UdivUmgtpref), series$UdivUmsypref, series$ffmsy)
-series$ffmsy = ifelse(is.na(series$ffmsy) & !is.na(series$FdivFmsy), series$FdivFmsy, series$ffmsy)
-series$ffmsy = ifelse(is.na(series$ffmsy) & !is.na(series$FdivFmgt), series$FdivFmgt, series$ffmsy)
-
-series = bind_rows(series, US_pacific) #add additional datapoints from catchshareindicators.org!
-
-
 
 #cut-off for time-series
 series_did = did %>% left_join(series) %>%
@@ -79,16 +58,7 @@ series_did = series_did %>%
   filter(year > 1983)
 
 
-# model for over or under bbmsy ffmsy
-series_did$ffmsy_overfishing = as.factor(ifelse(series_did$ffmsy>1.1, 1, 0))
-series_did$ffmsy_high_overfishing = as.factor(ifelse(series_did$ffmsy>1.5, 1, 0))
-series_did$bbmsy_overfished = as.factor(ifelse(series_did$bbmsy<0.8, 1, 0))
-series_did$bbmsy_overexploited = as.factor(ifelse(series_did$bbmsy<0.5, 1, 0))
-
-
-#series_did$collapsed = as.factor(ifelse(series_did$bbmsy<0.4, 1, 0)
-series_did$treatmentstock_iq_type = as.factor(series_did$treatmentstock_iq_type)
-
+#DiD fixed effects
 series_did$ba = as.factor(ifelse(series_did$ba=="1. after", 1, 0))
 series_did$beforeaftercontrol = as.factor(ifelse(series_did$beforeaftercontrol=="impact", 1, 0))
 series_did$baci_pair = as.factor(series_did$baci_pair)
@@ -107,7 +77,7 @@ confidence_m_1 =   data.frame(predictors = rownames(sum[c(2:dim(sum)[1]),]), est
 rownames(confidence_m_1) <- rownames(sum[c(2:dim(sum)[1]),])
 colnames(confidence_m_1) = c("predictors", "estimate", "upper", "lower", "probability")
 
-confidence_m_1$outcome = "high overfishing (f/fmsy > 1.5)"
+confidence_m_1$outcome = "overfishing (f/fmsy > 1.1)"
 confidence_m_1$order = 1
 
 series_b = series_did %>%
@@ -120,8 +90,8 @@ confidence_m_b1 =   data.frame(predictors = rownames(sum[c(2:dim(sum)[1]),]), es
 rownames(confidence_m_b1) <- rownames(sum[c(2:dim(sum)[1]),])
 colnames(confidence_m_b1) = c("predictors", "estimate", "upper", "lower", "probability")
 
-confidence_m_b1$outcome = "high overfished (b/bmsy < 0.5)"
-confidence_m_b1$order = 3
+confidence_m_b1$outcome = "overfished (b/bmsy < 0.8)"
+confidence_m_b1$order = 2
 
 
 confidence_interval = bind_rows(confidence_m_1, confidence_m_b1)
@@ -138,28 +108,6 @@ confidence_i$effect = ifelse(confidence_i$estimate <0  & confidence_i$probabilit
 confidence_i$effect = ifelse(confidence_i$estimate >0  & confidence_i$probability <0.05, "positive", confidence_i$effect)
 confidence_i$effect = ifelse(confidence_i$lower == 0 & confidence_i$estimate ==0 &confidence_i$upper ==0, "", confidence_i$effect)
 
-
-f_series = series_did %>%
-  filter(!is.na(ffmsy_overfishing))%>%
-  filter(ffmsy>0)
-
-
-
-library(nlme)
-
-
-f_series=f_series%>%
-  mutate(ID=paste0(year,stocklong))
-
-
-length(unique(f_series$ID))
-
-x = lme(fixed = log(ffmsy) ~ ba*beforeaftercontrol,
-  random = (~ year | stocklong), correlation = corARMA(value = rep(0.2, 2),
-                                                    form = (~ year | stocklong), p = 1, q = 1),
-  method = "REML", data = f_series, na.action = na.omit)
-
-
 #plot confidence intervals
 ggplot(confidence_i, aes( x= rev(order), y = estimate, ymax = upper, ymin = lower, colour= effect, shape= effect)) +
   geom_pointrange(position=position_dodge(width=c(0.3)))+scale_x_continuous(breaks = rev(confidence_i$order), labels = confidence_i$outcome)+
@@ -167,7 +115,4 @@ ggplot(confidence_i, aes( x= rev(order), y = estimate, ymax = upper, ymin = lowe
   scale_color_manual(values=c("grey","black", "grey")) + xlab("")+
   theme(legend.position = "bottom", text = element_text(size=12))+
   scale_shape_manual(values = c(19,21,19))+ggtitle("paired approach Individual (n=19)")
-
-#model coefficients
-tab_model(m_1, m_b1)
 

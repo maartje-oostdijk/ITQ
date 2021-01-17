@@ -145,7 +145,6 @@ b_m <- glmmTMB(bbmsy_overfished ~attribute+ ar1(year + 0 | stocklong),
                data= series_b,
                family= binomial(link="logit"))
 
-summary(b_m)
 
 sum = data.frame(summary(b_m)$coefficients$cond)
 confidence_bm =   data.frame(predictors = rownames(sum[c(2:dim(sum)[1]),]), estimate = confint(b_m)[c(2:dim(sum)[1]), 3], upper = confint(b_m)[c(2:dim(sum)[1]), 2], lower = confint(b_m)[c(2:dim(sum)[1]), 1],  sum$Pr...z..[c(2:dim(sum)[1])])
@@ -168,9 +167,8 @@ f_series = series%>%
 f_m <- glmmTMB(overfishing ~ attribute + (1|region)+   (1|year) + ar1(year + 0 | stocklong),
                data= f_series,
                 family= binomial(link="logit"))
-summary(f_m)
 
-tab_model(f_m)
+
 sum = data.frame(summary(f_m)$coefficients$cond)
 confidence_fm =   data.frame(predictors = rownames(sum[c(2:dim(sum)[1]),]), estimate = confint(f_m)[c(2:dim(sum)[1]), 3], upper = confint(f_m)[c(2:dim(sum)[1]), 2], lower = confint(f_m)[c(2:dim(sum)[1]), 1],  sum$Pr...z..[c(2:dim(sum)[1])])
 rownames(confidence_fm) <- rownames(sum[c(2:dim(sum)[1]),])

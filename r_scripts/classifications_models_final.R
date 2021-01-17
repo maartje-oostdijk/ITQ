@@ -17,7 +17,7 @@ load("/Users/mtn1/Dropbox/RAM v4.491 Files (1-16-20)/RAM v4.491/DB Files With As
 try = read.csv(paste0(datadir, "attributes.csv"))%>%
   select(-X)
 #cleaning script
-source("~/Documents/Development/ITQ/r_scripts/ramdata_clean.R")  # subset RAM data for analysis and make outcome variables
+source("~/Documents/development/ITQ/r_scripts/ramdata_clean.R")  # subset RAM data for analysis and make outcome variables
 
 #create data with classes and management data
 series = series%>%
@@ -49,8 +49,6 @@ b_m <- glmmTMB(bbmsy_overfished ~   leasable+ transferable+individual+quota+ rat
 simulationOutput <- simulateResiduals(fittedModel = b_m, plot = T)
 testDispersion(simulationOutput)#no significant overdispersion (value 1.03, so rather close to modeled)
 
-
-
 f_series = series%>%
   filter(!(stocklong %in% check$stocklong))%>%
   filter(!is.na(stocklong))%>%
@@ -64,4 +62,7 @@ f_m <- glmmTMB(overfishing ~   rationed+pooled+leasable+transferable+individual+
 #some deviation from uniformity, but no strong pattern
 simulationOutput <- simulateResiduals(fittedModel = f_m, plot = T)
 testDispersion(simulationOutput)#no significant overdispersion
+
+#model output table
+tab_model(f_m, b_m)
 

@@ -1,3 +1,6 @@
+#script for duration attribute model (Fig 3D in main text, needs the "attributes.csv" which is the result of
+#classification script)
+
 rm(list = ls())
 require(tidyverse)
 require(glmmTMB)

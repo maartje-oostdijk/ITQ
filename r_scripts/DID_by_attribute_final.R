@@ -18,6 +18,9 @@ datadir = "/Users/mtn1/Dropbox/ITQ_meta/Data/"
 US_extra = read.csv(paste0(datadir, "extra_stocks.csv"))
 load("/Users/mtn1/Dropbox/RAM v4.491 Files (1-16-20)/RAM v4.491/DB Files With Assessment Data/R Data/DBdata[asmt][v4.491].RData")
 
+US_extra = read.csv(paste0(datadir, "extra_stocks.csv"))
+
+
 class= read.csv(paste0(datadir, "attributes.csv"))%>%
   filter(!(quota==0 & effort==0))
 
@@ -64,12 +67,11 @@ for(i in 1:length(stocks)){
 
       if(gdat1$quota == 1 & gdat2$quota == 1 & gdat3$quota == 1 & gdat4$quota == 1  & gdat$quota == 0){year_to_q = t+1}else{year_to_q = NA}
       if(gdat1$individual== 1 & gdat2$individual == 1 & gdat3$individual == 1 & gdat4$individual == 1  & gdat$individual == 0){year_to_i = t+1}else{year_to_i = NA}
-      if(gdat1$rationed== 1 & gdat2$rationed == 1 & gdat3$rationed == 1 & gdat4$rationed == 1  & gdat$rationed == 0){year_to_r = t+1}else{year_to_r = NA}
       if(gdat1$transferable== 1 & gdat2$transferable == 1 & gdat3$transferable== 1 & gdat4$transferable == 1  & gdat$transferable == 0){year_to_t = t+1}else{year_to_t = NA}
       if(gdat1$leasable== 1 & gdat2$leasable == 1 & gdat3$leasable== 1 & gdat4$leasable == 1  & gdat$leasable == 0){year_to_l = t+1}else{year_to_l = NA}
       if(gdat1$pooled== 1 & gdat2$pooled == 1 & gdat3$pooled== 1 & gdat4$pooled == 1  & gdat$pooled == 0){year_to_p = t+1}else{year_to_p = NA}
 
-      df = data.frame(year = t+1, stocklong =  stocks[i], year_to_q, year_to_i, year_to_r, year_to_t, year_to_l, year_to_p)
+      df = data.frame(year = t+1, stocklong =  stocks[i], year_to_q, year_to_i,  year_to_t, year_to_l, year_to_p)
       return(df)
 
     }
@@ -91,30 +93,26 @@ controls <- purrr::map_df(stocks, function(t){
     filter(stocklong == t)
   ############################
   #get control stocks that do not change management attribute
-  if(length(dat$year[dat$quota==0])== length(dat$year)) {control_q = "quota_control_stock"} else{control_q= "no control"}
-  if(length(dat$year[dat$individual==0])== length(dat$year)) {control_i = "individual_control_stock"} else{control_i= "no control"}
-  if(length(dat$year[dat$rationed==0])== length(dat$year)) {control_r = "rationed_control_stock"} else{control_r= "no control"}
-  if(length(dat$year[dat$leasable==0])== length(dat$year)) {control_l = "leasable_control_stock"} else{control_l= "no control"}
-  if(length(dat$year[dat$pooled==0])== length(dat$year)) {control_p = "pooled_control_stock"} else{control_p= "no control"}
-  if(length(dat$year[dat$transferable==0])== length(dat$year)) {control_t = "transferable_control_stock"} else{control_t= "no control"}
+  if(length(dat$year[dat$quota==0])== length(dat$year)) {control_q = "q_control_stock"} else{control_q= "no control"}
+  if(length(dat$year[dat$individual==0])== length(dat$year)) {control_i = "i_control_stock"} else{control_i= "no control"}
+  if(length(dat$year[dat$leasable==0])== length(dat$year)) {control_l = "l_control_stock"} else{control_l= "no control"}
+  if(length(dat$year[dat$pooled==0])== length(dat$year)) {control_p = "p_control_stock"} else{control_p= "no control"}
+  if(length(dat$year[dat$transferable==0])== length(dat$year)) {control_t = "t_control_stock"} else{control_t= "no control"}
 
 
-  df= data_frame(stocklong = t, control_q, control_i, control_r, control_l, control_p, control_t)
+  df= data_frame(stocklong = t, control_q, control_i,  control_l, control_p, control_t)
   return(df)
 
 
 
 })
 
-ch = results%>%
+classes = results%>%
   filter(!(is.na(year_to_q) & is.na(year_to_i) & is.na(year_to_t)
          & is.na(year_to_l) & is.na(year_to_p)))%>%
   select(-year)%>%
-  distinct()
-
-
-classes = class%>%
-  left_join(ch )%>%
+  distinct()%>%
+  left_join(class)%>%
   left_join(controls)
   ungroup()
 
@@ -122,157 +120,119 @@ series = series %>%
   left_join(classes)
 
 
-
-Q_series = series%>%
-    select(stocklong, year,  region, FisheryType, year_to_q, control_q, quota, ffmsy, bbmsy, bbmsy_overfished, overfishing, high_overfishing, bbmsy_overexploited) %>%
-    filter(control_q=="quota_control_stock"| !is.na(year_to_q) & quota == 1 |!is.na(year_to_q) & quota == 0)%>%
-    mutate(period = as.factor(year), stocklong = as.factor(stocklong), FisheryType= as.factor(FisheryType), region = as.factor(region),
-           before_after_Q = ifelse(year>= year_to_q, 1, 0))%>%
-    mutate(before_after_Q= ifelse(is.na(before_after_Q), 0, before_after_Q))%>%
-    mutate(year = as.factor(year),
-           region = as.factor(region), FisheryType = as.factor(FisheryType), before_after_Q = as.factor(before_after_Q),
-           overfishing = as.factor(overfishing), high_overfishing= as.factor(high_overfishing), bbmsy_overfished = as.factor(bbmsy_overfished), bbmsy_overexploited=as.factor(bbmsy_overexploited))
-
-quota_f_series = Q_series %>%
-  filter(ffmsy>0)%>%
-  mutate(ID=as.factor(paste0(year, "_", stocklong)))
+attributes = c("q", "i", "t", "l", "p")
 
 
-model_Q_2 = glmmTMB(overfishing ~before_after_Q+(1|region)+ ar1(year + 0 | stocklong), family= binomial(link="logit"), data = quota_f_series)
+confidence <- purrr::map_df(attributes, function(x){
 
 
-#residuals look alright.. again slight deviation from uniformity but can't get any reasonable model specification which doesnt deviate slightly
-simulationOutput <- simulateResiduals(fittedModel = model_Q_2, plot = T)
-testDispersion(simulationOutput)#no significant overdispersion
+d_series=series
+d_series$attr=NA
+if(x=="q"){(d_series$attr=d_series$quota) & (d_series$year_to_x = d_series$year_to_q)}
+if(x=="i"){(d_series$attr=d_series$individual)& (d_series$year_to_x = d_series$year_to_i)}
+if(x=="t"){(d_series$attr=d_series$transferable) & (d_series$year_to_x = d_series$year_to_t)}
+if(x=="l"){(d_series$attr=d_series$leasable) & (d_series$year_to_x = d_series$year_to_l)}
+if(x=="p"){(d_series$attr=d_series$pooled) & (d_series$year_to_x = d_series$year_to_p)}
 
-quota_b_series = Q_series %>%
-  filter(bbmsy>0)%>%
-  mutate(ID=as.factor(paste0(year, "_", stocklong)))
-
-
-model_Q_5 = glmmTMB(bbmsy_overfished ~before_after_Q +  ar1(year + 0 | stocklong)+(1|region)+(1|year), family= binomial, data = quota_b_series)
-
-# a bit of a pattern in the residuals though...
-simulationOutput <- simulateResiduals(fittedModel = model_Q_5, plot = T)
-testDispersion(simulationOutput)# significant but rather small
-
-
-
-
-I_series = series%>%
-  select(stocklong, year,  region, FisheryType, year_to_i, control_i, individual, ffmsy, bbmsy, bbmsy_overfished, overfishing, high_overfishing, bbmsy_overexploited) %>%
-  filter(control_i=="individual_control_stock"| !is.na(year_to_i) & individual == 1 |!is.na(year_to_i) & individual == 0)%>%
+g_series = d_series%>%
+  select(stocklong, year,  region, FisheryType, paste0("year_to_", x), paste0("control_", x), ffmsy, bbmsy, bbmsy_overfished, overfishing, high_overfishing, bbmsy_overexploited,
+         attr, year_to_x)%>%
+  filter(paste0("control_", x)== paste0(x, "control_stock")| !is.na(year_to_x) & attr == 1 |!is.na(year_to_x) & attr == 0)%>%
   mutate(period = as.factor(year), stocklong = as.factor(stocklong), FisheryType= as.factor(FisheryType), region = as.factor(region),
-         before_after_I = ifelse(year>= year_to_i, 1, 0))%>%
-  mutate(before_after_I= ifelse(is.na(before_after_I), 0, before_after_I))%>%
+         did = ifelse(year>= year_to_x, 1, 0))%>%
+  mutate(did= ifelse(is.na(did), 0, did))%>%
   mutate(year = as.factor(year),
-         region = as.factor(region), FisheryType = as.factor(FisheryType), before_after_I = as.factor(before_after_I),
+         region = as.factor(region), FisheryType = as.factor(FisheryType), did = as.factor(did),
          overfishing = as.factor(overfishing), high_overfishing= as.factor(high_overfishing), bbmsy_overfished = as.factor(bbmsy_overfished), bbmsy_overexploited=as.factor(bbmsy_overexploited))
 
-individual_f_series = I_series %>%
+f_series = g_series %>%
   filter(ffmsy>0)
 
-model_I_2 = glmmTMB(overfishing ~before_after_I +  (1|region)+ar1(year + 0 | stocklong), family= binomial, data = individual_f_series)
+f_m =  glmmTMB(overfishing ~did+(1|region)+ (1|year)+(1|stocklong)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = f_series)
 
-#residuals look alright.. again slight deviation from uniformity
-simulationOutput <- simulateResiduals(fittedModel = model_I_2, plot = T)
-testDispersion(simulationOutput)#no significant overdispersion
+v = VarCorr(f_m)
+
+#but if random variance approaches 0 model needs to be re-specified
+if(v$cond$stocklong[,1] <0.0001){f_m =  glmmTMB(overfishing ~did+(1|region)+ (1|year)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = f_series)}
+if(v$cond$year[,1] <0.0001){f_m =  glmmTMB(overfishing ~did+(1|region)+(1|stocklong)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = f_series)}
+if(v$cond$region[,1] <0.0001){f_m =  glmmTMB(overfishing ~did+ (1|year) +(1|stocklong) + ar1(year + 0 | stocklong), family= binomial(link="logit"), data = f_series)}
+
+#year & stocklong
+if((v$cond$stocklong[,1] <0.0001)&
+   (v$cond$year[,1] <0.0001)){f_m =  glmmTMB(overfishing ~did+ (1|region)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = f_series)}
+#year & region
+if((v$cond$region[,1] <0.0001)&
+   (v$cond$year[,1] <0.0001)){f_m =  glmmTMB(overfishing ~did+ (1|stocklong)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = f_series)}
+#region and stocklong
+if((v$cond$region[,1] <0.0001)&
+   (v$cond$stocklong[,1] <0.0001)){f_m =  glmmTMB(overfishing ~did+ (1|year)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = f_series)}
+
+#all aditional ran eff except AR1 model
+if((v$cond$region[,1] <0.0001) & (v$cond$stocklong[,1] <0.0001)&
+   (v$cond$year[,1] <0.0001)){f_m =  glmmTMB(overfishing ~did+ ar1(year + 0 | stocklong), family= binomial(link="logit"), data = f_series)}
+
+sum = data.frame(summary(f_m)$coefficients$cond)
+confidence_fm =   data.frame(predictors = rownames(sum[c(2:dim(sum)[1]),]), estimate = confint(f_m)[c(2:dim(sum)[1]), 3], upper = confint(f_m)[c(2:dim(sum)[1]), 2], lower = confint(f_m)[c(2:dim(sum)[1]), 1],  sum$Pr...z..[c(2:dim(sum)[1])])
+rownames(confidence_fm) <- rownames(sum[c(2:dim(sum)[1]),])
+colnames(confidence_fm) = c("predictors", "estimate", "upper", "lower", "probability")
+
+confidence_fm$attribute = x
+confidence_fm$outcome = "overfishing"
 
 
-individual_b_series = I_series %>%
+
+
+
+b_series = g_series %>%
   filter(bbmsy>0)
 
-model_I_5 = glmmTMB(bbmsy_overfished ~before_after_I + (1|year)+ ar1(year + 0 | stocklong), family= binomial, data = individual_b_series)
+#stocklong variance always near 0, removed due to a convergence issue
+b_m =  glmmTMB(bbmsy_overfished ~did+(1|region)+ (1|year)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = b_series)
 
-simulationOutput <- simulateResiduals(fittedModel = model_I_5, plot = T)
-testDispersion(simulationOutput)
+v = VarCorr(b_m)
 
-#Transferable attribute
-T_series = series%>%
-  select(stocklong, year,  region, FisheryType, year_to_t, control_t, transferable, ffmsy, bbmsy, bbmsy_overfished, overfishing, high_overfishing, bbmsy_overexploited) %>%
-  filter(control_t=="transferable_control_stock"| !is.na(year_to_t) & transferable == 1 |!is.na(year_to_t) & transferable == 0)%>%
-  mutate(period = as.factor(year), stocklong = as.factor(stocklong), FisheryType= as.factor(FisheryType), region = as.factor(region),
-         before_after_T = ifelse(year>= year_to_t, 1, 0))%>%
-  mutate(before_after_T= ifelse(is.na(before_after_T), 0, before_after_T))%>%
-  mutate(year = as.factor(year),
-         region = as.factor(region), FisheryType = as.factor(FisheryType), before_after_T = as.factor(before_after_T),
-         overfishing = as.factor(overfishing), high_overfishing= as.factor(high_overfishing), bbmsy_overfished = as.factor(bbmsy_overfished), bbmsy_overexploited=as.factor(bbmsy_overexploited))
+#but if random variance approaches 0 model needs to be re-specified
+if(v$cond$stocklong[,1] <0.0001){b_m =  glmmTMB(bbmsy_overfished ~did+(1|region)+ (1|year)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = f_series)}
+if(v$cond$year[,1] <0.0001){b_m =  glmmTMB(bbmsy_overfished ~did+(1|region)+(1|stocklong)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = f_series)}
+if(v$cond$region[,1] <0.0001){b_m =  glmmTMB(bbmsy_overfished~did+ (1|year) +(1|stocklong) + ar1(year + 0 | stocklong), family= binomial(link="logit"), data = f_series)}
 
-transferable_f_series = T_series %>%
-  filter(ffmsy>0)
+#year & stocklong
+if((v$cond$stocklong[,1] <0.0001)&
+   (v$cond$year[,1] <0.0001)){b_m =  glmmTMB(bbmsy_overfished ~did+ (1|region)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = b_series)}
+#year & region
+if((v$cond$region[,1] <0.0001)&
+   (v$cond$year[,1] <0.0001)){b_m =  glmmTMB(bbmsy_overfished ~did+ (1|stocklong)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = b_series)}
+#region and stocklong
+if((v$cond$region[,1] <0.0001)&
+   (v$cond$stocklong[,1] <0.0001)){b_m =  glmmTMB(bbmsy_overfished ~did+ (1|year)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = b_series)}
 
-model_T_2 = glmmTMB(overfishing ~before_after_T + (1|region)+ar1(year + 0 | stocklong), family= binomial, data = transferable_f_series)
+#all aditional ran eff except AR1 model
+if((v$cond$region[,1] <0.0001) & (v$cond$stocklong[,1] <0.0001)&
+   (v$cond$year[,1] <0.0001)){b_m =  glmmTMB(bbmsy_overfished ~did+ ar1(year + 0 | stocklong), family= binomial(link="logit"), data = b_series)}
 
-#check residuals, bit worse these..
-simulationOutput <- simulateResiduals(fittedModel = model_T_2, plot = T)
-testDispersion(simulationOutput)#no significant overdispersion
+sum = data.frame(summary(b_m)$coefficients$cond)
+confidence_bm =   data.frame(predictors = rownames(sum[c(2:dim(sum)[1]),]), estimate = confint(b_m)[c(2:dim(sum)[1]), 3], upper = confint(b_m)[c(2:dim(sum)[1]), 2], lower = confint(b_m)[c(2:dim(sum)[1]), 1],  sum$Pr...z..[c(2:dim(sum)[1])])
+rownames(confidence_bm) <- rownames(sum[c(2:dim(sum)[1]),])
+colnames(confidence_bm) = c("predictors", "estimate", "upper", "lower", "probability")
 
+confidence_bm$attribute = x
+confidence_bm$outcome = "overfished"
 
-transferable_b_series = T_series %>%
-  filter(bbmsy>0)
+confidence = bind_rows(confidence_fm, confidence_bm)
+return(confidence)
 
-model_T_5 = glmmTMB(bbmsy_overfished  ~before_after_T + (1|year)+ar1(year + 0 | stocklong), family= binomial, data = transferable_b_series)
+})
 
-#check residuals, slightly better..
-simulationOutput <- simulateResiduals(fittedModel = model_T_5, plot = T)
-testDispersion(simulationOutput)#no significant overdispersion
-
-
-L_series = series%>%
-  select(stocklong, year,  region, FisheryType, year_to_l, control_l, leasable, ffmsy, bbmsy, bbmsy_overfished, overfishing, high_overfishing, bbmsy_overexploited) %>%
-  filter(control_l=="leasable_control_stock"| !is.na(year_to_l) & leasable == 1 |!is.na(year_to_l) & leasable == 0)%>%
-  mutate(period = as.factor(year), stocklong = as.factor(stocklong), FisheryType= as.factor(FisheryType), region = as.factor(region),
-         before_after_L = ifelse(year>= year_to_l, 1, 0))%>%
-  mutate(before_after_L= ifelse(is.na(before_after_L), 0, before_after_L))%>%
-  mutate(year = as.factor(year),
-         region = as.factor(region), FisheryType = as.factor(FisheryType), before_after_L = as.factor(before_after_L),
-         overfishing = as.factor(overfishing), high_overfishing= as.factor(high_overfishing), bbmsy_overfished = as.factor(bbmsy_overfished), bbmsy_overexploited=as.factor(bbmsy_overexploited))
-
-leasable_f_series = L_series %>%
-  filter(ffmsy>0)
-
-model_L_2 = glmmTMB(overfishing  ~before_after_L +    (1|region)+ar1(year + 0 | stocklong), family= binomial, data = leasable_f_series)
-
-#check residuals
-simulationOutput <- simulateResiduals(fittedModel = model_L_2, plot = T)
-testDispersion(simulationOutput)#no significant overdispersion
-
-leasable_b_series = L_series %>%
-  filter(bbmsy>0)
-
-model_L_5 = glmmTMB(bbmsy_overfished ~ before_after_L +(1|year)+ar1(year + 0 | stocklong), family= binomial, data = leasable_b_series)
-
-#check residuals, look quite alright
-simulationOutput <- simulateResiduals(fittedModel = model_L_5, plot = T)
-testDispersion(simulationOutput)#some significant overdispersion actually, but it's small (1.04 compared to modeled)
-
-#Pooled attribute
-P_series = series%>%
-  select(stocklong, year,  region, FisheryType, year_to_p, control_p, pooled, ffmsy, bbmsy, bbmsy_overfished, overfishing, high_overfishing, bbmsy_overexploited) %>%
-  filter(control_p=="pooled_control_stock"| !is.na(year_to_p) & pooled == 1 |!is.na(year_to_p) & pooled == 0)%>%
-    mutate(period = as.factor(year), stocklong = as.factor(stocklong), FisheryType= as.factor(FisheryType), region = as.factor(region),
-    before_after_P = ifelse(year>= year_to_p, 1, 0))%>%
-        mutate(before_after_P= ifelse(is.na(before_after_P), 0, before_after_P))%>%
-        mutate(year = as.factor(year),
-               region = as.factor(region), FisheryType = as.factor(FisheryType), before_after_P = as.factor(before_after_P),
-               overfishing = as.factor(overfishing), high_overfishing= as.factor(high_overfishing), bbmsy_overfished = as.factor(bbmsy_overfished), bbmsy_overexploited=as.factor(bbmsy_overexploited))
-
-pooled_f_series = P_series %>%
-        filter(ffmsy>0)
-
-model_P_3 = glmmTMB(overfishing ~before_after_P +  (1|region)+ar1(year + 0 | stocklong), family= binomial, data = pooled_f_series)
-
-  #check residuals, look less nice
-  simulationOutput <- simulateResiduals(fittedModel = model_P_3, plot = T)
-  testDispersion(simulationOutput)#no significant overdispersion
+#make plot with confidence intervals
+confidence$effect = ifelse(confidence$estimate <0  & confidence$probability <0.05 , "negative", "non-significant")
+confidence$effect = ifelse(confidence$estimate >0  & confidence$probability <0.05, "positive", confidence$effect)
+confidence$effect = ifelse(confidence$lower == 0 & confidence$estimate ==0 &confidence$upper ==0, "", confidence$effect)
 
 
 
- pooled_b_series = P_series %>%
-        filter(bbmsy>0)
-
-model_P_5 = glmmTMB(bbmsy_overfished ~before_after_P +  ar1(year + 0 | stocklong), family= binomial, data = pooled_b_series)
-
- simulationOutput <- simulateResiduals(fittedModel = model_P_5, plot = T)
- testDispersion(simulationOutput)#no significant overdispersion
-
+#plot
+ggplot(transform(confidence, outcome=factor(outcome,levels=c("overfishing","overfished"))), aes( x= attribute, y = estimate, ymax = upper, ymin = lower, colour= effect)) +
+  geom_pointrange(position=position_dodge(width=c(0.3)))+
+  theme_bw()+ coord_flip() + geom_hline(yintercept=0, linetype="dashed") +
+  scale_color_manual(values=c("blue","grey", "red")) + xlab("predictor")+
+  facet_wrap(~outcome) + theme(legend.position = "bottom", text = element_text(size=20))+ggtitle("DiD")

@@ -1,5 +1,5 @@
 #script for classification attribute model (Fig 3C in main text, needs the "attributes.csv" which is the result of
-#classification script and transboundary.csv which is produced in the management models r script)
+#classification script)
 rm(list = ls())
 
 require(tidyverse)
@@ -17,7 +17,8 @@ trans = read.csv(paste0(datadir, "transboundary.csv"))
 load("/Users/mtn1/Dropbox/RAM v4.491 Files (1-16-20)/RAM v4.491/DB Files With Assessment Data/R Data/DBdata[asmt][v4.491].RData")
 try = read.csv(paste0(datadir, "attributes.csv"))%>%
   select(-X)
-
+stock_gdp = read.csv(paste0(datadir, "stock_gdp.csv"))%>%
+  select(-X)
 
 #cleaning script
 source("~/Documents/development/ITQ/r_scripts/ramdata_clean.R")  # subset RAM data for analysis and make outcome variables
@@ -67,7 +68,8 @@ series = series%>%
          transboundary=as.factor(transboundary))%>%
   filter(!is.na(region) & !is.na(individual))%>%
   mutate(ID= paste0(year, "_", stocklong), region_ID = paste0(region, "_", stocklong))%>%
-  distinct()
+  distinct()%>%
+  filter(quota==1)
 
 
 b_series = series%>%
@@ -77,10 +79,48 @@ b_series = series%>%
   filter(!is.na(bbmsy))%>%
   filter(bbmsy>0)
 
-b_m <- glmmTMB(bbmsy_overfished ~  (1|year) + transboundary+ leasable+ transferable+individual+quota+ rationed+ pooled+ ar1(year+0  | stocklong) ,
+b_m <- glmmTMB(bbmsy_overfished ~  (1|year) + transboundary+ leasable+ transferable+individual+ rationed+ pooled+ ar1(year+0  | stocklong) ,
                data= b_series,
                family= binomial(link="logit"))
 
+
+
+b_m2 <- glmmTMB(bbmsy_overexploited  ~ transboundary+ rationed+pooled+leasable+transferable+individual+ (1|year)+ar1(year+0  |stocklong),
+                data= b_series,
+                family=binomial(link="logit"))
+
+b_m3 <- glmmTMB(tr_overfished ~  transboundary+rationed+pooled+leasable+transferable+individual+(1|year) + (1|taxGroup)+(1|region)+(1 |stocklong),
+                data= b_series,
+                family=binomial(link="logit"))
+require(nlme)
+
+#moving average & AR1
+cor_s4 <- corARMA(value = rep(0.2, 2),
+                  form = (~ as.integer(year) | stocklong), p = 1, q = 1)
+#first & second order autocorrelation
+cor_s5 <- corARMA(value = rep(0.2, 2),
+                  form = (~ as.integer(year)  | stocklong), p = 2, q = 0)
+#AR1
+cor_s6 <- corAR1(value = 0.2,
+                 form = (~ as.integer(year)  | stocklong))
+
+
+b_m4 = lme(log(bbmsy) ~transboundary+rationed+pooled+leasable+transferable+individual+as.factor(taxGroup)+as.factor(year)+as.factor(region), data = b_series, random = ~ 1 | stocklong, cor = cor_s4, na.action=na.omit, method = "REML")
+b_m5 = lme(log(bbmsy) ~transboundary+rationed+pooled+leasable+transferable+individual+as.factor(taxGroup)+as.factor(year)+as.factor(region), data = b_series, random = ~ 1 | stocklong, cor = cor_s5, na.action=na.omit, method = "REML")
+b_m6 = lme(log(bbmsy) ~transboundary+rationed+pooled+leasable+transferable+individual+as.factor(taxGroup)+as.factor(year)+as.factor(region), data = b_series, random = ~ 1 | stocklong, cor = cor_s6, na.action=na.omit, method = "REML")
+
+anova(b_m4, b_m6)#b_m6 significantly better model
+anova(b_m6, b_m5)#b_m5 significantly better model
+
+#no significant effects for b
+summary(b_m5)
+
+df = data_frame(fitted= fitted(b_m6), resid=resid(b_m6))
+
+#residual plot continuous model ffmsy
+ggplot(df, aes(x = fitted, y = resid))+
+  geom_point(color = "dark grey", size = 3, alpha =0.6, shape =1)+
+  geom_hline(yintercept = 0)+geom_smooth(color="black")+theme_bw()+ylab("residuals")
 
 
 #residuals look quite uniform (although deviate significantly from uniformity)
@@ -94,18 +134,57 @@ f_series = series%>%
   filter(!is.na(ffmsy))%>%
   filter(ffmsy>0)
 
-f_m <- glmmTMB(overfishing ~  transboundary+rationed+pooled+leasable+transferable+individual+quota+ (1|year)+(1|taxGroup)+(1|region)+ar1(year+0  |stocklong),
+f_m <- glmmTMB(overfishing ~  transboundary+rationed+pooled+leasable+transferable+individual+ (1|year)+(1|taxGroup)+(1|region)+ar1(year+0  |stocklong),
+               data= f_series,
+               family=binomial(link="logit"))
+
+f_m2 <- glmmTMB(high_overfishing ~ transboundary+ rationed+pooled+leasable+transferable+individual+ (1|year)+(1|taxGroup)+(1|region)+ar1(year+0  |stocklong),
+                data= f_series,
+                family=binomial(link="logit"))
+
+f_m3 <- glmmTMB(tr_overfish ~  transboundary+rationed+pooled+leasable+transferable+individual+(1|year) + (1|taxGroup)+(1|region)+(1 |stocklong),
                data= f_series,
                family=binomial(link="logit"))
 
 
+
+f_m4 = lme(log(ffmsy) ~transboundary+rationed+pooled+leasable+transferable+individual+as.factor(year)+as.factor(taxGroup)+as.factor(region), data = f_series, random = ~ 1 | stocklong, cor = cor_s4, na.action=na.omit, method = "REML")
+f_m5 = lme(log(ffmsy) ~transboundary+rationed+pooled+leasable+transferable+individual+as.factor(taxGroup)+as.factor(year)+as.factor(region), data = f_series, random = ~ 1 | stocklong, cor = cor_s5, na.action=na.omit, method = "REML")
+f_m6 = lme(log(ffmsy) ~transboundary+rationed+pooled+leasable+transferable+individual+as.factor(taxGroup)+as.factor(year)+as.factor(region), data = f_series, random = ~ 1 | stocklong, cor = cor_s6, na.action=na.omit, method = "REML")
+
+anova(f_m4, f_m6)#f_m4 significantly better model
+anova(f_m4, f_m5)#no significant difference
+
+#pos effect for rationed & leasable, lower f for quota, reassuringly the assumption of autocorrelation structure doesn't really impact the results
+summary(f_m6)
+summary(f_m4)
+
+
+
+#plot residuals
+df2 = data_frame(fitted= fitted(f_m4), resid=resid(f_m4))
+
+ggplot(f_series[f_series$year==2014,], aes(x = quota, y = ffmsy, colour=quota))+
+  geom_boxplot()+
+  geom_hline(yintercept = 0)+geom_smooth(color="black")+theme_bw()
+
+#residual plot continuous model ffmsy
+ggplot(df2, aes(x = fitted, y = resid))+
+  geom_point(color = "dark grey", size = 3, alpha =0.6, shape =1)+
+  geom_hline(yintercept = 0)+geom_smooth(color="black")+theme_bw()+ylab("residuals")
+
+
+
+par(mar=c(2,2,2,0))
+plot(f_m4, type=c("p","smooth"), col.line=1)
+qqnorm(resid(f_m4))
 
 #some deviation from uniformity, but no strong pattern
 simulationOutput <- simulateResiduals(fittedModel = f_m, plot = T)
 testDispersion(simulationOutput)#no significant overdispersion
 
 #model output table
-tab_model(f_m, b_m, string.est="Estimate", transform=NULL)
+tab_model(f_m, b_m)
 
 
 # confidence intervals to dataframes
@@ -124,18 +203,31 @@ confidence_to_df = function(x){
 confidence_f_m = confidence_to_df(f_m)
 confidence_f_m$outcome = "overfishing (f/fmsy > 1.1)"
 
+confidence_f_m2 = confidence_to_df(f_m2)
+confidence_f_m2$outcome = "high overfishing (f/fmsy > 1.5)"
+
+confidence_f_m3 = confidence_to_df(f_m3)
+confidence_f_m3$outcome = "transition to overfishing"
+
+
+
 #b/bmsy confidence intervals
 confidence_b_m = confidence_to_df(b_m)
 confidence_b_m$outcome = "overfished (b/bmsy < 0.8)"
 
+confidence_b_m2 = confidence_to_df(b_m2)
+confidence_b_m2$outcome = "high overfished (b/bmsy < 0.5)"
+
+confidence_b_m3 = confidence_to_df(b_m3)
+confidence_b_m3$outcome = "transition to overfished"
+
+confidence_attributes = bind_rows(confidence_f_m, confidence_f_m2, confidence_f_m3,
+                                                  confidence_b_m, confidence_b_m2, confidence_b_m3) 
 
 
-confidence_attributes = bind_rows(confidence_f_m,confidence_b_m) 
 
 
-
-
-write.csv(confidence_attributes, "~/Dropbox/ITQ_meta/model_outcomes/confidence_attributes.csv")
+write.csv(confidence_attributes, "~/Dropbox/ITQ_meta/model_outcomes/confidence_attributes_quota_only.csv")
 
 
 #train & test for model accuracy
@@ -159,7 +251,7 @@ test$pred<- predict(f_m , newdata = test, type="response", allow.new.levels=TRUE
 test = test %>%
   mutate(pred. = ifelse(pred>0.6, 1, 0))
 
-#89% accuracy!
+#91% accuracy!
 test = test %>%
   mutate(accurate = 1*(pred. == overfishing))
 sum(test$accurate)/nrow(test)

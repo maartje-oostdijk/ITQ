@@ -8,6 +8,7 @@ require(tidyverse)
 datadir = "/Users/mtn1/Dropbox/ITQ_meta/Data/"
 #read in classifications
 mn_data = read.csv(paste0(datadir, "all_data_nov2020.csv"))
+key = read.csv(paste0(datadir, "key_new_ram.csv"))
 
 
 
@@ -86,7 +87,7 @@ for(i in 1:length(stocks)){
 
 try = results%>%
   left_join(key)%>%
-  mutate(stocklong = ifelse(is.na(stocklong), name, as.character(stocklong)),
+  mutate(stocklong = ifelse(is.na(stocklong), as.character(name), as.character(stocklong)),
          year = as.numeric(as.character(year)))%>%
   select(stocklong, year, transferable, individual, quota, effort, leasable, SG, pooled, rationed)%>%
   filter(!is.na(transferable))%>%
@@ -95,39 +96,5 @@ try = results%>%
 
 
 
-stocks = sort(unique(try$stocklong))
 
-for(i in 1:length(stocks)){
-
-  sdat = try%>%
-    filter(stocklong == stocks[i])
-
-
-
-  years = sort(unique(sdat$year[c(1:(length(sdat$year)))]))
-  years = years[years!=min(sdat$year)]
-
-  out = purrr::map_df(years, function(t){
-
-
-    gdat1 = sdat%>%
-      filter(year == t-1)
-
-    gdat = sdat%>%
-      filter(year == t)
-
-    num = gdat$year -gdat1$year
-
-    if(!(length(num)>0)){df = data_frame(stocklong = stocks[i], brk = "break")
-    return(df)}
-
-
-
-  })
-
-  if(i==1){check = out}else{check= rbind(check, out)}
-
-}
-
-
-write.csv(try, "attributes.csv")
+write.csv(try, "/Users/mtn1/Dropbox/ITQ_meta/Data/attributes.csv")

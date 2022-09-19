@@ -10,7 +10,7 @@ require(glmmTMB)
 require(DHARMa)
 require(sjPlot)
 require(patchwork)
-
+require(gridExtra)
 
 #data
 
@@ -25,9 +25,6 @@ trans = read.csv(paste0(datadir, "transboundary.csv"))%>%
 class= read.csv(paste0(datadir, "attributes.csv"))%>%
   filter(!(quota==0 & effort==0))
 
-#confidence intervals paired approach
-confidence_i = read.csv(paste0(datadir, "paired_confidence.csv"))
-
 #cleaning script
 source("~/Documents/Development/ITQ/r_scripts/ramdata_clean.R")  # subset RAM data for analysis and make outcome variables
 
@@ -39,6 +36,9 @@ list = class%>%
   filter(n>9)
 
 stocks = sort(unique(class$stocklong[class$stocklong%in%list$stocklong]))
+
+#confidence intervals paired approach
+confidence_i = read.csv(paste0(datadir, "paired_confidence.csv"))
 
 #loop over data to find changes in management attribute
 for(i in 1:length(stocks)){
@@ -131,7 +131,7 @@ attributes = c("q", "i", "t", "l", "p")
 confidence <- purrr::map_df(attributes, function(x){
 
   #test
-x="p"
+#x="p"
 d_series=series
 d_series$attr=NA
 
@@ -145,7 +145,7 @@ if(x=="p"){(d_series$attr=d_series$pooled) & (d_series$year_to_x = d_series$year
 y = paste0(x, "_control_stock")
 
 g_series = d_series%>%
-  select(stocklong, year,  region, taxGroup,transboundary, FisheryType, paste0("year_to_", x), paste0("control_", x), ffmsy, bbmsy, bbmsy_overfished, overfishing, overfishing, bbmsy_overfished,
+  select(stocklong, year,  region, taxGroup,transboundary, FisheryType, paste0("year_to_", x), paste0("control_", x), ffmsy, bbmsy, bbmsy_overfished, overfishing, high_overfishing, bbmsy_overexploited,
          attr, year_to_x)%>%
   rename(control_x = paste0("control_", x))%>%
   filter(control_x== y| !is.na(year_to_x) & attr == 1 |!is.na(year_to_x) & attr == 0)%>%
@@ -154,40 +154,43 @@ g_series = d_series%>%
   mutate(did= ifelse(is.na(did), 0, did))%>%
   mutate(year = as.factor(year),
          region = as.factor(region), taxGroup = as.factor(taxGroup), did = as.factor(did),
-         overfishing = as.factor(overfishing), bbmsy_overfished = as.factor(bbmsy_overfished), bbmsy_overfished=as.factor(bbmsy_overfished),
+         overfishing = as.factor(overfishing), high_overfishing= as.factor(high_overfishing), bbmsy_overfished = as.factor(bbmsy_overfished), bbmsy_overexploited=as.factor(bbmsy_overexploited),
          transboundary= as.factor(transboundary))
 
 
 f_series = g_series %>%
-  filter(ffmsy>0)%>%
-  distinct()%>%
-  filter(stocklong!="Pollock Faroe Plateau")#switches in two years
+  filter(ffmsy>0)
 
 n_f = length(unique(f_series$stocklong[f_series$did==1]))
 
-f_m =  glmmTMB(overfishing ~did+ transboundary+(1|taxGroup)+(1|region)+ (1|year)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = f_series)
+f_m =  glmmTMB(high_overfishing ~did+ transboundary+(1|taxGroup)+(1|region)+ (1|year)+(1|stocklong)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = f_series)
 
+#test for non-significant trends control fishery & treatment fishery
+#test = f_series %>%
+  #filter(did==0)
+
+#t_m =  glmmTMB(high_overfishing ~as.factor(control_x)+(1|region)+ (1|year)+(1|stocklong)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = f_series)
 
 v = VarCorr(f_m)
 
 #but if random variance approaches 0 model needs to be re-specified
-if(v$cond$taxGroup[,1] <0.0001){f_m =  glmmTMB(overfishing ~did+transboundary+(1|region)+ (1|year)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = f_series)}
-if(v$cond$year[,1] <0.0001){f_m =  glmmTMB(overfishing ~did+transboundary+(1|taxGroup)+(1|region)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = f_series)}
-if(v$cond$region[,1] <0.0001){f_m =  glmmTMB(overfishing ~did+ transboundary+(1|taxGroup)+(1|year) ++ ar1(year + 0 | stocklong), family= binomial(link="logit"), data = f_series)}
+if(v$cond$taxGroup[,1] <0.0001){f_m =  glmmTMB(high_overfishing ~did+transboundary+(1|region)+ (1|year)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = f_series)}
+if(v$cond$year[,1] <0.0001){f_m =  glmmTMB(high_overfishing ~did+transboundary+(1|taxGroup)+(1|region)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = f_series)}
+if(v$cond$region[,1] <0.0001){f_m =  glmmTMB(high_overfishing ~did+ transboundary+(1|taxGroup)+(1|year) ++ ar1(year + 0 | stocklong), family= binomial(link="logit"), data = f_series)}
 
 #year & taxGroup
 if((v$cond$taxGroup[,1] <0.0001)&
-   (v$cond$year[,1] <0.0001)){f_m =  glmmTMB(overfishing ~did+ transboundary+(1|region)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = f_series)}
+   (v$cond$year[,1] <0.0001)){f_m =  glmmTMB(high_overfishing ~did+ transboundary+(1|region)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = f_series)}
 #year & region
 if((v$cond$region[,1] <0.0001)&
-   (v$cond$year[,1] <0.0001)){f_m =  glmmTMB(overfishing ~did+ transboundary+(1|taxGroup)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = f_series)}
+   (v$cond$year[,1] <0.0001)){f_m =  glmmTMB(high_overfishing ~did+ transboundary+(1|taxGroup)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = f_series)}
 #region and stocklong
 if((v$cond$region[,1] <0.0001)&
-   (v$cond$taxGroup[,1] <0.0001)){f_m =  glmmTMB(overfishing ~did+transboundary+ (1|year)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = f_series)}
+   (v$cond$taxGroup[,1] <0.0001)){f_m =  glmmTMB(high_overfishing ~did+transboundary+ (1|year)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = f_series)}
 
 #all aditional ran eff except AR1 model
 if((v$cond$region[,1] <0.0001) & (v$cond$taxGroup[,1] <0.0001)&
-   (v$cond$year[,1] <0.0001)){f_m =  glmmTMB(overfishing ~did+ transboundary+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = f_series)}
+   (v$cond$year[,1] <0.0001)){f_m =  glmmTMB(high_overfishing ~did+ transboundary+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = f_series)}
 
 sum = data.frame(summary(f_m)$coefficients$cond)
 confidence_fm =   data.frame(predictors = rownames(sum[c(2:dim(sum)[1]),]), estimate = confint(f_m)[c(2:dim(sum)[1]), 3], upper = confint(f_m)[c(2:dim(sum)[1]), 2], lower = confint(f_m)[c(2:dim(sum)[1]), 1],  sum$Pr...z..[c(2:dim(sum)[1])])
@@ -195,43 +198,40 @@ rownames(confidence_fm) <- rownames(sum[c(2:dim(sum)[1]),])
 colnames(confidence_fm) = c("predictors", "estimate", "upper", "lower", "probability")
 
 confidence_fm$attribute = x
+confidence_fm$outcome = "high overfishing (f/fmsy>1.1)"
 confidence_fm$n = n_f
-confidence_fm$outcome = "overfishing (f/fmsy>1.1)"
-
 
 
 
 
 b_series = g_series %>%
-  filter(bbmsy>0)%>%
-  distinct()%>%
-  filter(stocklong!="Pollock Faroe Plateau")#switches in two years
+  filter(bbmsy>0)
 
 n_b = length(unique(b_series$stocklong[b_series$did==1]))
 
 #stocklong variance always near 0, removed due to a convergence issue
-b_m =  glmmTMB(bbmsy_overfished ~did+(1|region)+ (1|year)+transboundary+(1|taxGroup)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = b_series)
+b_m =  glmmTMB(bbmsy_overexploited ~did+(1|region)+ (1|year)+transboundary+(1|taxGroup)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = b_series)
 
 v = VarCorr(b_m)
 
 #but if random variance approaches 0 model needs to be re-specified
-if(v$cond$taxGroup[,1] <0.0001){b_m =  glmmTMB(bbmsy_overfished ~did+transboundary+(1|region)+ (1|year)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = f_series)}
-if(v$cond$year[,1] <0.0001){b_m =  glmmTMB(bbmsy_overfished ~did+transboundary+(1|taxGroup)+(1|region)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = f_series)}
-if(v$cond$region[,1] <0.0001){b_m =  glmmTMB(bbmsy_overfished~did+ transboundary+(1|taxGroup)+(1|year) + ar1(year + 0 | stocklong), family= binomial(link="logit"), data = f_series)}
+if(v$cond$taxGroup[,1] <0.0001){b_m =  glmmTMB(bbmsy_overexploited ~did+transboundary+(1|region)+ (1|year)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = f_series)}
+if(v$cond$year[,1] <0.0001){b_m =  glmmTMB(bbmsy_overexploited ~did+transboundary+(1|taxGroup)+(1|region)+(1|stocklong)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = f_series)}
+if(v$cond$region[,1] <0.0001){b_m =  glmmTMB(bbmsy_overexploited~did+ transboundary+(1|taxGroup)+(1|year) +(1|stocklong) + ar1(year + 0 | stocklong), family= binomial(link="logit"), data = f_series)}
 
 #year & stocklong
 if((v$cond$taxGroup[,1] <0.0001)&
-   (v$cond$year[,1] <0.0001)){b_m =  glmmTMB(bbmsy_overfished ~did+ transboundary+(1|region)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = b_series)}
+   (v$cond$year[,1] <0.0001)){b_m =  glmmTMB(bbmsy_overexploited ~did+ transboundary+(1|region)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = b_series)}
 #year & region
 if((v$cond$region[,1] <0.0001)&
-   (v$cond$year[,1] <0.0001)){b_m =  glmmTMB(bbmsy_overfished ~did+transboundary+(1|taxGroup)+ (1|stocklong)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = b_series)}
+   (v$cond$year[,1] <0.0001)){b_m =  glmmTMB(bbmsy_overexploited ~did+transboundary+(1|taxGroup)+ (1|stocklong)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = b_series)}
 #region and stocklong
 if((v$cond$region[,1] <0.0001)&
-   (v$cond$taxGroup[,1] <0.0001)){b_m =  glmmTMB(bbmsy_overfished ~did+ transboundary+(1|year)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = b_series)}
+   (v$cond$taxGroup[,1] <0.0001)){b_m =  glmmTMB(bbmsy_overexploited ~did+ transboundary+(1|year)+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = b_series)}
 
 #all aditional ran eff except AR1 model
 if((v$cond$region[,1] <0.0001) & (v$cond$taxGroup[,1] <0.0001)&
-   (v$cond$year[,1] <0.0001)){b_m =  glmmTMB(bbmsy_overfished ~did+ transboundary+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = b_series)}
+   (v$cond$year[,1] <0.0001)){b_m =  glmmTMB(bbmsy_overexploited ~did+ transboundary+ar1(year + 0 | stocklong), family= binomial(link="logit"), data = b_series)}
 
 
 
@@ -242,11 +242,10 @@ rownames(confidence_bm) <- rownames(sum[c(2:dim(sum)[1]),])
 colnames(confidence_bm) = c("predictors", "estimate", "upper", "lower", "probability")
 
 confidence_bm$attribute = x
-confidence_bm$outcome = "overfished (b/bmsy<0.8)"
+confidence_bm$outcome = "high overfished (b/bmsy<0.5)"
 confidence_bm$n = n_b
 
 confidence = bind_rows(confidence_fm, confidence_bm)
-tab_model(f_m, b_m,string.est="Estimate", transform=NULL)
 return(confidence)
 
 })
@@ -255,6 +254,7 @@ return(confidence)
 confidence$effect = ifelse(confidence$estimate <0  & confidence$probability <0.05 , "negative", "non-significant")
 confidence$effect = ifelse(confidence$estimate >0  & confidence$probability <0.05, "positive", confidence$effect)
 confidence$effect = ifelse(confidence$lower == 0 & confidence$estimate ==0 &confidence$upper ==0, "", confidence$effect)
+
 
 confidence = confidence%>%
   filter(predictors =="did1")
@@ -266,27 +266,25 @@ confidence$predictor = ifelse(confidence$attribute=="t", paste0("Transferable (n
 confidence$predictor = ifelse(confidence$attribute=="p", paste0("Pooled (n=",confidence$n,")"), confidence$predictor)
 confidence$predictor = ifelse(confidence$attribute=="l", paste0("Leasable (n=",confidence$n,")"), confidence$predictor)
 
-
 confidence1 = confidence%>%
-  filter(!(attribute=="q" & outcome=="overfished (b/bmsy<0.8)"))
-
+  filter(!(attribute=="q" & outcome=="high overfished (b/bmsy<0.5)"))
 
 #plot
-p1 = ggplot(transform(confidence1, outcome=factor(outcome,levels=c("overfishing (f/fmsy>1.1)","overfished (b/bmsy<0.8)"))), aes( x=factor(predictor, 
-        levels = rev(levels(factor(predictor)))),y = estimate, ymax = upper, ymin = lower, colour= effect, shape=effect)) +
+p1 = ggplot(transform(confidence1, outcome=factor(outcome,levels=c("high overfishing (f/fmsy>1.1)","high overfished (b/bmsy<0.5)"))), aes( x=factor(predictor, 
+                                                                                                                                          levels = rev(levels(factor(predictor)))),y = estimate, ymax = upper, ymin = lower, colour= effect, shape=effect)) +
   geom_pointrange(position=position_dodge(width=c(0.3)))+
   theme_classic()+ coord_flip() + geom_hline(yintercept=0, linetype="dashed") +
   scale_color_manual(values=c("black","light grey")) + xlab("predictor")+scale_shape_manual(values = c(21,19,19))+
   facet_wrap(~outcome, scales = "free_y") + theme(legend.position = "bottom", text = element_text(size=10))+ggtitle("DiD")+labs(tag = "A", size =1)
 
+confidence_i = confidence_i%>%
+  filter(outcome=="high overfishing (f/fmsy > 1.5)"|outcome=="high overfished (b/bmsy < 0.5)")
+
 p2= ggplot(confidence_i, aes( x= rev(order), y = estimate, ymax = upper, ymin = lower, colour= effect, shape= effect)) +
   geom_pointrange(position=position_dodge(width=c(0.3)))+scale_x_continuous(breaks = rev(confidence_i$order), labels = confidence_i$outcome)+
   theme_classic()+ coord_flip() + geom_hline(yintercept=0, linetype="dashed") +
-  scale_color_manual(values=c("black", "grey")) + xlab("")+
+  scale_color_manual(values=c("grey", "grey")) + xlab("")+
   theme(legend.position = "bottom", text = element_text(size=12))+
-  scale_shape_manual(values = c(21,19,19))+ggtitle("paired approach Individual (n=19)")+labs(tag = "B")
-
+  scale_shape_manual(values = c(19,19,19))+ggtitle("paired approach Individual (n=19)")+labs(tag = "B")
+library(ggpubr)
 ggarrange(p1, p2, ncol=1, heights=c(2,1))
-
-ggsave("figure4.pdf", width = 15, height = 15, units = "cm")
-
